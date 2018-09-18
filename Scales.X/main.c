@@ -12,8 +12,8 @@
 /*
  * 
  */
-int main(int argc, char** argv) {
+void main(void) {
 
-    return (EXIT_SUCCESS);
+    
 }
 
