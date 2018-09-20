@@ -47,13 +47,13 @@ void main(void) {
   // main program
   switch(mode){
     case 0:
-      user_local();
+      mode = user_local();
       break;
     case 1:
-      user_remote();
+       mode = user_remote();
       break;
     case 3:
-      factory();
+      mode = factory();
       break;
   }
 
