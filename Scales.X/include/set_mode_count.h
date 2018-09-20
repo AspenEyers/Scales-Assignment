@@ -3,6 +3,6 @@
 #define SET_MODE_COUNT_H_
 
 int set_mode_count(int x);
-void count_wookring(void);
+void count_working(void);
 
 #endif // SET_MODE_COUNT_H_
