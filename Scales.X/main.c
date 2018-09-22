@@ -72,4 +72,6 @@ void main(void) {
 void setup_pic( void){
 
   // Pic setup_
+  // What will we need as a general set up? do we need to include the SCI, serial etc as soon as we launch our program?
+  
 }
