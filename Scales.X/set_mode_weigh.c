@@ -1,6 +1,5 @@
-
-#include <studio.h>
-#include <stepin.h>
+#include <stdio.h>
+#include "stepin.h"
 
 // @set_mode_weigh.c
 //@Thomas McCabe

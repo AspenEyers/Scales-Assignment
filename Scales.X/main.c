@@ -17,11 +17,11 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include "include/mode_controller.h"
-#include "include/set_mode_count.h"
-
+#include "set_mode_count.h"
+#include "mode_controller.h"
 // Function declarations
 
+// Function declarations
 
 /****************************************************************************
 *                                   Definitions                             *
@@ -35,9 +35,6 @@
 *****************************************************************************/
 void setup_pic(void);
 
-/*
- *
- */
 void main(void) {
 
   // Define variables
@@ -56,16 +53,19 @@ void main(void) {
   // main program
   switch(mode){
     case 0:
-        mode = user_local();
+        //mode = user_local();
       break;
     case 1:
-        mode = user_remote();
+        //mode = user_remote();
       break;
     case 3:
-       mode = factory();
+       //mode = factory();
       break;
   }
 
+}
+
+void setup_pic( void){
 
 }
 
