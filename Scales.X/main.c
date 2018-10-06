@@ -13,65 +13,95 @@
  * more detailed explination
  */
 
-
-
+/****************************************************************************
+*                                 Includes                                  *
+****************************************************************************/
 #include <stdio.h>
 #include <stdlib.h>
-#include "set_mode_count.h"
-#include "mode_controller.h"
-// Function declarations
+#include "LCD_head.h"
 
-// Function declarations
+
 
 /****************************************************************************
-*                                   Definitions                             *
+*                                 PIC board setup                           *
 ****************************************************************************/
+// Setup board OSC, watchdog and low voltage protect 
+#pragma config OSC = HS
+#pragma config WDT = OFF
+#pragma config LVP = OFF
+
+
+/****************************************************************************
+*                                 #Defines                                  *
+****************************************************************************/
+// User mode defines
 #define USER_LOCAL 0    /**< Local user mode */
 #define USER_REMOTE 1   /**< Remote user mode */
 #define FACTORY 2       /**< Some documentation for first. */
 
-/****************************************************************************
-*                                 functions                                 *
-*****************************************************************************/
-void setup_pic(void);
+// LCD defines
+#define SET_ROW 0
+#define SET_POS 1
+#define SEND_MSG 2
 
+
+
+
+/****************************************************************************
+*                                 Function declarations                     *
+****************************************************************************/
+void setup_pic(void);
+void highPriorityISR(void);
+void lowPriorityISR(void);
+
+
+
+/****************************************************************************
+*                                 Interrupt setup                           *
+****************************************************************************/
+
+#pragma code highISR = 0x08
+void goToHighISR( void ){
+    _asm 
+        goto highPriorityISR
+    _endasm 
+}
+#pragma code lowISR = 0x0018
+void goToLowISR( void ){
+    _asm 
+        goto lowPriorityISR
+    _endasm 
+}
+
+
+/****************************************************************************
+*                                 Main                                      *
+*****************************************************************************/
 void main(void) {
 
-  // Define variables
-  // The default mode for the board is user local
-  //int mode = user_local();
-  int mode = 0;
-  // Call setup functions
-  // Initialise the basic functionality of the board
-  // Interrupts and other things maybe as well
-  setup_pic();
-
-  // Tesintg some of the I/O atm
-  // Calliong the counter working function from the set_mode_count
-  count_working();
-
-  // main program
-  switch(mode){
-    case 0:
-        //mode = user_local();
-      break;
-    case 1:
-        //mode = user_remote();
-      break;
-    case 3:
-       //mode = factory();
-      break;
-  }
-
 }
 
-void setup_pic( void){
 
+/****************************************************************************
+*                                 Interrupt Function                        *
+****************************************************************************/
+
+#pragma interrupt highPriorityISR     // or interruptlow    
+void highPriorityISR( void ){
+        // Check to see if data was received
+    //if(PIR1 & (1 << 5)){
+        //receiveCharacter();         << PART OF SERIAL, ADD THIS BACK IN AFTER INCLUDING SERIAL
+    //} 
 }
 
-void setup_pic( void){
+#pragma interruptlow lowPriorityISR 
+void lowPriorityISR( void ){
+        
 
-  // Pic setup_
-  // What will we need as a general set up? do we need to include the SCI, serial etc as soon as we launch our program?
-  
-}
+    
+    // Check to see if data was sent
+    //if(PIR1 & (1 << 4)){
+    //    receiveCharacter();
+    //}
+    
+} 
