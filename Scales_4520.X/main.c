@@ -18,6 +18,8 @@
 ****************************************************************************/
 #include <stdio.h>
 #include <stdlib.h>
+#include "LCD_head.h"
+#include "globalvariables.h"
 
 
 
@@ -45,8 +47,62 @@
 
 
 
-void main(int argc, char** argv) {
 
-    //return (EXIT_SUCCESS);
+/****************************************************************************
+*                                 Function declarations                     *
+****************************************************************************/
+void setup_pic(void);
+void highPriorityISR(void);
+void lowPriorityISR(void);
+
+
+
+/****************************************************************************
+*                                 Interrupt setup                           *
+****************************************************************************/
+
+#pragma code highISR = 0x08
+void goToHighISR( void ){
+    _asm 
+        goto highPriorityISR
+    _endasm 
+}
+#pragma code lowISR = 0x0018
+void goToLowISR( void ){
+    _asm 
+        goto lowPriorityISR
+    _endasm 
 }
 
+
+/****************************************************************************
+*                                 Main                                      *
+*****************************************************************************/
+void main(void) {
+
+}
+
+
+/****************************************************************************
+*                                 Interrupt Function                        *
+****************************************************************************/
+
+#pragma interrupt highPriorityISR     // or interruptlow    
+void highPriorityISR( void ){
+        // Check to see if data was received
+    //if(PIR1 & (1 << 5)){
+        //receiveCharacter();         << PART OF SERIAL, ADD THIS BACK IN AFTER INCLUDING SERIAL
+    //} 
+}
+
+#pragma interruptlow lowPriorityISR 
+void lowPriorityISR( void ){
+        
+
+    
+    // Check to see if data was sent
+    //if(PIR1 & (1 << 4)){
+    //    receiveCharacter();
+    //}
+    
+} 

@@ -1,0 +1,2 @@
+Error[1521] C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\Scales_4520.X\basic_serial.c 141 : This feature is not implemented in compiler. There may be a definition of external symbol 'stringPos' found instead of its declaration
+Error[1521] C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\Scales_4520.X\basic_serial.c 141 : This feature is not implemented in compiler. There may be a definition of external symbol 'MsgToSend' found instead of its declaration
