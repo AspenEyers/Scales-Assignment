@@ -11,7 +11,7 @@
 
 
 // Setting weight to grams
-void set_weight_grams () {
+void set_weight_grams (void) {
 
   printf("set_weight_grams\n");
   //weight_mult = 1;

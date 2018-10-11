@@ -1,11 +1,11 @@
 // This is going to be the c file with the differen mode declarations
 #include<stdio.h>
-#include"include/mode_controller.h"
+#include"mode_controller.h"
 
 int user_local(void){
 
   // DO something
-  printf("I am in user_local_mode\n");
+  printf("I am in user_local_mode");
 
   return 0;
 }

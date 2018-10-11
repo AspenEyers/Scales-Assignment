@@ -14,7 +14,7 @@
 int set_mode_count (int var){
 
   // All we wan it to do now is print set_mode_count to screen
-  printf("set_mode_count\n");
+  printf('set_mode_count');
   printf("on line %d\n", var);
   return 0;
 
