@@ -6,6 +6,10 @@
                    projectFiles="true">
       <itemPath>LCD_head.h</itemPath>
       <itemPath>set_weight_unit.h</itemPath>
+      <itemPath>mode_controller.h</itemPath>
+      <itemPath>set_mode_count.h</itemPath>
+      <itemPath>stepin.h</itemPath>
+      <itemPath>tare.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -17,6 +21,10 @@
       <itemPath>main.c</itemPath>
       <itemPath>LCD.c</itemPath>
       <itemPath>set_weight_unit.c</itemPath>
+      <itemPath>mode_controller.c</itemPath>
+      <itemPath>set_mode_weigh.c</itemPath>
+      <itemPath>set_mode_count.c</itemPath>
+      <itemPath>tare.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -42,7 +50,7 @@
         <platform>3</platform>
       </toolsSet>
       <packs>
-        <pack name="PIC18Fxxxx_DFP" vendor="Microchip" version="1.0.6"/>
+        <pack name="PIC18Fxxxx_DFP" vendor="Microchip" version="0.1.3"/>
       </packs>
       <compileType>
         <linkerTool>

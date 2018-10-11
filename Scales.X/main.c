@@ -1,6 +1,6 @@
 /****************************************************************************
 *                                                                          *
-* This file is the main fie for the scales assignemnt.                     *
+* This file is the main fie for the scales Assignemnt.                     *
 ****************************************************************************/
 
 
@@ -10,7 +10,7 @@
  * @date 18 September 2018
  * @ Brief the main file that all others are called from
  *
- * more detailed explination
+ * more detailed explanation
  */
 
 /****************************************************************************
@@ -19,7 +19,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "LCD_head.h"
-
+#include "mode_controller.h"
+#include "set_mode_count.h"
+#include "set_weight_unit.h"
+#include "tare.h"
 
 
 /****************************************************************************

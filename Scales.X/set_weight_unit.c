@@ -1,9 +1,16 @@
-//cause the instrument to calculate the weight in different units
-// 10/9/2018
+// Purpose:
+//         cause the instrument to calculate the weight in different units
+
+// @set_weight_unit.c
+//@Thomas McCabe
+// @9 October 2018
+//@ file containing the set weight mode working
 
 #include <stdio.h>
 #include "set_weight_unit.h"
 
+
+// Setting weight to grams
 void set_weight_grams () {
 
   printf("set_weight_grams\n");
@@ -12,6 +19,8 @@ void set_weight_grams () {
 
 }
 
+
+// Setting weight to ounces by using a 1/28 multiplier
 void set_weight_ounces(){
 
 	printf("set_weight_ounces\n");
