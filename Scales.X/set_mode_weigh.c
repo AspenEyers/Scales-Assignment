@@ -9,6 +9,6 @@
 void set_mode_weigh () {
 
   // All we wan it to do now is print set_mode_count to screen
-  printf("set_mode_weigh\n");
+ // printf("set_mode_weigh\n");
 
 }

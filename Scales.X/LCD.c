@@ -152,7 +152,14 @@ void lcd_wait(void){
 
 }
 
-
+// Writes a string to the first location on the baord
+char string_to_LCD(char *str){
+    
+    // Waiting then loading a string to the LCd on the board
+    lcd_wait();
+    write_string(0,0,str);
+    
+}
 
 
 unsigned char read_lcd(void){

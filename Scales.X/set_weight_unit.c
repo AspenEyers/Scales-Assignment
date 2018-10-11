@@ -13,7 +13,7 @@
 // Setting weight to grams
 void set_weight_grams (void) {
 
-  printf("set_weight_grams\n");
+ // printf("set_weight_grams\n");
   //weight_mult = 1;
   //string_unit[] = "g";
 
@@ -23,7 +23,7 @@ void set_weight_grams (void) {
 // Setting weight to ounces by using a 1/28 multiplier
 void set_weight_ounces(){
 
-	printf("set_weight_ounces\n");
+//	printf("set_weight_ounces\n");
 	//weight_mult = 1/28;
 	//string_unit[] = "oz";
 	

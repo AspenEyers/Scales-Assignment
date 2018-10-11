@@ -64,7 +64,7 @@ extern "C" {
     void write_lcd(unsigned char);
     void lcd_clear(void);
     void write_string(int, int, unsigned char msg[]);
-    
+    char string_to_LCD(char*);
     
     
     

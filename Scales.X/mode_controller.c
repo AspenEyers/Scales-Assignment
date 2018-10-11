@@ -1,27 +1,31 @@
 // This is going to be the c file with the differen mode declarations
 #include<stdio.h>
+#include "LCD_head.h"
 #include"mode_controller.h"
 
 int user_local(void){
 
-  // DO something
-  printf("I am in user_local_mode");
+    // Write to LCD that it's working
+    unsigned char str[]= "user local";
+    string_to_LCD(str);
+  
 
   return 0;
 }
 int user_remote(void){
 
-  // DO something
-  printf("I am in user_remote_mode\n");
+    //Write to LCD that it's working
+    unsigned char str[]= "user remote";
+    string_to_LCD(str);
 
   return 0;
 }
 
 int factory(void){
 
-  // DO something
-  printf("I am in user_remote_mode\n");
-
+    //Write to LCD that it's working
+    unsigned char str[]= "Factory";
+    string_to_LCD(str);
   return 0;
 
 }

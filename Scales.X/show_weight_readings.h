@@ -9,7 +9,7 @@
 #define	SHOW_WEIGHT_READINGS_H
 
 void show_weight_seiral(int);
-void show_weight_lcd(int);
+char show_weight_lcd(char*);
 
 #endif
 

@@ -10,7 +10,7 @@
 void random(void){
     
     // We want to show that Tare is working correctly
-    printf("Tare.c is working\n");
+   // printf("Tare.c is working\n");
     
 }
 

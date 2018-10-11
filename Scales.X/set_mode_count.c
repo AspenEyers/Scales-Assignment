@@ -13,9 +13,10 @@
 
 int set_mode_count (int var){
 
-  // All we wan it to do now is print set_mode_count to screen
-  printf('set_mode_count');
-  printf("on line %d\n", var);
+  //Write to LCD that it's working
+ unsigned char str[]= "count mode";
+  string_to_LCD(str);
+    
   return 0;
 
 }
@@ -23,7 +24,7 @@ int set_mode_count (int var){
 void count_working(void){
 
   // This is the seperate function to test if count is responding
-  printf("set_mode_count is responding\n");
+ //printf("set_mode_count is responding\n");
 
 
 }
