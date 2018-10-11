@@ -57,17 +57,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=main.c LCD.c set_weight_unit.c mode_controller.c set_mode_weigh.c set_mode_count.c tare.c show_weight_readings.c
+SOURCEFILES_QUOTED_IF_SPACED=main.c LCD.c set_weight_unit.c mode_controller.c tare.c show_weight_readings.c count_or_weigh_mode.c
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/main.o ${OBJECTDIR}/LCD.o ${OBJECTDIR}/set_weight_unit.o ${OBJECTDIR}/mode_controller.o ${OBJECTDIR}/set_mode_weigh.o ${OBJECTDIR}/set_mode_count.o ${OBJECTDIR}/tare.o ${OBJECTDIR}/show_weight_readings.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/main.o.d ${OBJECTDIR}/LCD.o.d ${OBJECTDIR}/set_weight_unit.o.d ${OBJECTDIR}/mode_controller.o.d ${OBJECTDIR}/set_mode_weigh.o.d ${OBJECTDIR}/set_mode_count.o.d ${OBJECTDIR}/tare.o.d ${OBJECTDIR}/show_weight_readings.o.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/main.o ${OBJECTDIR}/LCD.o ${OBJECTDIR}/set_weight_unit.o ${OBJECTDIR}/mode_controller.o ${OBJECTDIR}/tare.o ${OBJECTDIR}/show_weight_readings.o ${OBJECTDIR}/count_or_weigh_mode.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/main.o.d ${OBJECTDIR}/LCD.o.d ${OBJECTDIR}/set_weight_unit.o.d ${OBJECTDIR}/mode_controller.o.d ${OBJECTDIR}/tare.o.d ${OBJECTDIR}/show_weight_readings.o.d ${OBJECTDIR}/count_or_weigh_mode.o.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/main.o ${OBJECTDIR}/LCD.o ${OBJECTDIR}/set_weight_unit.o ${OBJECTDIR}/mode_controller.o ${OBJECTDIR}/set_mode_weigh.o ${OBJECTDIR}/set_mode_count.o ${OBJECTDIR}/tare.o ${OBJECTDIR}/show_weight_readings.o
+OBJECTFILES=${OBJECTDIR}/main.o ${OBJECTDIR}/LCD.o ${OBJECTDIR}/set_weight_unit.o ${OBJECTDIR}/mode_controller.o ${OBJECTDIR}/tare.o ${OBJECTDIR}/show_weight_readings.o ${OBJECTDIR}/count_or_weigh_mode.o
 
 # Source Files
-SOURCEFILES=main.c LCD.c set_weight_unit.c mode_controller.c set_mode_weigh.c set_mode_count.c tare.c show_weight_readings.c
+SOURCEFILES=main.c LCD.c set_weight_unit.c mode_controller.c tare.c show_weight_readings.c count_or_weigh_mode.c
 
 
 CFLAGS=
@@ -133,22 +133,6 @@ ${OBJECTDIR}/mode_controller.o: mode_controller.c  nbproject/Makefile-${CND_CONF
 	@${DEP_GEN} -d ${OBJECTDIR}/mode_controller.o 
 	@${FIXDEPS} "${OBJECTDIR}/mode_controller.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
-${OBJECTDIR}/set_mode_weigh.o: set_mode_weigh.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/set_mode_weigh.o.d 
-	@${RM} ${OBJECTDIR}/set_mode_weigh.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -p$(MP_PROCESSOR_OPTION) -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/set_mode_weigh.o   set_mode_weigh.c 
-	@${DEP_GEN} -d ${OBJECTDIR}/set_mode_weigh.o 
-	@${FIXDEPS} "${OBJECTDIR}/set_mode_weigh.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
-	
-${OBJECTDIR}/set_mode_count.o: set_mode_count.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/set_mode_count.o.d 
-	@${RM} ${OBJECTDIR}/set_mode_count.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -p$(MP_PROCESSOR_OPTION) -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/set_mode_count.o   set_mode_count.c 
-	@${DEP_GEN} -d ${OBJECTDIR}/set_mode_count.o 
-	@${FIXDEPS} "${OBJECTDIR}/set_mode_count.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
-	
 ${OBJECTDIR}/tare.o: tare.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/tare.o.d 
@@ -164,6 +148,14 @@ ${OBJECTDIR}/show_weight_readings.o: show_weight_readings.c  nbproject/Makefile-
 	${MP_CC} $(MP_EXTRA_CC_PRE) -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -p$(MP_PROCESSOR_OPTION) -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/show_weight_readings.o   show_weight_readings.c 
 	@${DEP_GEN} -d ${OBJECTDIR}/show_weight_readings.o 
 	@${FIXDEPS} "${OBJECTDIR}/show_weight_readings.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
+	
+${OBJECTDIR}/count_or_weigh_mode.o: count_or_weigh_mode.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/count_or_weigh_mode.o.d 
+	@${RM} ${OBJECTDIR}/count_or_weigh_mode.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -p$(MP_PROCESSOR_OPTION) -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/count_or_weigh_mode.o   count_or_weigh_mode.c 
+	@${DEP_GEN} -d ${OBJECTDIR}/count_or_weigh_mode.o 
+	@${FIXDEPS} "${OBJECTDIR}/count_or_weigh_mode.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
 else
 ${OBJECTDIR}/main.o: main.c  nbproject/Makefile-${CND_CONF}.mk
@@ -198,22 +190,6 @@ ${OBJECTDIR}/mode_controller.o: mode_controller.c  nbproject/Makefile-${CND_CONF
 	@${DEP_GEN} -d ${OBJECTDIR}/mode_controller.o 
 	@${FIXDEPS} "${OBJECTDIR}/mode_controller.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
-${OBJECTDIR}/set_mode_weigh.o: set_mode_weigh.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/set_mode_weigh.o.d 
-	@${RM} ${OBJECTDIR}/set_mode_weigh.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -p$(MP_PROCESSOR_OPTION) -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/set_mode_weigh.o   set_mode_weigh.c 
-	@${DEP_GEN} -d ${OBJECTDIR}/set_mode_weigh.o 
-	@${FIXDEPS} "${OBJECTDIR}/set_mode_weigh.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
-	
-${OBJECTDIR}/set_mode_count.o: set_mode_count.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/set_mode_count.o.d 
-	@${RM} ${OBJECTDIR}/set_mode_count.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -p$(MP_PROCESSOR_OPTION) -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/set_mode_count.o   set_mode_count.c 
-	@${DEP_GEN} -d ${OBJECTDIR}/set_mode_count.o 
-	@${FIXDEPS} "${OBJECTDIR}/set_mode_count.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
-	
 ${OBJECTDIR}/tare.o: tare.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/tare.o.d 
@@ -229,6 +205,14 @@ ${OBJECTDIR}/show_weight_readings.o: show_weight_readings.c  nbproject/Makefile-
 	${MP_CC} $(MP_EXTRA_CC_PRE) -p$(MP_PROCESSOR_OPTION) -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/show_weight_readings.o   show_weight_readings.c 
 	@${DEP_GEN} -d ${OBJECTDIR}/show_weight_readings.o 
 	@${FIXDEPS} "${OBJECTDIR}/show_weight_readings.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
+	
+${OBJECTDIR}/count_or_weigh_mode.o: count_or_weigh_mode.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/count_or_weigh_mode.o.d 
+	@${RM} ${OBJECTDIR}/count_or_weigh_mode.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -p$(MP_PROCESSOR_OPTION) -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/count_or_weigh_mode.o   count_or_weigh_mode.c 
+	@${DEP_GEN} -d ${OBJECTDIR}/count_or_weigh_mode.o 
+	@${FIXDEPS} "${OBJECTDIR}/count_or_weigh_mode.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
 endif
 

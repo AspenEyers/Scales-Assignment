@@ -3,17 +3,13 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Tom/Downloads/Scales-Assignment-master/Scales.X/set_mode_count.c</file>
+            <file>file:/C:/Users/Tom/Downloads/Scales-Assignment-master/Scales.X/nbproject/Makefile-default.mk</file>
             <file>file:/C:/Users/Tom/Downloads/Scales-Assignment-master/Scales.X/set_weight_unit.h</file>
-            <file>file:/C:/Users/Tom/Downloads/Scales-Assignment-master/Scales.X/mode_controller.c</file>
             <file>file:/C:/Users/Tom/Downloads/Scales-Assignment-master/Scales.X/set_mode_weigh.c</file>
-            <file>file:/C:/Users/Tom/Downloads/Scales-Assignment-master/Scales.X/show_weight_readings.h</file>
-            <file>file:/C:/Users/Tom/Downloads/Scales-Assignment-master/Scales.X/set_weight_unit.c</file>
+            <file>file:/C:/Users/Tom/Downloads/Scales-Assignment-master/Scales.X/count_or_weigh_mode.h</file>
             <file>file:/C:/Users/Tom/Downloads/Scales-Assignment-master/Scales.X/main.c</file>
-            <file>file:/C:/Users/Tom/Downloads/Scales-Assignment-master/Scales.X/tare.h</file>
-            <file>file:/C:/Users/Tom/Downloads/Scales-Assignment-master/Scales.X/LCD.c</file>
-            <file>file:/C:/Users/Tom/Downloads/Scales-Assignment-master/Scales.X/mode_controller.h</file>
-            <file>file:/C:/Users/Tom/Downloads/Scales-Assignment-master/Scales.X/tare.c</file>
+            <file>file:/C:/Users/Tom/Downloads/Scales-Assignment-master/Scales.X/set_weight_unit.c</file>
+            <file>file:/C:/Users/Tom/Downloads/Scales-Assignment-master/Scales.X/count_or_weigh_mode.c</file>
             <file>file:/C:/Users/Tom/Downloads/Scales-Assignment-master/Scales.X/show_weight_readings.c</file>
         </group>
     </open-files>
