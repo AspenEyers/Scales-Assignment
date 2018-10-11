@@ -5,7 +5,6 @@
  * Created on 5 September 2018, 12:18 PM
  */
 
-#include "ConfigRegs18f4520.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <xlcd.h>
@@ -14,13 +13,12 @@
 #include "basic_lcd.h"
 #include "basic_serial.h"
 #include "globalVariables.h"
-#include "ConfigRegs18f4520.h"
 
 
 // Setup board OSC, watchdog and low voltage protect 
-//#pragma config OSC = HS
-//#pragma config WDT = OFF
-//#pragma config LVP = OFF
+#pragma config OSC = HS
+#pragma config WDT = OFF
+#pragma config LVP = OFF
 
 
 #define SET_ROW 0
@@ -66,7 +64,7 @@ void main( void )
     int row = 0;
     int position = 0;
     int state = SET_ROW;
-    char lolz[] = "0";
+    
     
     setupSerial();
     setupInterrupts();
@@ -91,11 +89,7 @@ void main( void )
     //    new_msg_flag = 0;
     //}
     
-    while(1){
-        tx232C(lolz);
-    }
     
-    /*
     
     while(1){
         // If there was a message received by the serial communications
@@ -123,7 +117,7 @@ void main( void )
                 case SET_POS:
                     
                     // for each string, if equal then set pos and move on
-                    for(i=0; i < BUFFERSIZE; i++){
+                    for(i=0; i < 17; i++){
                         if(strcmp(fromReceiver, num_arr[i])==0){
                             position = i;
                             //tx232C(fromReceiver);
@@ -151,8 +145,7 @@ void main( void )
                     
             }
         }
-    }
-    */
+    }   
 }
 
 

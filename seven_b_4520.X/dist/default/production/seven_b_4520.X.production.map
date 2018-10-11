@@ -1,5 +1,5 @@
 MPLINK 4.48, Linker
-Linker Map File - Created Wed Oct 10 20:57:13 2018
+Linker Map File - Created Thu Oct 11 12:57:43 2018
 
                                  Section Info
                   Section       Type    Address   Location Size(Bytes)
@@ -20,15 +20,14 @@ Linker Map File - Created Wed Oct 10 20:57:13 2018
              .code_main.o       code   0x000016    program   0x000000
             .code_c018i.o       code   0x000016    program   0x000000
          .idata_c018i.o_i    romdata   0x000016    program   0x000000
-                   lowISR       code   0x000018    program   0x000428
-                   .cinit    romdata   0x000440    program   0x00000e
-        .code_basic_lcd.o       code   0x00044e    program   0x00034a
-     .code_basic_serial.o       code   0x000798    program   0x0000ea
-               _cinit_scn       code   0x000882    program   0x00009e
-                     PROG       code   0x000920    program   0x00005a
-                   STRING       code   0x00097a    program   0x000040
-                    .code       code   0x0009ba    program   0x000020
-             _startup_scn       code   0x0009da    program   0x00001c
+                   lowISR       code   0x000018    program   0x0002dc
+                   .cinit    romdata   0x0002f4    program   0x00000e
+        .code_basic_lcd.o       code   0x000302    program   0x00034a
+     .code_basic_serial.o       code   0x00064c    program   0x0000ea
+               _cinit_scn       code   0x000736    program   0x00009e
+                     PROG       code   0x0007d4    program   0x00005a
+                    .code       code   0x00082e    program   0x000020
+             _startup_scn       code   0x00084e    program   0x00001c
     .config_300001_main.o    romdata   0x300001    program   0x000001
     .config_300002_main.o    romdata   0x300002    program   0x000001
     .config_300003_main.o    romdata   0x300003    program   0x000001
@@ -41,7 +40,7 @@ Linker Map File - Created Wed Oct 10 20:57:13 2018
     .config_30000c_main.o    romdata   0x30000c    program   0x000001
     .config_30000d_main.o    romdata   0x30000d    program   0x000001
                 MATH_DATA      udata   0x000000       data   0x000014
-                 .tmpdata      udata   0x000014       data   0x000006
+                 .tmpdata      udata   0x000014       data   0x000004
             .udata_main.o      udata   0x000080       data   0x000067
            .udata_c018i.o      udata   0x0000e7       data   0x00000a
             .idata_main.o      idata   0x0000f1       data   0x000008
@@ -61,34 +60,34 @@ Linker Map File - Created Wed Oct 10 20:57:13 2018
                                Start         End      
                            ---------   ---------      
                             0x000000    0x000015      
-                            0x000018    0x0009f5      
+                            0x000018    0x000869      
                             0x300001    0x300003      
                             0x300005    0x300006      
                             0x300008    0x30000d      
-            2559 out of 33048 program addresses used, program memory utilization is 7%
+            2163 out of 33048 program addresses used, program memory utilization is 6%
 
 
 
                               Symbols - Sorted by Name
                      Name    Address   Location    Storage File                     
                 ---------  ---------  ---------  --------- ---------                
-                 FXM1616S   0x000920    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxm1616s.asm
-                  LCDInit   0x000534    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
-               TSIGN1616A   0x00096c    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxm1616s.asm
-          ___for_lbl00011   0x00057e    program     static                          
-          ___for_lbl00012   0x000588    program     static                          
-          ___for_lbl00013   0x000564    program     static                          
-       ___return_lbl00000   0x000004    program     static                          
+                 FXM1616S   0x0007d4    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxm1616s.asm
+                  LCDInit   0x0003e8    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
+               TSIGN1616A   0x000820    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxm1616s.asm
+          ___for_lbl00011   0x000432    program     static                          
+          ___for_lbl00012   0x00043c    program     static                          
+          ___for_lbl00013   0x000418    program     static                          
        ___return_lbl00000   0x00000c    program     static                          
-       ___return_lbl00001   0x0009f4    program     static                          
+       ___return_lbl00000   0x000004    program     static                          
        ___return_lbl00001   0x00001c    program     static                          
-       ___return_lbl00002   0x00091e    program     static                          
-       ___return_lbl00010   0x0005ec    program     static                          
-       ___return_lbl00014   0x000668    program     static                          
-       ___return_lbl00017   0x000694    program     static                          
-       ___return_lbl00023   0x000710    program     static                          
-        ___while_lbl00015   0x000632    program     static                          
-        ___while_lbl00016   0x000668    program     static                          
+       ___return_lbl00001   0x000868    program     static                          
+       ___return_lbl00002   0x0007d2    program     static                          
+       ___return_lbl00010   0x0004a0    program     static                          
+       ___return_lbl00014   0x00051c    program     static                          
+       ___return_lbl00017   0x000548    program     static                          
+       ___return_lbl00023   0x0005c4    program     static                          
+        ___while_lbl00015   0x0004e6    program     static                          
+        ___while_lbl00016   0x00051c    program     static                          
                __config_0   0x300001    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
                __config_1   0x300002    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
               __config_10   0x30000d    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
@@ -101,62 +100,55 @@ Linker Map File - Created Wed Oct 10 20:57:13 2018
                __config_8   0x30000b    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
                __config_9   0x30000c    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
                    __init   0x000006    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\__init.c
-                   __pa_0   0x000728    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
-                   __pa_0   0x000866    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_serial.c
-                   __pa_0   0x000390    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
-                   __pa_1   0x0003ae    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
-                   __pa_1   0x000748    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
-                   __pa_1   0x000872    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_serial.c
-                  __pa_10   0x000428    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
-                  __pa_11   0x000436    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
-                   __pa_2   0x0003b6    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
-                   __pa_2   0x000764    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
-                   __pa_3   0x0003c8    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
-                   __pa_3   0x000776    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
-                   __pa_4   0x0003e2    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
-                   __pa_4   0x000780    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
-                   __pa_5   0x0003fe    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
-                   __pa_5   0x00078e    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
-                   __pa_6   0x000406    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
-                   __pa_7   0x000412    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
-                   __pa_8   0x00041a    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
-                   __pa_9   0x000422    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
-               __tmplbl_0   0x000652    program     static                          
-            __zero_memory   0x0009ba    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-                _do_cinit   0x000882    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                   __pa_0   0x0005dc    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
+                   __pa_0   0x000276    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
+                   __pa_0   0x00071a    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_serial.c
+                   __pa_1   0x0005fc    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
+                   __pa_1   0x00027e    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
+                   __pa_1   0x000726    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_serial.c
+                   __pa_2   0x000288    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
+                   __pa_2   0x000618    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
+                   __pa_3   0x0002ac    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
+                   __pa_3   0x00062a    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
+                   __pa_4   0x0002b4    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
+                   __pa_4   0x000634    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
+                   __pa_5   0x0002c6    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
+                   __pa_5   0x000642    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
+                   __pa_6   0x0002e0    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
+                   __pa_7   0x0002e8    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
+               __tmplbl_0   0x000506    program     static                          
+            __zero_memory   0x00082e    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+                _do_cinit   0x000736    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
                    _entry   0x000000    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                 _startup   0x0009da    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-               commandLCD   0x00067c    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
-                compare_l   0x0009d0    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-                copy_loop   0x0008f4    program     static                          
-            copy_one_byte   0x0008fa    program     static                          
-                     done   0x00091e    program     static                          
-             done_copying   0x000908    program     static                          
+                 _startup   0x00084e    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+               commandLCD   0x000530    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
+                compare_l   0x000844    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+                copy_loop   0x0007a8    program     static                          
+            copy_one_byte   0x0007ae    program     static                          
+                     done   0x0007d2    program     static                          
+             done_copying   0x0007bc    program     static                          
               goToHighISR   0x000008    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
                goToLowISR   0x000018    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
-          highPriorityISR   0x0002d4    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
-                     jEnd   0x0009a4    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strcmp.asm
-                    jLoop   0x00099a    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strcmp.asm
-                lcd_clear   0x0004a0    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
-                 lcd_wait   0x00069c    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
-                     loop   0x0009ea    program     static                          
-                   loop_h   0x0009c8    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-                   loop_l   0x0009d2    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-           lowPriorityISR   0x00036e    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
+          highPriorityISR   0x0001ba    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
+                lcd_clear   0x000354    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
+                 lcd_wait   0x000550    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
+                     loop   0x00085e    program     static                          
+                   loop_h   0x00083c    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+                   loop_l   0x000846    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+           lowPriorityISR   0x000254    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
                      main   0x00001e    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
-                 read_lcd   0x0006b8    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
-         receiveCharacter   0x000818    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_serial.c
-            sendCharacter   0x000800    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_serial.c
-              set_lcd_pos   0x0004d4    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
-          setupInterrupts   0x000798    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_serial.c
-              setupSerial   0x0007a4    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_serial.c
-                   strcmp   0x00097a    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strcmp.asm
-                     test   0x00089c    program     static                          
-                   tx232C   0x0007ca    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_serial.c
-                     wait   0x000600    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
-                write_lcd   0x0004b4    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
-             write_string   0x00044e    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
-               zero_block   0x0009c8    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+                 read_lcd   0x00056c    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
+         receiveCharacter   0x0006cc    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_serial.c
+            sendCharacter   0x0006b4    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_serial.c
+              set_lcd_pos   0x000388    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
+          setupInterrupts   0x00064c    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_serial.c
+              setupSerial   0x000658    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_serial.c
+                     test   0x000750    program     static                          
+                   tx232C   0x00067e    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_serial.c
+                     wait   0x0004b4    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
+                write_lcd   0x000368    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
+             write_string   0x000302    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
+               zero_block   0x00083c    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                    ADCON0   0x000fc2       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                ADCON0bits   0x000fc2       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                    ADCON1   0x000fc1       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
@@ -399,72 +391,65 @@ Linker Map File - Created Wed Oct 10 20:57:13 2018
                goToLowISR   0x000018    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
        ___return_lbl00001   0x00001c    program     static                          
                      main   0x00001e    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
-          highPriorityISR   0x0002d4    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
-           lowPriorityISR   0x00036e    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
-                   __pa_0   0x000390    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
-                   __pa_1   0x0003ae    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
-                   __pa_2   0x0003b6    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
-                   __pa_3   0x0003c8    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
-                   __pa_4   0x0003e2    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
-                   __pa_5   0x0003fe    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
-                   __pa_6   0x000406    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
-                   __pa_7   0x000412    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
-                   __pa_8   0x00041a    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
-                   __pa_9   0x000422    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
-                  __pa_10   0x000428    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
-                  __pa_11   0x000436    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
-             write_string   0x00044e    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
-                lcd_clear   0x0004a0    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
-                write_lcd   0x0004b4    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
-              set_lcd_pos   0x0004d4    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
-                  LCDInit   0x000534    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
-          ___for_lbl00013   0x000564    program     static                          
-          ___for_lbl00011   0x00057e    program     static                          
-          ___for_lbl00012   0x000588    program     static                          
-       ___return_lbl00010   0x0005ec    program     static                          
-                     wait   0x000600    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
-        ___while_lbl00015   0x000632    program     static                          
-               __tmplbl_0   0x000652    program     static                          
-       ___return_lbl00014   0x000668    program     static                          
-        ___while_lbl00016   0x000668    program     static                          
-               commandLCD   0x00067c    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
-       ___return_lbl00017   0x000694    program     static                          
-                 lcd_wait   0x00069c    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
-                 read_lcd   0x0006b8    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
-       ___return_lbl00023   0x000710    program     static                          
-                   __pa_0   0x000728    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
-                   __pa_1   0x000748    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
-                   __pa_2   0x000764    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
-                   __pa_3   0x000776    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
-                   __pa_4   0x000780    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
-                   __pa_5   0x00078e    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
-          setupInterrupts   0x000798    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_serial.c
-              setupSerial   0x0007a4    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_serial.c
-                   tx232C   0x0007ca    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_serial.c
-            sendCharacter   0x000800    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_serial.c
-         receiveCharacter   0x000818    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_serial.c
-                   __pa_0   0x000866    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_serial.c
-                   __pa_1   0x000872    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_serial.c
-                _do_cinit   0x000882    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                     test   0x00089c    program     static                          
-                copy_loop   0x0008f4    program     static                          
-            copy_one_byte   0x0008fa    program     static                          
-             done_copying   0x000908    program     static                          
-                     done   0x00091e    program     static                          
-       ___return_lbl00002   0x00091e    program     static                          
-                 FXM1616S   0x000920    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxm1616s.asm
-               TSIGN1616A   0x00096c    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxm1616s.asm
-                   strcmp   0x00097a    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strcmp.asm
-                    jLoop   0x00099a    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strcmp.asm
-                     jEnd   0x0009a4    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strcmp.asm
-            __zero_memory   0x0009ba    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-               zero_block   0x0009c8    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-                   loop_h   0x0009c8    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-                compare_l   0x0009d0    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-                   loop_l   0x0009d2    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-                 _startup   0x0009da    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                     loop   0x0009ea    program     static                          
-       ___return_lbl00001   0x0009f4    program     static                          
+          highPriorityISR   0x0001ba    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
+           lowPriorityISR   0x000254    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
+                   __pa_0   0x000276    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
+                   __pa_1   0x00027e    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
+                   __pa_2   0x000288    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
+                   __pa_3   0x0002ac    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
+                   __pa_4   0x0002b4    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
+                   __pa_5   0x0002c6    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
+                   __pa_6   0x0002e0    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
+                   __pa_7   0x0002e8    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
+             write_string   0x000302    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
+                lcd_clear   0x000354    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
+                write_lcd   0x000368    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
+              set_lcd_pos   0x000388    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
+                  LCDInit   0x0003e8    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
+          ___for_lbl00013   0x000418    program     static                          
+          ___for_lbl00011   0x000432    program     static                          
+          ___for_lbl00012   0x00043c    program     static                          
+       ___return_lbl00010   0x0004a0    program     static                          
+                     wait   0x0004b4    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
+        ___while_lbl00015   0x0004e6    program     static                          
+               __tmplbl_0   0x000506    program     static                          
+       ___return_lbl00014   0x00051c    program     static                          
+        ___while_lbl00016   0x00051c    program     static                          
+               commandLCD   0x000530    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
+       ___return_lbl00017   0x000548    program     static                          
+                 lcd_wait   0x000550    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
+                 read_lcd   0x00056c    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
+       ___return_lbl00023   0x0005c4    program     static                          
+                   __pa_0   0x0005dc    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
+                   __pa_1   0x0005fc    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
+                   __pa_2   0x000618    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
+                   __pa_3   0x00062a    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
+                   __pa_4   0x000634    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
+                   __pa_5   0x000642    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
+          setupInterrupts   0x00064c    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_serial.c
+              setupSerial   0x000658    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_serial.c
+                   tx232C   0x00067e    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_serial.c
+            sendCharacter   0x0006b4    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_serial.c
+         receiveCharacter   0x0006cc    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_serial.c
+                   __pa_0   0x00071a    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_serial.c
+                   __pa_1   0x000726    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_serial.c
+                _do_cinit   0x000736    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                     test   0x000750    program     static                          
+                copy_loop   0x0007a8    program     static                          
+            copy_one_byte   0x0007ae    program     static                          
+             done_copying   0x0007bc    program     static                          
+                     done   0x0007d2    program     static                          
+       ___return_lbl00002   0x0007d2    program     static                          
+                 FXM1616S   0x0007d4    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxm1616s.asm
+               TSIGN1616A   0x000820    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxm1616s.asm
+            __zero_memory   0x00082e    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+               zero_block   0x00083c    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+                   loop_h   0x00083c    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+                compare_l   0x000844    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+                   loop_l   0x000846    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+                 _startup   0x00084e    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                     loop   0x00085e    program     static                          
+       ___return_lbl00001   0x000868    program     static                          
                __config_0   0x300001    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
                __config_1   0x300002    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
                __config_2   0x300003    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c

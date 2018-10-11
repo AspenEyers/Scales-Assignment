@@ -41,34 +41,33 @@ void setupInterrupts(void){
 
 // Set up the USART in Async mode
 void setupSerial(void){
-        // Setup for Tx and Rx for Serial
-    LATCbits.LATC7 = 1;
-    LATCbits.LATC6 = 1;
-    RCSTAbits.SPEN = 1;
-    
-    // Transmit and control
-    TXSTAbits.CSRC = 1; // Master mode
-    TXSTAbits.TX9  = 0; // 8 bit transmission 
-    TXSTAbits.TXEN = 1; // Transmit enabled       
-    TXSTAbits.SYNC = 0; // Async mode
-    // TXSTAbits.SENDB= // unimplemented
-    TXSTAbits.BRGH = 1; // High baud rate
-    //TXSTAbits.TRMT =  // Transmit status bit  
-    //TXSTAbits.TX9D =  // 9th data transmission bit      
+    // Set baud to 9600 on 4Mhz clock
+    // async mode
+    // 8 bit
+    // disable transmit
+    // high baud rate
+    SPBRG = 9;
+    //TXSTA |= (1 << 7);        // clock source select bit
+    TXSTA &= ~(1 << 6);         // 9/8 bit select, 8bit = 0
+    TXSTA |= (1 << 5);          // Transmit enabled
+    TXSTA &= ~(1 << 4);         // USART mode, 0 = Async
+    //TXSTA |= (1 << 3);        // unimplimented
+    TXSTA |= (1 << 2);          // High speed
+    //TXSTA |= (1 << 1);        // transmit shift reg status bit, 1=full
+    //TXSTA |= (1 << 0);        // 9th bit for 9bit transmission 
 
-    // Receive and control
-    RCSTAbits.SPEN = 1; // Serial port enabled 
-    RCSTAbits.RX9  = 0; // 8bit receive
-    RCSTAbits.SREN = 0; // Disable single receive
-    RCSTAbits.CREN = 1; // Enable receiver
-    RCSTAbits.ADDEN= 0; // Disable address detection;
-    RCSTAbits.FERR = 0; // No framing error
-    RCSTAbits.OERR = 0; // No overrun error
-    //RCSTAbits.RX9D =  // 9th bit of received data      
-    
-    // Baud rate -> 9600
-    BAUDCONbits.BRG16 = 0; // 8 bit baud generation
-    SPBRG = 64;
+    // set baud rate to 9615
+    SPBRG = 25;
+
+    // Set receive status register 
+    RCSTA |= (1 << 7);      // Serial port enabled
+    RCSTA &= ~(1 << 6);     // 8 bit receive
+    RCSTA &= ~(1 << 5);     // Disable single receive
+    RCSTA |= (1 << 4);      // Enable receiver  
+    RCSTA &= ~(1 << 3);     // Disable address detection
+    RCSTA &= ~(1 << 2);     // No framing error      
+    RCSTA &= ~(1 << 1);     // No overrun error
+    //RCSTA |= (1 << 0);    // Address bit for 9th bit if used
 }
 
 // This function takes in the pointer to the beginning of a string
@@ -137,7 +136,7 @@ void receiveCharacter(void){
     // increment the buffer pointer
     stringPos++;
     // If the buffer is full
-    if(stringPos == 17 - 1){
+    if(stringPos == BUFFERSIZE - 1){
         // point back to the start of the buffer
         stringPos = 0;
     }
