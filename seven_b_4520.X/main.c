@@ -27,11 +27,21 @@
 #define SET_POS 1
 #define SEND_MSG 2
 
+ char yes[] = "yes\n\r";
+ char no[] = "no\n\r";
 
+ 
+ 
+char output[25];
+int number;
+int length;    
+int rem; 
+int direction;
+     
 
 void highPriorityISR( void );
 void lowPriorityISR( void );
-
+void AdInit(void);
 
 // Setup the interrupts 
 #pragma code highISR = 0x08
@@ -66,34 +76,76 @@ void main( void )
     int row = 0;
     int position = 0;
     int state = SET_ROW;
-    char lolz[] = "0";
-    
+    int ten = 11;
     setupSerial();
     setupInterrupts();
     
+    // ******** LCD INIT ******** //
     LCDInit();    
-    lcd_wait();
-    
-    set_lcd_pos(0,0);
-    lcd_wait();
+
 
     
-    
+    // ******** Verify the LCD and serial work ******** //
     lcd_clear();    
     write_string(0,0,message);
     tx232C(intro_msg);
     tx232C(end_msg);
     
+ 
     
-    //if(new_msg_flag == 1){
-    //    lcd_clear();
-    write_string(0,0,message);
-    //    new_msg_flag = 0;
-    //}
-    
+    number = 1;
+    direction = 1;
     while(1){
-        tx232C(lolz);
+    
+    length = 0;    
+    rem = number;
+    
+    // ********                     ******** //
+    // Determine the length of the input number
+    while(rem > 0){
+        length++;
+        rem = rem/10;
     }
+    
+    output[0] = (length+48);
+    output[1] = '\0';
+    
+    // ********                      ******** //
+    // Convert the number into a char array
+    rem = number;
+    i = length;
+    
+    while(length > 0){
+        
+        output[--length] = (rem%10 + 48);
+        rem = rem/10;
+        //length--;
+    }
+    output[i++] = ',';
+    output[i++] = '\n';
+    output[i++] = '\r';
+    output[i++] = '\0';
+            
+    
+    
+    // *********** Display the data *********** //
+    tx232C(output);
+    write_string(0,0,output);
+    
+    
+    // ******** Simulate data changing ******** //
+    number = number + direction;
+    if(number > 1000){
+        
+        direction = -1;
+        
+    }else if(number <= 0){
+        direction = 1;
+    }
+    }    
+    // Number has been converted and sent
+    
+    
     
     /*
     
@@ -178,3 +230,8 @@ void lowPriorityISR( void ){
     //}
     
 } 
+
+void AdInit(void){
+
+
+}
