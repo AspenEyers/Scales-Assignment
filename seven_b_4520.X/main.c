@@ -80,6 +80,10 @@ void main( void )
     setupSerial();
     setupInterrupts();
     
+    // ******** Analog-dig init ******** //
+    AdInit();    
+    
+    
     // ******** LCD INIT ******** //
     LCDInit();    
 
@@ -232,6 +236,37 @@ void lowPriorityISR( void ){
 } 
 
 void AdInit(void){
+    
+    ADCON0bits.ADON = 1;    // Enable A/D
+    // ADCON0bits.GO_DONE   // AD state, 1 if in progress   
+    
+    // Choose channel AN0
+    ADCON0bits.CHS0 = 0;
+    ADCON0bits.CHS1 = 0;
+    ADCON0bits.CHS2 = 0;
+    ADCON0bits.CHS3 = 0;
+    
+    // Set all the port A pins to Analog <<<<<<<<<<<<<<<<<<<<<<
+    ADCON1bits.PCFG0 = 0;
+    ADCON1bits.PCFG1 = 0; 
+    ADCON1bits.PCFG2 = 0;
+    ADCON1bits.PCFG3 = 0;
+            
+    // Voltage reference config bits
+            // Might be useful to test this with the DC power supply
+    ADCON1bits.VCFG0 = 0;   // 1 = Vref- reference is AN2
+    ADCON1bits.VCFG1 = 0;   // 1 = Vref+ reference is AN3 
 
+    // FOSC/8 clock
+    ADCON2bits.ADCS0 = 1;
+    ADCON2bits.ADCS1 = 0;
+    ADCON2bits.ADCS2 = 0;
+
+    // Aquisition time
+    ADCON2bits.ACQT0 = 0;
+    ADCON2bits.ACQT1 = 0;
+    ADCON2bits.ACQT2 = 0;
+    // Left justify
+    ADCON2bits.ADFM = 0;         
 
 }
