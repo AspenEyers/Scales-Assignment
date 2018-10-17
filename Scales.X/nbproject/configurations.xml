@@ -7,10 +7,10 @@
       <itemPath>LCD_head.h</itemPath>
       <itemPath>set_weight_unit.h</itemPath>
       <itemPath>mode_controller.h</itemPath>
-      <itemPath>set_mode_count.h</itemPath>
       <itemPath>stepin.h</itemPath>
       <itemPath>tare.h</itemPath>
       <itemPath>show_weight_readings.h</itemPath>
+      <itemPath>count_or_weigh_mode.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -23,10 +23,9 @@
       <itemPath>LCD.c</itemPath>
       <itemPath>set_weight_unit.c</itemPath>
       <itemPath>mode_controller.c</itemPath>
-      <itemPath>set_mode_weigh.c</itemPath>
-      <itemPath>set_mode_count.c</itemPath>
       <itemPath>tare.c</itemPath>
       <itemPath>show_weight_readings.c</itemPath>
+      <itemPath>count_or_weigh_mode.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -135,6 +134,7 @@
                   value="Press to browse for a specific firmware version"/>
         <property key="ToolFirmwareOption.UseLatestFirmware" value="true"/>
         <property key="debugoptions.useswbreakpoints" value="true"/>
+        <property key="firmware.download.all" value="false"/>
         <property key="hwtoolclock.frcindebug" value="false"/>
         <property key="memories.aux" value="false"/>
         <property key="memories.bootflash" value="false"/>
