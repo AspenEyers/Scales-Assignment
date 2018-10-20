@@ -33,7 +33,9 @@ extern unsigned char LRC;
 void setupInterrupts(void){
 
     RCON |= (1 << 7);      // Enable interrupt priority
-    PIE1 |= (1 << 5);       // USART receive interrupt enable
+    PIE1 |= (1 << 5);      // USART receive interrupt enable
+    PIE1bits.ADIE = 1;     // AD interrupt enable 
+    IPR1bits.ADIP = 0;     // AD low priority
     IPR1 |= (1 << 5);      // USART interrupt > high priority 
     INTCON |= (1 << 7);    // Enable high priority interrupts 
     INTCON |= (1 << 6);    // Enable low priority interrupts

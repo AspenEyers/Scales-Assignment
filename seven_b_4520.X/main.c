@@ -74,52 +74,25 @@ void main( void )
     unsigned char num_arr[][3] = {"0", "1", "2", "3","4","5","6","7","8","9",
                                    "10","11","12","13","14","15","16"};
     // Set the variables for lcd display
-    int row = 0;
-    int position = 0;
     int state = SET_ROW;
-    int ten = 11;
     setupSerial();
+    AdInit();    
+    LCDInit();    
+    // Note: the setup interrupts MUST go after the setup functions
+    // otherwise it will break the timing in the setups.
     setupInterrupts();
     
-    // ******** Analog-dig init ******** //
-    AdInit();    
-    
-    
-    // ******** LCD INIT ******** //
-    LCDInit();    
-
-
-    
     // ******** Verify the LCD and serial work ******** //
-    //num2str(&output,987);
     lcd_clear();    
     write_string(0,0,message);
     tx232C(intro_msg);
     tx232C(end_msg);
-    //while(1);
-    AdInit();   
     
 
     while(1){
-        // poll the A/D
-        while(ADCON0bits.GO == 1 ){
-            // Do nothing
-        }
 
-        number = ADRESH;
-        ADCON0bits.GO = 1;
-
-        num2str(&output,number);
-        write_string(0,0,output);
     }
-    
-    num2str(&output,987);
-    
-    //TRISAbits.RA0 = 1;
-    number = 1;
-    direction = 1;
-    
-    
+         
 }
 
 
@@ -136,7 +109,14 @@ void highPriorityISR( void ){
 void lowPriorityISR( void ){
         
 
-    
+    if(PIR1bits.ADIF == 1){
+        
+        number = ADRESH;
+        ADCON0bits.GO = 1;
+        
+        num2str(&output,number);
+        write_string(0,0,output);
+    }
     // Check to see if data was sent
     //if(PIR1 & (1 << 4)){
     //    receiveCharacter();
