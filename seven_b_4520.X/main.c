@@ -87,6 +87,7 @@ void main( void )
     write_string(0,0,message);
     tx232C(intro_msg);
     tx232C(end_msg);
+    //edit
     
 
     while(1){
