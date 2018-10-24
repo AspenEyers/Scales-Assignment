@@ -15,6 +15,7 @@
 #include "basic_serial.h"
 #include "globalVariables.h"
 #include "ConfigRegs18f4520.h"
+#include "include_scales_functionality.h"
 
 
 // Setup board OSC, watchdog and low voltage protect 
@@ -82,6 +83,12 @@ void main( void )
     // otherwise it will break the timing in the setups.
     setupInterrupts();
     
+    //SET_MODE_COUNT();
+    //while(1){
+        //write_string(0,0,message);
+        //SET_MODE_COUNT();
+    //};
+    
     // ******** Verify the LCD and serial work ******** //
     lcd_clear();    
     write_string(0,0,message);
@@ -111,8 +118,10 @@ void lowPriorityISR( void ){
         
 
     if(PIR1bits.ADIF == 1){
-        
         number = ADRESH;
+        number = (number << 2);
+        number = number | ((ADRESL >> 6) && (0b00000011));
+        //number = ADRESL;
         ADCON0bits.GO = 1;
         
         num2str(&output,number);

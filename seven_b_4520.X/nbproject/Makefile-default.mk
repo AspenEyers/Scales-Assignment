@@ -57,17 +57,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=main.c basic_lcd.c basic_serial.c
+SOURCEFILES_QUOTED_IF_SPACED=main.c basic_lcd.c basic_serial.c set_mode_weigh.c set_mode_count.c
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/main.o ${OBJECTDIR}/basic_lcd.o ${OBJECTDIR}/basic_serial.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/main.o.d ${OBJECTDIR}/basic_lcd.o.d ${OBJECTDIR}/basic_serial.o.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/main.o ${OBJECTDIR}/basic_lcd.o ${OBJECTDIR}/basic_serial.o ${OBJECTDIR}/set_mode_weigh.o ${OBJECTDIR}/set_mode_count.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/main.o.d ${OBJECTDIR}/basic_lcd.o.d ${OBJECTDIR}/basic_serial.o.d ${OBJECTDIR}/set_mode_weigh.o.d ${OBJECTDIR}/set_mode_count.o.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/main.o ${OBJECTDIR}/basic_lcd.o ${OBJECTDIR}/basic_serial.o
+OBJECTFILES=${OBJECTDIR}/main.o ${OBJECTDIR}/basic_lcd.o ${OBJECTDIR}/basic_serial.o ${OBJECTDIR}/set_mode_weigh.o ${OBJECTDIR}/set_mode_count.o
 
 # Source Files
-SOURCEFILES=main.c basic_lcd.c basic_serial.c
+SOURCEFILES=main.c basic_lcd.c basic_serial.c set_mode_weigh.c set_mode_count.c
 
 
 CFLAGS=
@@ -125,6 +125,22 @@ ${OBJECTDIR}/basic_serial.o: basic_serial.c  nbproject/Makefile-${CND_CONF}.mk
 	@${DEP_GEN} -d ${OBJECTDIR}/basic_serial.o 
 	@${FIXDEPS} "${OBJECTDIR}/basic_serial.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
+${OBJECTDIR}/set_mode_weigh.o: set_mode_weigh.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/set_mode_weigh.o.d 
+	@${RM} ${OBJECTDIR}/set_mode_weigh.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -p$(MP_PROCESSOR_OPTION) -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/set_mode_weigh.o   set_mode_weigh.c 
+	@${DEP_GEN} -d ${OBJECTDIR}/set_mode_weigh.o 
+	@${FIXDEPS} "${OBJECTDIR}/set_mode_weigh.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
+	
+${OBJECTDIR}/set_mode_count.o: set_mode_count.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/set_mode_count.o.d 
+	@${RM} ${OBJECTDIR}/set_mode_count.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -p$(MP_PROCESSOR_OPTION) -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/set_mode_count.o   set_mode_count.c 
+	@${DEP_GEN} -d ${OBJECTDIR}/set_mode_count.o 
+	@${FIXDEPS} "${OBJECTDIR}/set_mode_count.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
+	
 else
 ${OBJECTDIR}/main.o: main.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}" 
@@ -149,6 +165,22 @@ ${OBJECTDIR}/basic_serial.o: basic_serial.c  nbproject/Makefile-${CND_CONF}.mk
 	${MP_CC} $(MP_EXTRA_CC_PRE) -p$(MP_PROCESSOR_OPTION) -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/basic_serial.o   basic_serial.c 
 	@${DEP_GEN} -d ${OBJECTDIR}/basic_serial.o 
 	@${FIXDEPS} "${OBJECTDIR}/basic_serial.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
+	
+${OBJECTDIR}/set_mode_weigh.o: set_mode_weigh.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/set_mode_weigh.o.d 
+	@${RM} ${OBJECTDIR}/set_mode_weigh.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -p$(MP_PROCESSOR_OPTION) -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/set_mode_weigh.o   set_mode_weigh.c 
+	@${DEP_GEN} -d ${OBJECTDIR}/set_mode_weigh.o 
+	@${FIXDEPS} "${OBJECTDIR}/set_mode_weigh.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
+	
+${OBJECTDIR}/set_mode_count.o: set_mode_count.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/set_mode_count.o.d 
+	@${RM} ${OBJECTDIR}/set_mode_count.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -p$(MP_PROCESSOR_OPTION) -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/set_mode_count.o   set_mode_count.c 
+	@${DEP_GEN} -d ${OBJECTDIR}/set_mode_count.o 
+	@${FIXDEPS} "${OBJECTDIR}/set_mode_count.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
 endif
 
