@@ -1,13 +1,21 @@
 #include "factory.h"
 #include "basic_serial.h"
 #include <string.h>
+#include "function_manager.h"
+
+#define NUMBER_OF_MODES 4
 
 //******************************************************************
 //* Messages
 //******************************************************************
-char factory_welcome[] = "Welcome to factory mode.\n If you need help, type 'help'";
-char help_message[] = "The following commands are valid:\n";
+char factory_welcome[] = "Welcome to factory mode.\n\r type 'HELP'\n\r";
+
+int i;
+// 
 char return_endline[] = "\n\r";
+char msg[] = "msg: ";
+char string_test[NUMBER_OF_MODES][15] = {"HELP", "WEIGH", "TARE", "CALIBRATE"};
+char end_msg[] = "\r\n";
 extern unsigned char fromReceiver[BUFFERSIZE];
 
 void factory(void){
@@ -17,24 +25,29 @@ void factory(void){
     // to get into a mode or change states in the factory mode, the correct string must be entered into the command line
     // followed by an enter.
 
-    // test the recieve string from te serial to determine what mode using a lookup table
+    // test the recieve string from the serial to determine what mode using a lookup table
     //  
+    //tx232C(fromReceiver);
+    //tx232C(end_msg);
     
-    if(strcmp(fromReceiver, "hi") == 0){
-        welcome_message_factory();
-        tx232C(fromReceiver);
-        help_message_factory();
+    int exit_factory = 0;
+    
+    
+    // wait until the user wants to exit factory mode
+    while(exit_factory == 0){
+
+        
+        // check to see if the user has entered a valid state 
+        // if they have then enter it.
+        for(i = 0; i < NUMBER_OF_MODES; i++){
+            if(strcmp(fromReceiver, string_test[i]) == 0){
+                enter_function(i);
+                empty_receive_buffer();
+            }
+        }
+
+
     }
     
 }
 
-void welcome_message_factory(void){
-    tx232C(factory_welcome);
-    tx232C(return_endline);
-}
-
-void help_message_factory(void){
-    tx232C(help_message);
-    tx232C(return_endline);
-        
-}

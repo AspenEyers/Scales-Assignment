@@ -22,7 +22,7 @@ extern int stringPos = 0;
 extern int overflowFlag = 0;
 // Create a variable for the LRC
 extern unsigned char LRC;
-
+extern i;
 
 
 
@@ -115,8 +115,16 @@ void sendCharacter(unsigned char *msg){
 // though the TXSTA serial transmission register
 void receiveCharacter(void){
    
+    unsigned char temp;// = "G";
+    
     // Save the character to current position in the buffer
-    fromReceiver[stringPos] = (unsigned char) RCREG;    
+    //fromReceiver[stringPos] = (unsigned char) RCREG;    
+    temp = (unsigned char) RCREG;
+    
+    fromReceiver[stringPos] = temp;
+    //temp = 'G';
+    //sendCharacter('H'); 
+    
     
     // If enter was pressed
     if(fromReceiver[stringPos] == 0xD){
@@ -154,7 +162,12 @@ void receiveCharacter(void){
 }
 
 
+void empty_receive_buffer(void){
 
+    for(i = 0; i < BUFFERSIZE; i++){
+        fromReceiver[i] = '0';
+    }
+}
 
 
 

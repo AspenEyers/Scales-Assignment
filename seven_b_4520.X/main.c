@@ -41,6 +41,8 @@ int rem;
 int direction;
      
 
+
+
 void highPriorityISR( void );
 void lowPriorityISR( void );
 void AdInit(void);
@@ -111,7 +113,8 @@ void highPriorityISR( void ){
         // Check to see if data was received
     if(PIR1 & (1 << 5)){
         receiveCharacter();
-        tx232C(yes);
+        //tx232C(yes);
+        //sendCharacter(fromReceiver[0]);
         PIR1bits.RCIF = 0;
     }
 }
