@@ -1,0 +1,30 @@
+Error[1105] C:\Users\Tom\Documents\Uni\Year 3\Semester 2\MTRX3700\Tuesday\Scales-Assignment\ScalesTnT.X\UI.c 9 : symbol 'stateChange' has not been defined
+Error[1105] C:\Users\Tom\Documents\Uni\Year 3\Semester 2\MTRX3700\Tuesday\Scales-Assignment\ScalesTnT.X\UI.c 9 : symbol 'newStateChange' has not been defined
+Error[1105] C:\Users\Tom\Documents\Uni\Year 3\Semester 2\MTRX3700\Tuesday\Scales-Assignment\ScalesTnT.X\UI.c 10 : symbol 'stateChange' has not been defined
+Warning[2058] C:\Users\Tom\Documents\Uni\Year 3\Semester 2\MTRX3700\Tuesday\Scales-Assignment\ScalesTnT.X\UI.c 10 : call of function without prototype
+Error[1105] C:\Users\Tom\Documents\Uni\Year 3\Semester 2\MTRX3700\Tuesday\Scales-Assignment\ScalesTnT.X\UI.c 11 : symbol 'newStateChange' has not been defined
+Error[1105] C:\Users\Tom\Documents\Uni\Year 3\Semester 2\MTRX3700\Tuesday\Scales-Assignment\ScalesTnT.X\UI.c 11 : symbol 'stateChange' has not been defined
+Error[1101] C:\Users\Tom\Documents\Uni\Year 3\Semester 2\MTRX3700\Tuesday\Scales-Assignment\ScalesTnT.X\UI.c 11 : lvalue required
+Error[1105] C:\Users\Tom\Documents\Uni\Year 3\Semester 2\MTRX3700\Tuesday\Scales-Assignment\ScalesTnT.X\UI.c 12 : symbol 'stateDepth' has not been defined
+Error[1101] C:\Users\Tom\Documents\Uni\Year 3\Semester 2\MTRX3700\Tuesday\Scales-Assignment\ScalesTnT.X\UI.c 12 : lvalue required
+Error[1105] C:\Users\Tom\Documents\Uni\Year 3\Semester 2\MTRX3700\Tuesday\Scales-Assignment\ScalesTnT.X\UI.c 13 : symbol 'currentStateDepth' has not been defined
+Error[1105] C:\Users\Tom\Documents\Uni\Year 3\Semester 2\MTRX3700\Tuesday\Scales-Assignment\ScalesTnT.X\UI.c 13 : symbol 'stateDepth' has not been defined
+Error[1101] C:\Users\Tom\Documents\Uni\Year 3\Semester 2\MTRX3700\Tuesday\Scales-Assignment\ScalesTnT.X\UI.c 13 : lvalue required
+Error[1105] C:\Users\Tom\Documents\Uni\Year 3\Semester 2\MTRX3700\Tuesday\Scales-Assignment\ScalesTnT.X\UI.c 15 : symbol 'stateDepth' has not been defined
+Error[1105] C:\Users\Tom\Documents\Uni\Year 3\Semester 2\MTRX3700\Tuesday\Scales-Assignment\ScalesTnT.X\UI.c 15 : symbol 'currentStateDepth' has not been defined
+Error[1105] C:\Users\Tom\Documents\Uni\Year 3\Semester 2\MTRX3700\Tuesday\Scales-Assignment\ScalesTnT.X\UI.c 16 : symbol 'stateDepth' has not been defined
+Warning[2058] C:\Users\Tom\Documents\Uni\Year 3\Semester 2\MTRX3700\Tuesday\Scales-Assignment\ScalesTnT.X\UI.c 16 : call of function without prototype
+Error[1105] C:\Users\Tom\Documents\Uni\Year 3\Semester 2\MTRX3700\Tuesday\Scales-Assignment\ScalesTnT.X\UI.c 17 : symbol 'currentStateDepth' has not been defined
+Error[1105] C:\Users\Tom\Documents\Uni\Year 3\Semester 2\MTRX3700\Tuesday\Scales-Assignment\ScalesTnT.X\UI.c 17 : symbol 'stateDepth' has not been defined
+Error[1101] C:\Users\Tom\Documents\Uni\Year 3\Semester 2\MTRX3700\Tuesday\Scales-Assignment\ScalesTnT.X\UI.c 17 : lvalue required
+Warning[2058] C:\Users\Tom\Documents\Uni\Year 3\Semester 2\MTRX3700\Tuesday\Scales-Assignment\ScalesTnT.X\UI.c 31 : call of function without prototype
+Error[1105] C:\Users\Tom\Documents\Uni\Year 3\Semester 2\MTRX3700\Tuesday\Scales-Assignment\ScalesTnT.X\UI.c 35 : symbol 'stateChange' has not been defined
+Error[1101] C:\Users\Tom\Documents\Uni\Year 3\Semester 2\MTRX3700\Tuesday\Scales-Assignment\ScalesTnT.X\UI.c 35 : lvalue required
+Warning[2058] C:\Users\Tom\Documents\Uni\Year 3\Semester 2\MTRX3700\Tuesday\Scales-Assignment\ScalesTnT.X\UI.c 37 : call of function without prototype
+Error[1105] C:\Users\Tom\Documents\Uni\Year 3\Semester 2\MTRX3700\Tuesday\Scales-Assignment\ScalesTnT.X\UI.c 40 : symbol 'stateChange' has not been defined
+Error[1105] C:\Users\Tom\Documents\Uni\Year 3\Semester 2\MTRX3700\Tuesday\Scales-Assignment\ScalesTnT.X\UI.c 40 : symbol 'maxNStates' has not been defined
+Error[1105] C:\Users\Tom\Documents\Uni\Year 3\Semester 2\MTRX3700\Tuesday\Scales-Assignment\ScalesTnT.X\UI.c 41 : symbol 'stateChange' has not been defined
+Error[1101] C:\Users\Tom\Documents\Uni\Year 3\Semester 2\MTRX3700\Tuesday\Scales-Assignment\ScalesTnT.X\UI.c 41 : lvalue required
+Warning[2058] C:\Users\Tom\Documents\Uni\Year 3\Semester 2\MTRX3700\Tuesday\Scales-Assignment\ScalesTnT.X\UI.c 53 : call of function without prototype
+Error[1105] C:\Users\Tom\Documents\Uni\Year 3\Semester 2\MTRX3700\Tuesday\Scales-Assignment\ScalesTnT.X\UI.c 57 : symbol 'stateDepth' has not been defined
+Error[1101] C:\Users\Tom\Documents\Uni\Year 3\Semester 2\MTRX3700\Tuesday\Scales-Assignment\ScalesTnT.X\UI.c 57 : lvalue required

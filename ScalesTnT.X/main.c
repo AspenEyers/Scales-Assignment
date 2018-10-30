@@ -43,6 +43,7 @@
 #include "set_weight_unit.h"
 #include "tare.h"
 #include "p18f452.h"
+#include "UI.h"
 /************************************************************************
  Constants
  *************************************************************************/
@@ -77,10 +78,14 @@ int result;
 int firstIndex;
 int lastIndex;
 int flag=0;
-int N;
-int maxN=10;
+int stateDepth;
+int stateChange;  //variable for picking a new mode
+int newStateChange; //condition to stop flickering of constant loop
+int maxNStates=11; // maximum number of modes in first state
 int maxNless= 9;
 int state;
+int isPressed;
+int currentStateDepth;
 
 /////////////////////////////////////////
 // Declares Functions (but does not activate/call them)
@@ -134,27 +139,32 @@ void rx232Isr (void);
 int tx232C(unsigned char *txPTr);
 void functionPicker (int);
 void enableinterrupts (void);
-
+void modeSelector(int);
+void user_interface(void);
+void buttonControl(void);
 
 /****************************************************************************
 *                                 Main                                      *
 *****************************************************************************/
 void main(void) 
 {
-  
    setup();// Creating a setup sequence to allow for the use of a RB4/RBI interrupt
   
     // Initial menu
-    N=0;
-   // layer_depth = 1;
+  
+    stateChange = 0;
+    stateDepth = -1;
+    currentStateDepth = stateDepth;
+    newStateChange = stateChange;
+   
     LCDInit();
-    //state= N;
+    
+    functionPicker(stateChange);
     
     while(1){
-        functionPicker(N);  
         
+        user_interface();
     }
-    
 }
 
 /****************************************************************************
@@ -174,26 +184,7 @@ void _interrupt (void)
 void highPriorityISR( void )
 {
     
-     // TRISB = 0b0000000;       //Configure 3rd bit of PORTA as input and 3rd as out
-    
-    
-    if((PORTBbits.RB4) == 1)            //Hopefully helps with debouncing
-    {
-        
-         //N &= maxNless;//
-        TMR0H = 0xF8;
-        TMR0L = 0x30;
-    
-        N++;
-       
-        PORTB = 0;
-        wait(100);
-        
-        // This loops allows the switch statement to loop through
-        if (N >= maxNless ){
-            N = 0;
-        }
-    }
+    buttonControl();
     
     INTCONbits.TMR0IF = 0;  //Resetting flag
     INTCONbits.RBIF =0;// Set the flag to 0

@@ -5,7 +5,6 @@
 #include "p18f452.h"
 
 
-/////////////////////////////////////////////////////////
 void enableInterrupts(void)
 {
     //Enable prioritized interrupts (pg 84)
@@ -27,18 +26,7 @@ void disableInterrupts (void)
 }
 void setup (void)
 {
-   /* Most excellent, there is a section on the INTO interrupt on pg 85 
- * called "8.6 INT0 Interrupt" 
- The following is ke information gleamed from the aforemention section 8.6
- *  Is edge triggered
- * Triggered on rise if INEDG0 =1 in INTCON2
- * Triggered on fall if INTEDG0=0 in INTCON2
- * When (desired edge) appears on INT0
- *          => INT0F=1
- * INT0 interrupt can be disabled by INT0IE=0 (in INTCON register)
- * Must clear INT0F in ISR "BEFORE" re-enabaling the interrupt
- * INT0 is desgined in such a manner that it is ALWAYS A HIGH INTERRUPT
- */
+  
     disableInterrupts();
     INTCONbits.TMR0IE = 1; //Enable timer0 interrupt
     T0CONbits.T08BIT = 0;
@@ -46,30 +34,23 @@ void setup (void)
     T0CONbits.T0PS2 =1;
     TMR0H = 0xF8;
     TMR0L = 0x30;
-        
-    
-    
- 
+         
     //Set interrupts
     //TRISBbits.RB4=1;// Set RB4 to input ///////pg 92, open to suggestions 
-   TRISB = 0b00010000; // Set RB7 as input
+   TRISB = 0b00110000; // Set RB4,5 as input
    PORTB = 0;
    
     INTCON2bits.RBPU = 1; // Setting the ort B priority to high
-       
     //INTCONbits.INT0IF =0;// Clear flag of RB0 
     //INTCONbits.INT0E = 1; //enable Interrupt 0 (RB0 as interrupt)
-     
     //INTCON2bits.INTEDG1= 1;//Trigger on rise
     //INTCONbits.INT0IE= 1;// Enable interrupt INT0/RBO, pg 75, The INT0 external interrupt did not occur
-
     //#pragma config PBADEN = OFF     // PORTB A/D Enable bit (PORTB<4:0>
     ADCON1bits.PCFG = 0b1111; //all ports digital
      INTCONbits.RBIE =1;// Enables the RB port change interrupt
      INTCONbits.RBIF =0;// Set the flag to 0
      
     // http://microcontrollerslab.com/external-interrupt-pic-microcontroller/
-  
     enableInterrupts();
 }
 
@@ -79,24 +60,19 @@ int user_local(void)
     // Write to LCD that it's working
     unsigned char str[]= "user local";
     string_to_LCD(str);
-  
-
   return 0;
 }
 
 int user_remote(void)
 {
-
     //Write to LCD that it's working
     unsigned char str[]= "user remote";
     string_to_LCD(str);
-
   return 0;
 }
 
 int factory(void)
 {
-
     //Write to LCD that it's working
     unsigned char str[]= "Factory";
     string_to_LCD(str);
@@ -158,7 +134,6 @@ void SET_MODE_COUNT (void)
 /*
 int oneUnit (void)
 {
-    
     //For the use in PC terminals
     if (localType==0)
     {
@@ -169,8 +144,7 @@ int oneUnit (void)
           {
            TXREG= msg[i];
          }
-    }
-         
+    }  
     // else it is in local user mode
      else
     {
@@ -382,9 +356,9 @@ void HELP (void)
     string_to_LCD(str);
 }
 
-void functionPicker(int N )
+void functionPicker(int mode )
 {
-    switch (N)
+    switch (mode)
     {
         case 0:
             SET_MODE_COUNT();
@@ -393,7 +367,7 @@ void functionPicker(int N )
             SET_MODE_WEIGH();
             break;
         case 2: 
-            TARE;
+            TARE();
             break;
         case 3:
             SET_WEIGHT_GRAMS();
@@ -405,7 +379,7 @@ void functionPicker(int N )
             SET_MODE_FACTORY();
             break;
         case 6:
-            CALIBRATE;
+            CALIBRATE();
             break;
         case 7:
             SET_SAMPLES_PER_MEASURMENT();
@@ -428,6 +402,54 @@ void functionPicker(int N )
             break; 
     }
 }
+
+void Entered1(void)
+{
+    int count;
+    /* I am thinking, it will display a guide with all the available functions  */
+     //Write to LCD that it's working
+    unsigned char str[] = "Entered 1";
+    string_to_LCD(str);
+}
+void Entered2(void)
+{
+    int count;
+    /* I am thinking, it will display a guide with all the available functions  */
+     //Write to LCD that it's working
+    unsigned char str[] = "Entered 2";
+    string_to_LCD(str);
+}
+void Entered3(void)
+{
+    int count;
+    /* I am thinking, it will display a guide with all the available functions  */
+     //Write to LCD that it's working
+    unsigned char str[] = "Entered 3";
+    string_to_LCD(str);
+}
+
+
+void modeSelector(int depth){
+    
+    switch(depth){
+        case 0:
+           Entered1();
+           break;
+        case 1:
+            Entered2();
+            break;
+        case 2:
+            Entered3();
+            break;
+        default:
+           // errorType =1; //Invalid input
+            ERROR() ;
+            break; 
+    }
+    
+    
+}
+
 
 //////////////////////////////////////////////////////////////////////
 void read_input(void){
