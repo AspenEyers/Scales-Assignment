@@ -78,14 +78,11 @@ int result;
 int firstIndex;
 int lastIndex;
 int flag=0;
-int stateDepth;
-int stateChange;  //variable for picking a new mode
-int newStateChange; //condition to stop flickering of constant loop
-int maxNStates=11; // maximum number of modes in first state
+
 int maxNless= 9;
 int state;
 int isPressed;
-int currentStateDepth;
+
 
 /////////////////////////////////////////
 // Declares Functions (but does not activate/call them)
@@ -150,16 +147,11 @@ void main(void)
 {
    setup();// Creating a setup sequence to allow for the use of a RB4/RBI interrupt
   
-    // Initial menu
-  
-    stateChange = 0;
-    stateDepth = -1;
-    currentStateDepth = stateDepth;
-    newStateChange = stateChange;
-   
+    // Initial setup
     LCDInit();
+    UIsetup();
     
-    functionPicker(stateChange);
+    functionPicker(0);
     
     while(1){
         

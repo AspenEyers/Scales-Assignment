@@ -429,16 +429,19 @@ void Entered3(void)
 }
 
 
-void modeSelector(int depth){
+void modeSelector(int depth,int mode){
     
     switch(depth){
         case 0:
+            functionPicker(mode);
+            break;
+        case 1:
            Entered1();
            break;
-        case 1:
+        case 2:
             Entered2();
             break;
-        case 2:
+        case 3:
             Entered3();
             break;
         default:

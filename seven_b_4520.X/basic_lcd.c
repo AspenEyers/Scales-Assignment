@@ -83,6 +83,7 @@ void LCDInit(void)
 
   //WaitLCD();
   //WaitLCD();
+
   for(i = 0; i < 10000; i++){
   Nop();
   }

@@ -8,6 +8,7 @@
 #ifndef UI_H
 #define	UI_H
 
+void UIsetup(void);
 void user_interface(void);
 void buttonControl(void);
 

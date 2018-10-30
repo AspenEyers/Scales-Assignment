@@ -3,17 +3,38 @@
 #include"mode_controller.h"
 #include "p18f452.h"
 
+// Function declarations
+void modeSelector(int,int);
+void user_interface(void);
+void buttonControl(void);
+
+// 'Gloabal' declarations
+int stateChange;  //variable for picking a new mode
+int newStateChange; //condition to stop flickering of constant loop
+int maxNStates=11; // maximum number of modes in first state
+int stateDepth;
+int currentStateDepth;
+
+void UIsetup(void){
+    
+    stateChange = 0;
+    stateDepth = -1;
+    currentStateDepth = stateDepth;
+    newStateChange = stateChange;
+    
+    
+}
 // This is called in the main function and controls what buttons do
 void user_interface(void){
     
     while(stateChange != newStateChange){
             functionPicker(stateChange);  
             newStateChange = stateChange;  // Update when changed
-            stateDepth = -1;
+            stateDepth = 0;
             currentStateDepth = stateDepth; // update when changed
         }
         while(stateDepth != currentStateDepth){
-            modeSelector(stateDepth);
+            modeSelector(stateDepth,stateChange);
             currentStateDepth = stateDepth; // update when changed
         }  
 
@@ -59,7 +80,7 @@ void buttonControl(void){
            wait(100);
 
            // ensuring that it loops through
-           if (stateDepth >= 3 ){
+           if (stateDepth > 3 ){
                 stateDepth = 0; // Resetting to initialize loop
            }
         

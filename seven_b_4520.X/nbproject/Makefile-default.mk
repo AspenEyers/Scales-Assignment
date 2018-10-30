@@ -91,7 +91,7 @@ endif
 
 MP_PROCESSOR_OPTION=18F4520
 MP_PROCESSOR_OPTION_LD=18f4520
-MP_LINKER_DEBUG_OPTION= -u_DEBUGCODESTART=0x7d30 -u_DEBUGCODELEN=0x2d0 -u_DEBUGDATASTART=0x5ef -u_DEBUGDATALEN=0x10
+MP_LINKER_DEBUG_OPTION=
 # ------------------------------------------------------------------------------------
 # Rules for buildStep: assemble
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)
@@ -105,7 +105,7 @@ ${OBJECTDIR}/main.o: main.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/main.o.d 
 	@${RM} ${OBJECTDIR}/main.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -p$(MP_PROCESSOR_OPTION) -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/main.o   main.c 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -D__DEBUG -D__MPLAB_DEBUGGER_SIMULATOR=1 -p$(MP_PROCESSOR_OPTION) -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/main.o   main.c 
 	@${DEP_GEN} -d ${OBJECTDIR}/main.o 
 	@${FIXDEPS} "${OBJECTDIR}/main.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
@@ -113,7 +113,7 @@ ${OBJECTDIR}/basic_lcd.o: basic_lcd.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/basic_lcd.o.d 
 	@${RM} ${OBJECTDIR}/basic_lcd.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -p$(MP_PROCESSOR_OPTION) -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/basic_lcd.o   basic_lcd.c 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -D__DEBUG -D__MPLAB_DEBUGGER_SIMULATOR=1 -p$(MP_PROCESSOR_OPTION) -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/basic_lcd.o   basic_lcd.c 
 	@${DEP_GEN} -d ${OBJECTDIR}/basic_lcd.o 
 	@${FIXDEPS} "${OBJECTDIR}/basic_lcd.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
@@ -121,7 +121,7 @@ ${OBJECTDIR}/basic_serial.o: basic_serial.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/basic_serial.o.d 
 	@${RM} ${OBJECTDIR}/basic_serial.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -p$(MP_PROCESSOR_OPTION) -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/basic_serial.o   basic_serial.c 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -D__DEBUG -D__MPLAB_DEBUGGER_SIMULATOR=1 -p$(MP_PROCESSOR_OPTION) -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/basic_serial.o   basic_serial.c 
 	@${DEP_GEN} -d ${OBJECTDIR}/basic_serial.o 
 	@${FIXDEPS} "${OBJECTDIR}/basic_serial.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
@@ -129,7 +129,7 @@ ${OBJECTDIR}/set_mode_weigh.o: set_mode_weigh.c  nbproject/Makefile-${CND_CONF}.
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/set_mode_weigh.o.d 
 	@${RM} ${OBJECTDIR}/set_mode_weigh.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -p$(MP_PROCESSOR_OPTION) -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/set_mode_weigh.o   set_mode_weigh.c 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -D__DEBUG -D__MPLAB_DEBUGGER_SIMULATOR=1 -p$(MP_PROCESSOR_OPTION) -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/set_mode_weigh.o   set_mode_weigh.c 
 	@${DEP_GEN} -d ${OBJECTDIR}/set_mode_weigh.o 
 	@${FIXDEPS} "${OBJECTDIR}/set_mode_weigh.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
@@ -137,7 +137,7 @@ ${OBJECTDIR}/set_mode_count.o: set_mode_count.c  nbproject/Makefile-${CND_CONF}.
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/set_mode_count.o.d 
 	@${RM} ${OBJECTDIR}/set_mode_count.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -p$(MP_PROCESSOR_OPTION) -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/set_mode_count.o   set_mode_count.c 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -D__DEBUG -D__MPLAB_DEBUGGER_SIMULATOR=1 -p$(MP_PROCESSOR_OPTION) -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/set_mode_count.o   set_mode_count.c 
 	@${DEP_GEN} -d ${OBJECTDIR}/set_mode_count.o 
 	@${FIXDEPS} "${OBJECTDIR}/set_mode_count.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
@@ -145,7 +145,7 @@ ${OBJECTDIR}/factory_mode.o: factory_mode.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/factory_mode.o.d 
 	@${RM} ${OBJECTDIR}/factory_mode.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -p$(MP_PROCESSOR_OPTION) -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/factory_mode.o   factory_mode.c 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -D__DEBUG -D__MPLAB_DEBUGGER_SIMULATOR=1 -p$(MP_PROCESSOR_OPTION) -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/factory_mode.o   factory_mode.c 
 	@${DEP_GEN} -d ${OBJECTDIR}/factory_mode.o 
 	@${FIXDEPS} "${OBJECTDIR}/factory_mode.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
@@ -153,7 +153,7 @@ ${OBJECTDIR}/function_manager.o: function_manager.c  nbproject/Makefile-${CND_CO
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/function_manager.o.d 
 	@${RM} ${OBJECTDIR}/function_manager.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -p$(MP_PROCESSOR_OPTION) -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/function_manager.o   function_manager.c 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -D__DEBUG -D__MPLAB_DEBUGGER_SIMULATOR=1 -p$(MP_PROCESSOR_OPTION) -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/function_manager.o   function_manager.c 
 	@${DEP_GEN} -d ${OBJECTDIR}/function_manager.o 
 	@${FIXDEPS} "${OBJECTDIR}/function_manager.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
@@ -221,7 +221,7 @@ endif
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)
 dist/${CND_CONF}/${IMAGE_TYPE}/seven_b_4520.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}: ${OBJECTFILES}  nbproject/Makefile-${CND_CONF}.mk    
 	@${MKDIR} dist/${CND_CONF}/${IMAGE_TYPE} 
-	${MP_LD} $(MP_EXTRA_LD_PRE)   -p$(MP_PROCESSOR_OPTION_LD)  -w -x -u_DEBUG -m"${DISTDIR}/${PROJECTNAME}.${IMAGE_TYPE}.map"  -z__MPLAB_BUILD=1  -u_CRUNTIME -z__MPLAB_DEBUG=1 -z__MPLAB_DEBUGGER_ICD3=1 $(MP_LINKER_DEBUG_OPTION) -l ${MP_CC_DIR}\\..\\lib  -o dist/${CND_CONF}/${IMAGE_TYPE}/seven_b_4520.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}  ${OBJECTFILES_QUOTED_IF_SPACED}   
+	${MP_LD} $(MP_EXTRA_LD_PRE)   -p$(MP_PROCESSOR_OPTION_LD)  -w -x -u_DEBUG -m"${DISTDIR}/${PROJECTNAME}.${IMAGE_TYPE}.map"  -z__MPLAB_BUILD=1  -u_CRUNTIME -z__MPLAB_DEBUG=1 -z__MPLAB_DEBUGGER_SIMULATOR=1 $(MP_LINKER_DEBUG_OPTION) -l ${MP_CC_DIR}\\..\\lib  -o dist/${CND_CONF}/${IMAGE_TYPE}/seven_b_4520.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}  ${OBJECTFILES_QUOTED_IF_SPACED}   
 else
 dist/${CND_CONF}/${IMAGE_TYPE}/seven_b_4520.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}: ${OBJECTFILES}  nbproject/Makefile-${CND_CONF}.mk   
 	@${MKDIR} dist/${CND_CONF}/${IMAGE_TYPE} 
