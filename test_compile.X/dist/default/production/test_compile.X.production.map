@@ -1,45 +1,23 @@
 MPLINK 4.48, Linker
-Linker Map File - Created Tue Oct 30 11:47:41 2018
+Linker Map File - Created Mon Oct 29 23:45:57 2018
 
                                  Section Info
                   Section       Type    Address   Location Size(Bytes)
                 ---------  ---------  ---------  ---------  ---------
                _entry_scn       code   0x000000    program   0x000006
-   .code_set_mode_weigh.o       code   0x000006    program   0x000002
-                  highISR       code   0x000008    program   0x000006
-           .code___init.o       code   0x00000e    program   0x000002
-     .idata_basic_lcd.o_i    romdata   0x000010    program   0x000000
-     .romdata_basic_lcd.o    romdata   0x000010    program   0x000000
-  .idata_basic_serial.o_i    romdata   0x000010    program   0x000000
-  .romdata_basic_serial.o    romdata   0x000010    program   0x000000
-.idata_set_mode_weigh.o_i    romdata   0x000010    program   0x000000
-.romdata_set_mode_weigh.o    romdata   0x000010    program   0x000000
-.idata_set_mode_count.o_i    romdata   0x000010    program   0x000000
-.romdata_set_mode_count.o    romdata   0x000010    program   0x000000
-  .romdata_factory_mode.o    romdata   0x000010    program   0x000000
-      .idata_fxd1616u.o_i    romdata   0x000010    program   0x000000
-      .romdata_fxd1616u.o    romdata   0x000010    program   0x000000
-        .idata___init.o_i    romdata   0x000010    program   0x000000
-        .romdata___init.o    romdata   0x000010    program   0x000000
-         .idata_c018i.o_i    romdata   0x000010    program   0x000000
-         .romdata_c018i.o    romdata   0x000010    program   0x000000
-            .code_c018i.o       code   0x000010    program   0x000000
-          .romdata_main.o    romdata   0x000010    program   0x000000
-             .code_main.o       code   0x000010    program   0x000000
-             .stringtable    romdata   0x000010    program   0x000000
-                   lowISR       code   0x000018    program   0x00067a
-                   .cinit    romdata   0x000692    program   0x00001a
-        .code_basic_lcd.o       code   0x0006ac    program   0x00034a
-     .code_basic_serial.o       code   0x0009f6    program   0x0000ee
-                     PROG       code   0x000ae4    program   0x0000a6
-               _cinit_scn       code   0x000b8a    program   0x00009e
-   .code_set_mode_count.o       code   0x000c28    program   0x000080
-     .code_factory_mode.o       code   0x000ca8    program   0x00005a
-         .code_fxd1616u.o       code   0x000d02    program   0x00002c
-                    .code       code   0x000d2e    program   0x000020
-             _startup_scn       code   0x000d4e    program   0x00001c
-          .idata_main.o_i    romdata   0x000d6a    program   0x000013
-  .idata_factory_mode.o_i    romdata   0x000d7d    program   0x00005e
+                   .cinit    romdata   0x000006    program   0x000002
+               _cinit_scn       code   0x000008    program   0x00009e
+                    .code       code   0x0000a6    program   0x000020
+             _startup_scn       code   0x0000c6    program   0x00001c
+             .code_main.o       code   0x0000e2    program   0x000002
+           .code___init.o       code   0x0000e4    program   0x000002
+        .romdata___init.o    romdata   0x0000e6    program   0x000000
+        .idata___init.o_i    romdata   0x0000e6    program   0x000000
+          .romdata_main.o    romdata   0x0000e6    program   0x000000
+          .idata_main.o_i    romdata   0x0000e6    program   0x000000
+            .code_c018i.o       code   0x0000e6    program   0x000000
+         .romdata_c018i.o    romdata   0x0000e6    program   0x000000
+         .idata_c018i.o_i    romdata   0x0000e6    program   0x000000
     .config_300001_main.o    romdata   0x300001    program   0x000001
     .config_300002_main.o    romdata   0x300002    program   0x000001
     .config_300003_main.o    romdata   0x300003    program   0x000001
@@ -51,27 +29,14 @@ Linker Map File - Created Tue Oct 30 11:47:41 2018
     .config_30000b_main.o    romdata   0x30000b    program   0x000001
     .config_30000c_main.o    romdata   0x30000c    program   0x000001
     .config_30000d_main.o    romdata   0x30000d    program   0x000001
-                MATH_DATA      udata   0x000000       data   0x000014
-                 .tmpdata      udata   0x000014       data   0x000004
-       lowPriorityISR_tmp      udata   0x000018       data   0x000002
+                MATH_DATA      udata   0x000000       data   0x000002
+                 .tmpdata      udata   0x000002       data   0x000000
            .udata_c018i.o      udata   0x000080       data   0x00000a
-            .udata_main.o      udata   0x000100       data   0x000088
-    .idata_factory_mode.o      idata   0x000188       data   0x00005e
-            .idata_main.o      idata   0x0001e6       data   0x000013
-          .idata___init.o      idata   0x0001f9       data   0x000000
-          .udata___init.o      udata   0x0001f9       data   0x000000
-        .idata_fxd1616u.o      idata   0x0001f9       data   0x000000
-        .udata_fxd1616u.o      udata   0x0001f9       data   0x000000
-    .udata_factory_mode.o      udata   0x0001f9       data   0x000000
-  .idata_set_mode_count.o      idata   0x0001f9       data   0x000000
-  .udata_set_mode_count.o      udata   0x0001f9       data   0x000000
-  .idata_set_mode_weigh.o      idata   0x0001f9       data   0x000000
-  .udata_set_mode_weigh.o      udata   0x0001f9       data   0x000000
-    .idata_basic_serial.o      idata   0x0001f9       data   0x000000
-    .udata_basic_serial.o      udata   0x0001f9       data   0x000000
-       .idata_basic_lcd.o      idata   0x0001f9       data   0x000000
-       .udata_basic_lcd.o      udata   0x0001f9       data   0x000000
-           .idata_c018i.o      idata   0x0001f9       data   0x000000
+           .idata_c018i.o      idata   0x00008a       data   0x000000
+            .udata_main.o      udata   0x00008a       data   0x000000
+            .idata_main.o      idata   0x00008a       data   0x000000
+          .udata___init.o      udata   0x00008a       data   0x000000
+          .idata___init.o      idata   0x00008a       data   0x000000
                    .stack      udata   0x000500       data   0x000100
             SFR_UNBANKED0      udata   0x000f80       data   0x000080
 
@@ -80,106 +45,47 @@ Linker Map File - Created Tue Oct 30 11:47:41 2018
                               Program Memory Usage 
                                Start         End      
                            ---------   ---------      
-                            0x000000    0x00000f      
-                            0x000018    0x000dda      
+                            0x000000    0x0000e5      
                             0x300001    0x300003      
                             0x300005    0x300006      
                             0x300008    0x30000d      
-            3550 out of 33048 program addresses used, program memory utilization is 10%
+            241 out of 33048 program addresses used, program memory utilization is 0%
 
 
 
                               Symbols - Sorted by Name
                      Name    Address   Location    Storage File                     
                 ---------  ---------  ---------  --------- ---------                
-                   AdInit   0x0004c0    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
-                   D1616S   0x000b06    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                D1616SNEG   0x000b14    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                 D1616SOK   0x000b10    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                  D1616SX   0x000b26    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                  DA1616S   0x000af6    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                 FXD1616S   0x000ae4    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                 FXD1616U   0x000d02    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616u.c
-                 FXM1616S   0x000b30    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxm1616s.asm
-                  LCDInit   0x000792    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
-           SET_MODE_COUNT   0x000c28    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\set_mode_count.c
-           SET_MODE_WEIGH   0x000006    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\set_mode_weigh.c
-               TSIGN1616A   0x000b7c    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxm1616s.asm
-          ___for_lbl00011   0x0007dc    program     static                          
-          ___for_lbl00012   0x0007e6    program     static                          
-          ___for_lbl00013   0x0007c2    program     static                          
-       ___return_lbl00000   0x000d2c    program     static                          
        ___return_lbl00000   0x000004    program     static                          
-       ___return_lbl00000   0x00000c    program     static                          
-       ___return_lbl00001   0x00001c    program     static                          
-       ___return_lbl00001   0x000d68    program     static                          
-       ___return_lbl00002   0x000c26    program     static                          
-       ___return_lbl00009   0x0004f0    program     static                          
-       ___return_lbl00010   0x00084a    program     static                          
-       ___return_lbl00014   0x0008c6    program     static                          
-       ___return_lbl00017   0x0008f2    program     static                          
-       ___return_lbl00023   0x00096e    program     static                          
-        ___while_lbl00015   0x000890    program     static                          
-        ___while_lbl00016   0x0008c6    program     static                          
-               __config_0   0x300001    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
-               __config_1   0x300002    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
-              __config_10   0x30000d    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
-               __config_2   0x300003    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
-               __config_3   0x300005    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
-               __config_4   0x300006    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
-               __config_5   0x300008    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
-               __config_6   0x300009    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
-               __config_7   0x30000a    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
-               __config_8   0x30000b    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
-               __config_9   0x30000c    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
-                   __init   0x00000e    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\__init.c
-                   __pa_0   0x000ac8    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_serial.c
-                   __pa_0   0x000986    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
-                   __pa_1   0x000ad4    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_serial.c
-                   __pa_1   0x0009a6    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
-                   __pa_2   0x0009c2    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
-                   __pa_3   0x0009d4    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
-                   __pa_4   0x0009de    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
-                   __pa_5   0x0009ec    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
-               __tmplbl_0   0x0008b0    program     static                          
-            __zero_memory   0x000d2e    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-                _do_cinit   0x000b8a    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+       ___return_lbl00001   0x0000e0    program     static                          
+       ___return_lbl00002   0x0000a4    program     static                          
+               __config_0   0x300001    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\test_compile.X\main.c
+               __config_1   0x300002    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\test_compile.X\main.c
+              __config_10   0x30000d    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\test_compile.X\main.c
+               __config_2   0x300003    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\test_compile.X\main.c
+               __config_3   0x300005    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\test_compile.X\main.c
+               __config_4   0x300006    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\test_compile.X\main.c
+               __config_5   0x300008    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\test_compile.X\main.c
+               __config_6   0x300009    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\test_compile.X\main.c
+               __config_7   0x30000a    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\test_compile.X\main.c
+               __config_8   0x30000b    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\test_compile.X\main.c
+               __config_9   0x30000c    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\test_compile.X\main.c
+                   __init   0x0000e4    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\__init.c
+            __zero_memory   0x0000a6    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+                _do_cinit   0x000008    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
                    _entry   0x000000    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                 _startup   0x000d4e    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-               commandLCD   0x0008da    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
-                compare_l   0x000d44    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-                copy_loop   0x000bfc    program     static                          
-            copy_one_byte   0x000c02    program     static                          
-                     done   0x000c26    program     static                          
-             done_copying   0x000c10    program     static                          
-                  endloop   0x000d28    program     static                          
-                  factory   0x000ca8    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\factory_mode.c
-              goToHighISR   0x000008    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
-               goToLowISR   0x000018    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
-     help_message_factory   0x000ce0    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\factory_mode.c
-          highPriorityISR   0x0002ea    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
-                lcd_clear   0x0006fe    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
-                 lcd_wait   0x0008fa    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
-                     loop   0x000d0c    program     static                          
-                     loop   0x000d5e    program     static                          
-                   loop_h   0x000d3c    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-                   loop_l   0x000d46    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-           lowPriorityISR   0x000396    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
-                     main   0x00001e    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
-                  num2str   0x0004f2    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
-                 read_lcd   0x000916    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
-         receiveCharacter   0x000a7a    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_serial.c
-            sendCharacter   0x000a62    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_serial.c
-              set_lcd_pos   0x000732    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
-          setupInterrupts   0x0009f6    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_serial.c
-              setupSerial   0x000a06    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_serial.c
-                     test   0x000ba4    program     static                          
-                   tx232C   0x000a2c    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_serial.c
-                     wait   0x00085e    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
-  welcome_message_factory   0x000cbe    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\factory_mode.c
-                write_lcd   0x000712    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
-             write_string   0x0006ac    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
-               zero_block   0x000d3c    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+                 _startup   0x0000c6    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                compare_l   0x0000bc    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+                copy_loop   0x00007a    program     static                          
+            copy_one_byte   0x000080    program     static                          
+                     done   0x0000a4    program     static                          
+             done_copying   0x00008e    program     static                          
+                     loop   0x0000d6    program     static                          
+                   loop_h   0x0000b4    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+                   loop_l   0x0000be    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+                     main   0x0000e2    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\test_compile.X\main.c
+                     test   0x000022    program     static                          
+               zero_block   0x0000b4    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                    ADCON0   0x000fc2       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                ADCON0bits   0x000fc2       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                    ADCON1   0x000fc1       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
@@ -263,10 +169,8 @@ Linker Map File - Created Tue Oct 30 11:47:41 2018
                  LATDbits   0x000f8c       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                      LATE   0x000f8d       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                  LATEbits   0x000f8d       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-                      LRC   0x000166       data     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\globalVariables.h
                    LVDCON   0x000fd2       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                LVDCONbits   0x000fd2       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-                MsgToSend   0x0001e6       data     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\globalVariables.h
                    OSCCON   0x000fd3       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                OSCCONbits   0x000fd3       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                   OSCTUNE   0x000f9b       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
@@ -372,54 +276,12 @@ Linker Map File - Created Tue Oct 30 11:47:41 2018
                    WDTCON   0x000fd1       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                WDTCONbits   0x000fd1       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                      WREG   0x000fe8       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-                 __AARGB0   0x000009       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
-                 __AARGB1   0x000008       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
-                 __AARGB2   0x000007       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
-                 __AARGB3   0x000006       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
-                 __AARGB4   0x000005       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
-                 __AARGB5   0x000004       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
-                 __AARGB6   0x000003       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
-                 __AARGB7   0x000002       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
-                   __AEXP   0x00000a       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
-                 __BARGB0   0x00000e       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
-                 __BARGB1   0x00000d       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
-                 __BARGB2   0x00000c       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
-                 __BARGB3   0x00000b       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
-                   __BEXP   0x00000f       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
                 __FPFLAGS   0x000001       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
             __FPFLAGSbits   0x000001       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
-                  __REMB0   0x000005       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
-                  __REMB1   0x000004       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
-                  __REMB2   0x000003       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
-                  __REMB3   0x000002       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
-                   __TEMP   0x000013       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\temparg.asm
-                 __TEMPB0   0x000013       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\temparg.asm
-                 __TEMPB1   0x000012       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\temparg.asm
-                 __TEMPB2   0x000011       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\temparg.asm
-                 __TEMPB3   0x000010       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\temparg.asm
-                  __tmp_0   0x000014       data     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\set_mode_count.c
-                  __tmp_0   0x000014       data     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
-                  __tmp_0   0x000014       data     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
-                  __tmp_2   0x000018       data     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
                 curr_byte   0x000083       data     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
                curr_entry   0x000085       data     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
                  data_ptr   0x000087       data     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                direction   0x000186       data     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
-          factory_welcome   0x000188       data     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\factory_mode.c
-             fromReceiver   0x000100       data     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\globalVariables.h
-             help_message   0x0001c0       data     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\factory_mode.c
-                   length   0x000182       data     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
-                       no   0x0001f4       data     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
-                   number   0x000180       data     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
-                   output   0x000167       data     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
-             overflowFlag   0x0001ec       data     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\globalVariables.h
                      prom   0x000080       data     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                      rem   0x000184       data     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
-           return_endline   0x0001e3       data     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\factory_mode.c
-                   string   0x000111       data     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\globalVariables.h
-                stringPos   0x0001ea       data     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\globalVariables.h
-                stringPtr   0x0001e8       data     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\globalVariables.h
-                      yes   0x0001ee       data     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
 
 
 
@@ -428,204 +290,102 @@ Linker Map File - Created Tue Oct 30 11:47:41 2018
                 ---------  ---------  ---------  --------- ---------                
                    _entry   0x000000    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
        ___return_lbl00000   0x000004    program     static                          
-           SET_MODE_WEIGH   0x000006    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\set_mode_weigh.c
-              goToHighISR   0x000008    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
-       ___return_lbl00000   0x00000c    program     static                          
-                   __init   0x00000e    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\__init.c
-               goToLowISR   0x000018    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
-       ___return_lbl00001   0x00001c    program     static                          
-                     main   0x00001e    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
-          highPriorityISR   0x0002ea    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
-           lowPriorityISR   0x000396    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
-                   AdInit   0x0004c0    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
-       ___return_lbl00009   0x0004f0    program     static                          
-                  num2str   0x0004f2    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
-             write_string   0x0006ac    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
-                lcd_clear   0x0006fe    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
-                write_lcd   0x000712    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
-              set_lcd_pos   0x000732    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
-                  LCDInit   0x000792    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
-          ___for_lbl00013   0x0007c2    program     static                          
-          ___for_lbl00011   0x0007dc    program     static                          
-          ___for_lbl00012   0x0007e6    program     static                          
-       ___return_lbl00010   0x00084a    program     static                          
-                     wait   0x00085e    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
-        ___while_lbl00015   0x000890    program     static                          
-               __tmplbl_0   0x0008b0    program     static                          
-       ___return_lbl00014   0x0008c6    program     static                          
-        ___while_lbl00016   0x0008c6    program     static                          
-               commandLCD   0x0008da    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
-       ___return_lbl00017   0x0008f2    program     static                          
-                 lcd_wait   0x0008fa    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
-                 read_lcd   0x000916    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
-       ___return_lbl00023   0x00096e    program     static                          
-                   __pa_0   0x000986    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
-                   __pa_1   0x0009a6    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
-                   __pa_2   0x0009c2    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
-                   __pa_3   0x0009d4    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
-                   __pa_4   0x0009de    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
-                   __pa_5   0x0009ec    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
-          setupInterrupts   0x0009f6    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_serial.c
-              setupSerial   0x000a06    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_serial.c
-                   tx232C   0x000a2c    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_serial.c
-            sendCharacter   0x000a62    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_serial.c
-         receiveCharacter   0x000a7a    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_serial.c
-                   __pa_0   0x000ac8    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_serial.c
-                   __pa_1   0x000ad4    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_serial.c
-                 FXD1616S   0x000ae4    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                  DA1616S   0x000af6    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                   D1616S   0x000b06    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                 D1616SOK   0x000b10    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                D1616SNEG   0x000b14    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                  D1616SX   0x000b26    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                 FXM1616S   0x000b30    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxm1616s.asm
-               TSIGN1616A   0x000b7c    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxm1616s.asm
-                _do_cinit   0x000b8a    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                     test   0x000ba4    program     static                          
-                copy_loop   0x000bfc    program     static                          
-            copy_one_byte   0x000c02    program     static                          
-             done_copying   0x000c10    program     static                          
-       ___return_lbl00002   0x000c26    program     static                          
-                     done   0x000c26    program     static                          
-           SET_MODE_COUNT   0x000c28    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\set_mode_count.c
-                  factory   0x000ca8    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\factory_mode.c
-  welcome_message_factory   0x000cbe    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\factory_mode.c
-     help_message_factory   0x000ce0    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\factory_mode.c
-                 FXD1616U   0x000d02    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616u.c
-                     loop   0x000d0c    program     static                          
-                  endloop   0x000d28    program     static                          
-       ___return_lbl00000   0x000d2c    program     static                          
-            __zero_memory   0x000d2e    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-               zero_block   0x000d3c    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-                   loop_h   0x000d3c    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-                compare_l   0x000d44    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-                   loop_l   0x000d46    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-                 _startup   0x000d4e    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                     loop   0x000d5e    program     static                          
-       ___return_lbl00001   0x000d68    program     static                          
-               __config_0   0x300001    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
-               __config_1   0x300002    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
-               __config_2   0x300003    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
-               __config_3   0x300005    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
-               __config_4   0x300006    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
-               __config_5   0x300008    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
-               __config_6   0x300009    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
-               __config_7   0x30000a    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
-               __config_8   0x30000b    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
-               __config_9   0x30000c    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
-              __config_10   0x30000d    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
+                _do_cinit   0x000008    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                     test   0x000022    program     static                          
+                copy_loop   0x00007a    program     static                          
+            copy_one_byte   0x000080    program     static                          
+             done_copying   0x00008e    program     static                          
+       ___return_lbl00002   0x0000a4    program     static                          
+                     done   0x0000a4    program     static                          
+            __zero_memory   0x0000a6    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+               zero_block   0x0000b4    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+                   loop_h   0x0000b4    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+                compare_l   0x0000bc    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+                   loop_l   0x0000be    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+                 _startup   0x0000c6    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                     loop   0x0000d6    program     static                          
+       ___return_lbl00001   0x0000e0    program     static                          
+                     main   0x0000e2    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\test_compile.X\main.c
+                   __init   0x0000e4    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\__init.c
+               __config_0   0x300001    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\test_compile.X\main.c
+               __config_1   0x300002    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\test_compile.X\main.c
+               __config_2   0x300003    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\test_compile.X\main.c
+               __config_3   0x300005    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\test_compile.X\main.c
+               __config_4   0x300006    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\test_compile.X\main.c
+               __config_5   0x300008    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\test_compile.X\main.c
+               __config_6   0x300009    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\test_compile.X\main.c
+               __config_7   0x30000a    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\test_compile.X\main.c
+               __config_8   0x30000b    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\test_compile.X\main.c
+               __config_9   0x30000c    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\test_compile.X\main.c
+              __config_10   0x30000d    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\test_compile.X\main.c
                      SIGN   0x000000       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
-                __FPFLAGS   0x000001       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
             __FPFLAGSbits   0x000001       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
-                  __REMB3   0x000002       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
-                 __AARGB7   0x000002       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
-                  __REMB2   0x000003       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
-                 __AARGB6   0x000003       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
-                  __REMB1   0x000004       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
-                 __AARGB5   0x000004       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
-                  __REMB0   0x000005       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
-                 __AARGB4   0x000005       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
-                 __AARGB3   0x000006       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
-                 __AARGB2   0x000007       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
-                 __AARGB1   0x000008       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
-                 __AARGB0   0x000009       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
-                   __AEXP   0x00000a       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
-                 __BARGB3   0x00000b       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
-                 __BARGB2   0x00000c       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
-                 __BARGB1   0x00000d       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
-                 __BARGB0   0x00000e       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
-                   __BEXP   0x00000f       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
-                 __TEMPB3   0x000010       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\temparg.asm
-                 __TEMPB2   0x000011       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\temparg.asm
-                 __TEMPB1   0x000012       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\temparg.asm
-                 __TEMPB0   0x000013       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\temparg.asm
-                   __TEMP   0x000013       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\temparg.asm
-                  __tmp_0   0x000014       data     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\set_mode_count.c
-                  __tmp_0   0x000014       data     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
-                  __tmp_0   0x000014       data     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
-                  __tmp_2   0x000018       data     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
+                __FPFLAGS   0x000001       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
                      prom   0x000080       data     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
                 curr_byte   0x000083       data     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
                curr_entry   0x000085       data     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
                  data_ptr   0x000087       data     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-             fromReceiver   0x000100       data     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\globalVariables.h
-                   string   0x000111       data     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\globalVariables.h
-                      LRC   0x000166       data     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\globalVariables.h
-                   output   0x000167       data     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
-                   number   0x000180       data     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
-                   length   0x000182       data     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
-                      rem   0x000184       data     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
-                direction   0x000186       data     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
-          factory_welcome   0x000188       data     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\factory_mode.c
-             help_message   0x0001c0       data     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\factory_mode.c
-           return_endline   0x0001e3       data     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\factory_mode.c
-                MsgToSend   0x0001e6       data     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\globalVariables.h
-                stringPtr   0x0001e8       data     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\globalVariables.h
-                stringPos   0x0001ea       data     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\globalVariables.h
-             overflowFlag   0x0001ec       data     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\globalVariables.h
-                      yes   0x0001ee       data     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
-                       no   0x0001f4       data     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
-                PORTAbits   0x000f80       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                     PORTA   0x000f80       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-                PORTBbits   0x000f81       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+                PORTAbits   0x000f80       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                     PORTB   0x000f81       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-                PORTCbits   0x000f82       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+                PORTBbits   0x000f81       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                     PORTC   0x000f82       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-                PORTDbits   0x000f83       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+                PORTCbits   0x000f82       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                     PORTD   0x000f83       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-                PORTEbits   0x000f84       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+                PORTDbits   0x000f83       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                     PORTE   0x000f84       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-                     LATA   0x000f89       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+                PORTEbits   0x000f84       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                  LATAbits   0x000f89       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-                     LATB   0x000f8a       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+                     LATA   0x000f89       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                  LATBbits   0x000f8a       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-                     LATC   0x000f8b       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+                     LATB   0x000f8a       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                  LATCbits   0x000f8b       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-                 LATDbits   0x000f8c       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+                     LATC   0x000f8b       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                      LATD   0x000f8c       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-                 LATEbits   0x000f8d       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+                 LATDbits   0x000f8c       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                      LATE   0x000f8d       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+                 LATEbits   0x000f8d       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+                    TRISA   0x000f92       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+                TRISAbits   0x000f92       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                      DDRA   0x000f92       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                  DDRAbits   0x000f92       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-                TRISAbits   0x000f92       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-                    TRISA   0x000f92       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+                 DDRBbits   0x000f93       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                 TRISBbits   0x000f93       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                     TRISB   0x000f93       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                      DDRB   0x000f93       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-                 DDRBbits   0x000f93       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-                 DDRCbits   0x000f94       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                      DDRC   0x000f94       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-                    TRISC   0x000f94       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+                 DDRCbits   0x000f94       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                 TRISCbits   0x000f94       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+                    TRISC   0x000f94       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                     TRISD   0x000f95       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                 TRISDbits   0x000f95       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-                     DDRD   0x000f95       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                  DDRDbits   0x000f95       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+                     DDRD   0x000f95       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                 TRISEbits   0x000f96       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                     TRISE   0x000f96       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-                     DDRE   0x000f96       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                  DDREbits   0x000f96       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-                  OSCTUNE   0x000f9b       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+                     DDRE   0x000f96       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
               OSCTUNEbits   0x000f9b       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+                  OSCTUNE   0x000f9b       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                      PIE1   0x000f9d       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                  PIE1bits   0x000f9d       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-                     PIR1   0x000f9e       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                  PIR1bits   0x000f9e       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+                     PIR1   0x000f9e       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                  IPR1bits   0x000f9f       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                      IPR1   0x000f9f       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-                     PIE2   0x000fa0       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                  PIE2bits   0x000fa0       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+                     PIE2   0x000fa0       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                      PIR2   0x000fa1       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                  PIR2bits   0x000fa1       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                  IPR2bits   0x000fa2       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                      IPR2   0x000fa2       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-                   EECON1   0x000fa6       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                EECON1bits   0x000fa6       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+                   EECON1   0x000fa6       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                    EECON2   0x000fa7       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                    EEDATA   0x000fa8       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                     EEADR   0x000fa9       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-                RCSTAbits   0x000fab       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                     RCSTA   0x000fab       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+                RCSTAbits   0x000fab       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                     TXSTA   0x000fac       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                 TXSTAbits   0x000fac       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                     TXREG   0x000fad       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
@@ -644,16 +404,16 @@ Linker Map File - Created Tue Oct 30 11:47:41 2018
                    ECCPAS   0x000fb6       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
               ECCP1ASbits   0x000fb6       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                   ECCP1AS   0x000fb6       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+              PWM1CONbits   0x000fb7       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+                  PWM1CON   0x000fb7       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
              ECCP1DELbits   0x000fb7       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                  ECCP1DEL   0x000fb7       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-                  PWM1CON   0x000fb7       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-              PWM1CONbits   0x000fb7       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
               BAUDCTLbits   0x000fb8       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-                  BAUDCTL   0x000fb8       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-              BAUDCONbits   0x000fb8       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                   BAUDCON   0x000fb8       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-              CCP2CONbits   0x000fba       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+              BAUDCONbits   0x000fb8       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+                  BAUDCTL   0x000fb8       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                   CCP2CON   0x000fba       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+              CCP2CONbits   0x000fba       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                     CCPR2   0x000fbb       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                    CCPR2L   0x000fbb       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                    CCPR2H   0x000fbc       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
@@ -662,12 +422,12 @@ Linker Map File - Created Tue Oct 30 11:47:41 2018
                     CCPR1   0x000fbe       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                    CCPR1L   0x000fbe       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                    CCPR1H   0x000fbf       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-                   ADCON2   0x000fc0       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                ADCON2bits   0x000fc0       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-               ADCON1bits   0x000fc1       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+                   ADCON2   0x000fc0       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                    ADCON1   0x000fc1       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-                   ADCON0   0x000fc2       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+               ADCON1bits   0x000fc1       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                ADCON0bits   0x000fc2       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+                   ADCON0   0x000fc2       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                     ADRES   0x000fc3       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                    ADRESL   0x000fc3       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                    ADRESH   0x000fc4       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
@@ -675,12 +435,12 @@ Linker Map File - Created Tue Oct 30 11:47:41 2018
               SSPCON2bits   0x000fc5       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                   SSPCON1   0x000fc6       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
               SSPCON1bits   0x000fc6       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-                  SSPSTAT   0x000fc7       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
               SSPSTATbits   0x000fc7       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+                  SSPSTAT   0x000fc7       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                    SSPADD   0x000fc8       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                    SSPBUF   0x000fc9       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-                    T2CON   0x000fca       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                 T2CONbits   0x000fca       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+                    T2CON   0x000fca       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                       PR2   0x000fcb       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                      TMR2   0x000fcc       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                     T1CON   0x000fcd       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
@@ -689,12 +449,12 @@ Linker Map File - Created Tue Oct 30 11:47:41 2018
                     TMR1H   0x000fcf       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                      RCON   0x000fd0       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                  RCONbits   0x000fd0       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-               WDTCONbits   0x000fd1       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                    WDTCON   0x000fd1       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+               WDTCONbits   0x000fd1       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+               LVDCONbits   0x000fd2       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                   HLVDCON   0x000fd2       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
               HLVDCONbits   0x000fd2       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                    LVDCON   0x000fd2       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-               LVDCONbits   0x000fd2       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                    OSCCON   0x000fd3       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                OSCCONbits   0x000fd3       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                     T0CON   0x000fd5       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
@@ -703,8 +463,8 @@ Linker Map File - Created Tue Oct 30 11:47:41 2018
                     TMR0H   0x000fd7       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                STATUSbits   0x000fd8       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                    STATUS   0x000fd8       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-                    FSR2L   0x000fd9       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                      FSR2   0x000fd9       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+                    FSR2L   0x000fd9       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                     FSR2H   0x000fda       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                    PLUSW2   0x000fdb       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                   PREINC2   0x000fdc       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
@@ -720,22 +480,22 @@ Linker Map File - Created Tue Oct 30 11:47:41 2018
                  POSTDEC1   0x000fe5       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                  POSTINC1   0x000fe6       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                     INDF1   0x000fe7       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-                        W   0x000fe8       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                      WREG   0x000fe8       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-                    FSR0L   0x000fe9       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+                        W   0x000fe8       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                      FSR0   0x000fe9       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+                    FSR0L   0x000fe9       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                     FSR0H   0x000fea       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                    PLUSW0   0x000feb       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                   PREINC0   0x000fec       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                  POSTDEC0   0x000fed       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                  POSTINC0   0x000fee       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                     INDF0   0x000fef       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-                  INTCON3   0x000ff0       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
               INTCON3bits   0x000ff0       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+                  INTCON3   0x000ff0       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
               INTCON2bits   0x000ff1       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                   INTCON2   0x000ff1       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-                   INTCON   0x000ff2       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                INTCONbits   0x000ff2       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+                   INTCON   0x000ff2       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                      PROD   0x000ff3       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                     PRODL   0x000ff3       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                     PRODH   0x000ff4       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
@@ -748,8 +508,8 @@ Linker Map File - Created Tue Oct 30 11:47:41 2018
                       PCL   0x000ff9       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                    PCLATH   0x000ffa       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                    PCLATU   0x000ffb       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-               STKPTRbits   0x000ffc       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                    STKPTR   0x000ffc       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+               STKPTRbits   0x000ffc       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                      TOSL   0x000ffd       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                       TOS   0x000ffd       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                      TOSH   0x000ffe       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm

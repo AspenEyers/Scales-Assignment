@@ -5,7 +5,7 @@
  * Created on 5 September 2018, 12:18 PM
  */
 
-#include "ConfigRegs18f4520.h"
+//#include "ConfigRegs18f4520.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <xlcd.h>
@@ -16,6 +16,7 @@
 #include "globalVariables.h"
 #include "ConfigRegs18f4520.h"
 #include "include_scales_functionality.h"
+#include "factory.h"
 
 
 // Setup board OSC, watchdog and low voltage protect 
@@ -98,7 +99,7 @@ void main( void )
     
 
     while(1){
-
+        factory();
     }
          
 }
@@ -110,6 +111,8 @@ void highPriorityISR( void ){
         // Check to see if data was received
     if(PIR1 & (1 << 5)){
         receiveCharacter();
+        tx232C(yes);
+        PIR1bits.RCIF = 0;
     }
 }
 
@@ -126,6 +129,7 @@ void lowPriorityISR( void ){
         
         num2str(&output,number);
         write_string(0,0,output);
+        PIR1bits.ADIF = 0;
     }
     // Check to see if data was sent
     //if(PIR1 & (1 << 4)){
