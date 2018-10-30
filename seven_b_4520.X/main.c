@@ -1,11 +1,15 @@
 /*
  * File:   main.c
- * Author: Aspen
+ * Authors:   Aspe     James, Ty, Richard, Tom, Lina
+ * SIDs:
  *
  * Created on 5 September 2018, 12:18 PM
  */
 
-//#include "ConfigRegs18f4520.h"
+
+//*****************************************************************************
+//*                          Includes                                         *
+//*****************************************************************************
 #include <stdio.h>
 #include <stdlib.h>
 #include <xlcd.h>
@@ -19,36 +23,45 @@
 #include "factory.h"
 
 
-// Setup board OSC, watchdog and low voltage protect 
-//#pragma config OSC = HS
-//#pragma config WDT = OFF
-//#pragma config LVP = OFF
 
-
+//*****************************************************************************
+//*                          Defines                                          *
+//*****************************************************************************
 #define SET_ROW 0
 #define SET_POS 1
 #define SEND_MSG 2
 
- char yes[] = "yes\n\r";
- char no[] = "no\n\r";
 
- 
- 
+//*****************************************************************************
+//*                          Strings for debugging                            *
+//*****************************************************************************
+char yes[] = "yes\n\r";
+char no[] = "no\n\r";
+
+//*****************************************************************************
+//*                          Vairables for main                               *
+//***************************************************************************** 
 char output[25];
-int number;
+int raw_weight;
 int length;    
 int rem; 
 int direction;
      
 
 
-
+//*****************************************************************************
+//*                          Function definitions                             *
+//*****************************************************************************
 void highPriorityISR( void );
 void lowPriorityISR( void );
 void AdInit(void);
 void num2str(char *string, int number);
 
-// Setup the interrupts 
+
+
+//*****************************************************************************
+//*                          Setup Interrupts                                 *
+//*****************************************************************************
 #pragma code highISR = 0x08
 void goToHighISR( void ){
     _asm 
@@ -63,7 +76,9 @@ void goToLowISR( void ){
 }
 
 
-
+//*****************************************************************************
+//*                          Main function                                    *
+//*****************************************************************************
 void main( void )
 {
     int i = 0;
@@ -99,26 +114,20 @@ void main( void )
     //tx232C(end_msg);
     //edit
     
-    
-    // choose mode
-    switch(current_mode){
-        case USER_LOCAL:
-            // go into user local function chooser
-            break;
-        case USER_REMOTE:
-            // go into user remote function chooser
-            break;
-        case FACTORY_REMOTE:
-            break;
-    }
-    
-    
-    
-
     while(1){
-        //factory();
-    }
-         
+        // choose mode
+        switch(current_mode){
+            case USER_LOCAL:
+                // go into user local function chooser
+                break;
+            case USER_REMOTE:
+                // go into user remote function chooser
+                break;
+            case FACTORY_REMOTE:
+                void factory(void);
+                break;
+        }
+    }         
 }
 
 
@@ -139,13 +148,13 @@ void lowPriorityISR( void ){
         
 
     if(PIR1bits.ADIF == 1){
-        number = ADRESH;
-        number = (number << 2);
-        number = number | ((ADRESL >> 6) && (0b00000011));
+        raw_weight = ADRESH;
+        raw_weight = (raw_weight << 2);
+        raw_weight = raw_weight | ((ADRESL >> 6) && (0b00000011));
         //number = ADRESL;
         
         
-        num2str(&output,number);
+        num2str(&output,raw_weight);
         write_string(0,0,output);
         PIR1bits.ADIF = 0;
         ADCON0bits.GO = 1;
