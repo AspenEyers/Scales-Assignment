@@ -93,15 +93,15 @@ void main( void )
     //};
     
     // ******** Verify the LCD and serial work ******** //
-    lcd_clear();    
-    write_string(0,0,message);
-    tx232C(intro_msg);
-    tx232C(end_msg);
+    //lcd_clear();    
+    //write_string(0,0,message);
+    //tx232C(intro_msg);
+    //tx232C(end_msg);
     //edit
     
 
     while(1){
-        factory();
+        //factory();
     }
          
 }
@@ -128,12 +128,14 @@ void lowPriorityISR( void ){
         number = (number << 2);
         number = number | ((ADRESL >> 6) && (0b00000011));
         //number = ADRESL;
-        ADCON0bits.GO = 1;
+        
         
         num2str(&output,number);
         write_string(0,0,output);
         PIR1bits.ADIF = 0;
+        ADCON0bits.GO = 1;
     }
+    
     // Check to see if data was sent
     //if(PIR1 & (1 << 4)){
     //    receiveCharacter();
@@ -157,8 +159,8 @@ void AdInit(void){
             
     // Voltage reference config bits
             // Might be useful to test this with the DC power supply
-    ADCON1bits.VCFG0 = 0;   // 1 = Vref- reference is AN2
-    ADCON1bits.VCFG1 = 0;   // 1 = Vref+ reference is AN3 
+    ADCON1bits.VCFG0 = 1;   // 1 = Vref- reference is AN2
+    ADCON1bits.VCFG1 = 1;   // 1 = Vref+ reference is AN3 
 
     // RC oscilator
     ADCON2bits.ADCS0 = 1;
