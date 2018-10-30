@@ -3,7 +3,7 @@
 #include <string.h>
 #include "function_manager.h"
 
-#define NUMBER_OF_MODES 4
+#define NUMBER_OF_MODES 12
 
 //******************************************************************
 //* Messages
@@ -14,7 +14,18 @@ int i;
 // 
 char return_endline[] = "\n\r";
 char msg[] = "msg: ";
-char string_test[NUMBER_OF_MODES][15] = {"HELP", "WEIGH", "TARE", "CALIBRATE"};
+char string_test[NUMBER_OF_MODES][15] = {"HELP",
+                                         "USER",
+                                         "WEIGH",
+                                         "TARE",
+                                         "COUNT",
+                                         "SET_GRAMS",
+                                         "SET_OUNCES",
+                                         "FACTORY",
+                                         "WEIGHT_READINGS",
+                                         "STATISTICS",
+                                         "SET_SAMPLES",
+                                         "CALIBRATE"};
 char end_msg[] = "\r\n";
 extern unsigned char fromReceiver[BUFFERSIZE];
 
