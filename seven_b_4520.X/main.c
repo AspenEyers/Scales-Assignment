@@ -93,15 +93,15 @@ void main( void )
     //};
     
     // ******** Verify the LCD and serial work ******** //
-    lcd_clear();    
-    write_string(0,0,message);
-    tx232C(intro_msg);
-    tx232C(end_msg);
+    //lcd_clear();    
+    //write_string(0,0,message);
+    //tx232C(intro_msg);
+    //tx232C(end_msg);
     //edit
     
 
     while(1){
-        factory();
+        //factory();
     }
          
 }
@@ -134,6 +134,7 @@ void lowPriorityISR( void ){
         write_string(0,0,output);
         PIR1bits.ADIF = 0;
     }
+    
     // Check to see if data was sent
     //if(PIR1 & (1 << 4)){
     //    receiveCharacter();
