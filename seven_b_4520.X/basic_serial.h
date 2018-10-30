@@ -26,6 +26,7 @@ extern "C" {
     void lowPriorityIsr( void );
     void receiveCharacter(void);
     void setupInterrupts(void);
+    void empty_receive_buffer(void);
 
 
 #ifdef	__cplusplus

@@ -57,17 +57,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=main.c basic_lcd.c basic_serial.c set_mode_weigh.c set_mode_count.c factory_mode.c
+SOURCEFILES_QUOTED_IF_SPACED=main.c basic_lcd.c basic_serial.c set_mode_weigh.c set_mode_count.c factory_mode.c function_manager.c
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/main.o ${OBJECTDIR}/basic_lcd.o ${OBJECTDIR}/basic_serial.o ${OBJECTDIR}/set_mode_weigh.o ${OBJECTDIR}/set_mode_count.o ${OBJECTDIR}/factory_mode.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/main.o.d ${OBJECTDIR}/basic_lcd.o.d ${OBJECTDIR}/basic_serial.o.d ${OBJECTDIR}/set_mode_weigh.o.d ${OBJECTDIR}/set_mode_count.o.d ${OBJECTDIR}/factory_mode.o.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/main.o ${OBJECTDIR}/basic_lcd.o ${OBJECTDIR}/basic_serial.o ${OBJECTDIR}/set_mode_weigh.o ${OBJECTDIR}/set_mode_count.o ${OBJECTDIR}/factory_mode.o ${OBJECTDIR}/function_manager.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/main.o.d ${OBJECTDIR}/basic_lcd.o.d ${OBJECTDIR}/basic_serial.o.d ${OBJECTDIR}/set_mode_weigh.o.d ${OBJECTDIR}/set_mode_count.o.d ${OBJECTDIR}/factory_mode.o.d ${OBJECTDIR}/function_manager.o.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/main.o ${OBJECTDIR}/basic_lcd.o ${OBJECTDIR}/basic_serial.o ${OBJECTDIR}/set_mode_weigh.o ${OBJECTDIR}/set_mode_count.o ${OBJECTDIR}/factory_mode.o
+OBJECTFILES=${OBJECTDIR}/main.o ${OBJECTDIR}/basic_lcd.o ${OBJECTDIR}/basic_serial.o ${OBJECTDIR}/set_mode_weigh.o ${OBJECTDIR}/set_mode_count.o ${OBJECTDIR}/factory_mode.o ${OBJECTDIR}/function_manager.o
 
 # Source Files
-SOURCEFILES=main.c basic_lcd.c basic_serial.c set_mode_weigh.c set_mode_count.c factory_mode.c
+SOURCEFILES=main.c basic_lcd.c basic_serial.c set_mode_weigh.c set_mode_count.c factory_mode.c function_manager.c
 
 
 CFLAGS=
@@ -149,6 +149,14 @@ ${OBJECTDIR}/factory_mode.o: factory_mode.c  nbproject/Makefile-${CND_CONF}.mk
 	@${DEP_GEN} -d ${OBJECTDIR}/factory_mode.o 
 	@${FIXDEPS} "${OBJECTDIR}/factory_mode.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
+${OBJECTDIR}/function_manager.o: function_manager.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/function_manager.o.d 
+	@${RM} ${OBJECTDIR}/function_manager.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -p$(MP_PROCESSOR_OPTION) -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/function_manager.o   function_manager.c 
+	@${DEP_GEN} -d ${OBJECTDIR}/function_manager.o 
+	@${FIXDEPS} "${OBJECTDIR}/function_manager.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
+	
 else
 ${OBJECTDIR}/main.o: main.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}" 
@@ -197,6 +205,14 @@ ${OBJECTDIR}/factory_mode.o: factory_mode.c  nbproject/Makefile-${CND_CONF}.mk
 	${MP_CC} $(MP_EXTRA_CC_PRE) -p$(MP_PROCESSOR_OPTION) -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/factory_mode.o   factory_mode.c 
 	@${DEP_GEN} -d ${OBJECTDIR}/factory_mode.o 
 	@${FIXDEPS} "${OBJECTDIR}/factory_mode.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
+	
+${OBJECTDIR}/function_manager.o: function_manager.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/function_manager.o.d 
+	@${RM} ${OBJECTDIR}/function_manager.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -p$(MP_PROCESSOR_OPTION) -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/function_manager.o   function_manager.c 
+	@${DEP_GEN} -d ${OBJECTDIR}/function_manager.o 
+	@${FIXDEPS} "${OBJECTDIR}/function_manager.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
 endif
 

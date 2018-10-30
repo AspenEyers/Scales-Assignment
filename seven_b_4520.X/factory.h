@@ -18,6 +18,7 @@ void factory(void);
 void welcome_message_factory(void);
 void help_message_factory(void);
 
+
 #ifdef	__cplusplus
 }
 #endif

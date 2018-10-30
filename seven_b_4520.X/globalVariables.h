@@ -31,7 +31,6 @@ extern "C" {
     unsigned char LRC;
     
     
-    
 
 #ifdef	__cplusplus
 }
