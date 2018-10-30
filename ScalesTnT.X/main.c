@@ -90,7 +90,7 @@ void disableInterrupts (void);
 void high_interrupt(void);
 void _interrupt(void);
 void highPriorityIsr(void);
-
+void lowPriorityIsr(void);
 
 /****************************************************************************
 *                                 PIC board setup                           *
@@ -125,6 +125,7 @@ unsigned int layer_depth;
 void setup_pic(void);
 void highPriorityISR(void);
 void lowPriorityISR(void);
+void goToLowISR( void );
 void read_input(void);
 void setup(void);
 void next (void);
@@ -171,16 +172,27 @@ void _interrupt (void)
     _asm GOTO highPriorityISR _endasm;
 
 }
+#pragma code lowISR = 0x0018
+void goToLowISR( void ){
+    _asm 
+        goto lowPriorityISR
+    _endasm 
+}
 /************************************************************************************************/
-#pragma interrupt highPriorityISR     // or interruptlow    
-void highPriorityISR( void )
+#pragma interrupt lowPriorityISR     // or interruptlow    
+void lowPriorityISR( void )
 {
     
     buttonControl();
     
     INTCONbits.TMR0IF = 0;  //Resetting flag
     INTCONbits.RBIF =0;// Set the flag to 0
-        // Check to see if data was received
+   
+}
+#pragma interrupt highPriorityISR     // or interruptlow
+void highPriorityISR(void){
+    
+    
     //if(PIR1 & (1 << 5)){
         //receiveCharacter();         << PART OF SERIAL, ADD THIS BACK IN AFTER INCLUDING SERIAL
     //} 

@@ -13,10 +13,11 @@
 #include <usart.h>
 #include "basic_lcd.h"
 #include "basic_serial.h"
-#include "globalVariables.h"
+//#include "globalVariables.h"
 #include "ConfigRegs18f4520.h"
 #include "include_scales_functionality.h"
 #include "factory.h"
+#include "UI.h"
 
 
 // Setup board OSC, watchdog and low voltage protect 
@@ -82,6 +83,7 @@ void main( void )
     setupSerial();
     AdInit();    
     LCDInit();    
+    UIsetup();
     // Note: the setup interrupts MUST go after the setup functions
     // otherwise it will break the timing in the setups.
     setupInterrupts();
@@ -117,6 +119,8 @@ void main( void )
 
     while(1){
         //factory();
+        user_interface();
+        
     }
          
 }
@@ -138,6 +142,16 @@ void highPriorityISR( void ){
 void lowPriorityISR( void ){
         
 
+    if(INTCONbits.TMR0IF == 1){
+        
+    // go to control function      
+    buttonControl();
+    
+    INTCONbits.TMR0IF = 0;  //Resetting flag
+    INTCONbits.RBIF =0;// Set the flag to 0   
+    }
+    
+    //Resetting flag)
     if(PIR1bits.ADIF == 1){
         number = ADRESH;
         number = (number << 2);

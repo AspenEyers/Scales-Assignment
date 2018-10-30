@@ -17,7 +17,7 @@ extern unsigned char string[5][BUFFERSIZE];
 // point to the first string
 extern int stringPtr = 1;
 // point to the first character
-extern int stringPos = 0;
+extern int stringPos;
 // Buffer overflow flag
 extern int overflowFlag = 0;
 // Create a variable for the LRC
@@ -31,7 +31,15 @@ extern i;
 
 // Sets up the interrupts
 void setupInterrupts(void){
-
+    
+    // Global and timer stuff
+    INTCONbits.GIE  = 1; // Global Interrupt Enable bit
+    INTCONbits.GIEL = 1;   // Enable low priority interrupt
+     INTCON2bits.RBIP = 0; // Port B is low
+    INTCON2bits.TMR0IP = 0; // Set timer0 interrupt as Low Priority
+    INTCONbits.TMR0IF = 0x0;    // Clear the timer0 flag
+    
+    // Serial setup
     RCON |= (1 << 7);      // Enable interrupt priority
     PIE1 |= (1 << 5);      // USART receive interrupt enable
     PIE1bits.ADIE = 1;     // AD interrupt enable 
@@ -73,6 +81,26 @@ void setupSerial(void){
     SPBRG = 64;
 }
 
+void setupbuttonInt (void)
+{
+    
+    // Timer setup
+    INTCONbits.TMR0IE = 1; //Enable timer0 interrupt
+    T0CONbits.T08BIT = 0;
+    T0CONbits.T0CS = 0;
+    T0CONbits.T0PS2 =1;
+    TMR0H = 0xF8;
+    TMR0L = 0x30;
+         
+    //Set button as interrupts
+   TRISBbits.RB4 = 1; // Set pin 4 as input
+   TRISBbits.RB5 = 1; // Set pin 5 as input
+   PORTBbits.RB4 = 0; // FOrcing them to 0
+   PORTBbits.RB5 = 0; // Forcing them to 0
+   
+   INTCONbits.RBIE =1;// Enables the RB port change interrupt
+   INTCONbits.RBIF =0;// Set the flag to 0
+}
 // This function takes in the pointer to the beginning of a string
 // it returns 0 for success and -1 for an error
 int tx232C(unsigned char *txPtr){

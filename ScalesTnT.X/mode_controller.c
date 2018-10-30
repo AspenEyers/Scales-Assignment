@@ -9,11 +9,13 @@ void enableInterrupts(void)
 {
     //Enable prioritized interrupts (pg 84)
     RCONbits.IPEN = 1;
-    //INTCON2bits.RBIP = 1; // Enable port B interrupts
-    
+        
     //enable all interrupts including peripherals , pg 75
     INTCONbits.GIE  = 1; // Global Interrupt Enable bit
+    INTCONbits.GIEL = 1;   // Enable low priority interrupt
     INTCONbits.PEIE  = 1; // Peripheral Interrupt Enable bit
+    INTCON2bits.RBIP = 0; // Port B is low
+    INTCON2bits.TMR0IP = 0; // Set timer0 interrupt as Low Priority
     INTCONbits.TMR0IF = 0x0;    // Clear the timer0 flag
    }
 
@@ -24,7 +26,7 @@ void disableInterrupts (void)
     INTCONbits.GIEL = 0; // ...
      
 }
-void setup (void)
+void setup(void)
 {
   
     disableInterrupts();
@@ -37,18 +39,15 @@ void setup (void)
          
     //Set interrupts
     //TRISBbits.RB4=1;// Set RB4 to input ///////pg 92, open to suggestions 
-   TRISB = 0b00110000; // Set RB4,5 as input
-   PORTB = 0;
+   TRISBbits.RB4 = 1;
+   TRISBbits.RB5 = 1;
    
-    INTCON2bits.RBPU = 1; // Setting the ort B priority to high
-    //INTCONbits.INT0IF =0;// Clear flag of RB0 
-    //INTCONbits.INT0E = 1; //enable Interrupt 0 (RB0 as interrupt)
-    //INTCON2bits.INTEDG1= 1;//Trigger on rise
-    //INTCONbits.INT0IE= 1;// Enable interrupt INT0/RBO, pg 75, The INT0 external interrupt did not occur
-    //#pragma config PBADEN = OFF     // PORTB A/D Enable bit (PORTB<4:0>
-    ADCON1bits.PCFG = 0b1111; //all ports digital
-     INTCONbits.RBIE =1;// Enables the RB port change interrupt
-     INTCONbits.RBIF =0;// Set the flag to 0
+   PORTBbits.RB4 = 0;
+   PORTBbits.RB5 = 0;
+   
+    //ADCON1bits.PCFG = 0b1111; //all ports digital
+    INTCONbits.RBIE =1;// Enables the RB port change interrupt
+    INTCONbits.RBIF =0;// Set the flag to 0
      
     // http://microcontrollerslab.com/external-interrupt-pic-microcontroller/
     enableInterrupts();
