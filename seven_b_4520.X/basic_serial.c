@@ -11,15 +11,15 @@
 // Used for serial
 // Add variables to be used in interrupts here
 extern unsigned char fromReceiver[BUFFERSIZE];
-extern int MsgToSend = 0;
+extern int MsgToSend;// = 0;
 // create an array of strings
 extern unsigned char string[5][BUFFERSIZE];
 // point to the first string
-extern int stringPtr = 1;
+extern int stringPtr;// = 1;
 // point to the first character
-extern int stringPos = 0;
+extern int stringPos;// = 0;
 // Buffer overflow flag
-extern int overflowFlag = 0;
+extern int overflowFlag;// = 0;
 // Create a variable for the LRC
 extern unsigned char LRC;
 extern i;
