@@ -12,8 +12,11 @@
 extern "C" {
 #endif
 
+    
 
-
+    #define USER_LOCAL 1
+    #define USER_REMOTE 2
+    #define FACTORY_REMOTE 3
     // Global variables
     // Used for serial
     // Add variables to be used in interrupts here
@@ -29,6 +32,8 @@ extern "C" {
     int overflowFlag = 0;
     // Create a variable for the LRC
     unsigned char LRC;
+    
+    int current_mode = USER_LOCAL;
     
     
 

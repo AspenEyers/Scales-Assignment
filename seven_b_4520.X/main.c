@@ -99,6 +99,21 @@ void main( void )
     //tx232C(end_msg);
     //edit
     
+    
+    // choose mode
+    switch(current_mode){
+        case USER_LOCAL:
+            // go into user local function chooser
+            break;
+        case USER_REMOTE:
+            // go into user remote function chooser
+            break;
+        case FACTORY_REMOTE:
+            break;
+    }
+    
+    
+    
 
     while(1){
         //factory();
