@@ -1,4 +1,4 @@
-/* 
+* 
  * File:   test.h
  * Author: Tom
  *
