@@ -33,6 +33,7 @@ char statistics_intro_msg[] = "6\r\n";
 char samples_intro_msg[] = "7\r\n";
 char msg2[] = "default";
 char end_msg2[] = "\r\n";
+extern unit_mode;
 
 void enter_function(int mode){
     
@@ -87,4 +88,12 @@ void enter_function(int mode){
             
 
     }
+}
+
+void set_weight_grams(){
+    unit_mode = 0;
+}
+
+void set_weight_ounces(){
+    unit_mode = 1;
 }

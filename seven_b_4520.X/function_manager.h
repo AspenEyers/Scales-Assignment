@@ -14,6 +14,8 @@ extern "C" {
 
 
 void enter_function(int);
+void set_weight_ounces(void);
+void set_weight_grams(void);
 
 #ifdef	__cplusplus
 }

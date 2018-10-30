@@ -50,7 +50,7 @@ int filtered_weight;
 int samples[20] = {0};
 int pos;
 long sum;
-
+int unit_mode = 0;
 int length;    
 int rem; 
 int direction;
@@ -175,8 +175,13 @@ void lowPriorityISR( void ){
         
         
         filter_raw_weight();
+        //callibrate_weight();
+        ounce_or_grams();
+        
         num2str(&output,filtered_weight);
         write_string(0,0,output);
+        
+        
         PIR1bits.ADIF = 0;
         ADCON0bits.GO = 1;
     }

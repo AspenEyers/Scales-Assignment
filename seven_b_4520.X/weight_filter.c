@@ -4,6 +4,9 @@ extern int filtered_weight;
 extern int samples[20];
 extern int pos;
 extern long sum;
+extern int unit_mode;
+
+
 
 void filter_raw_weight(void){
     
@@ -17,7 +20,11 @@ void filter_raw_weight(void){
         pos = 0;
     }
     
+    
+    
 }
+
+
 
 
 int movingAvg(int *ptrSamples, long *ptrSum, int pos, int len, int nextNum){
