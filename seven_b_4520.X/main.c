@@ -21,6 +21,7 @@
 #include "ConfigRegs18f4520.h"
 #include "include_scales_functionality.h"
 #include "factory.h"
+#include "weight_filter.h"
 
 
 
@@ -39,10 +40,17 @@ char yes[] = "yes\n\r";
 char no[] = "no\n\r";
 
 //*****************************************************************************
-//*                          Vairables for main                               *
+//*                          Variables for main                               *
 //***************************************************************************** 
 char output[25];
+// variables for data and filtering
 int raw_weight;
+int filtered_weight;
+//int window;
+int samples[20] = {0};
+int pos;
+long sum;
+
 int length;    
 int rem; 
 int direction;
@@ -81,6 +89,9 @@ void goToLowISR( void ){
 //*****************************************************************************
 void main( void )
 {
+    //window = 20;    // default window 
+ 
+     
     int i = 0;
     unsigned char message[] = "Send Input:";
     unsigned char end_msg[] = "\r\n"; 
@@ -92,8 +103,16 @@ void main( void )
     unsigned char zero[] = "0";
     unsigned char num_arr[][3] = {"0", "1", "2", "3","4","5","6","7","8","9",
                                    "10","11","12","13","14","15","16"};
+    
     // Set the variables for lcd display
     int state = SET_ROW;
+    
+    //samples[20] = {0};
+    raw_weight = 0;
+    filtered_weight = 0;
+    pos = 0;
+    sum = 0;
+    
     setupSerial();
     AdInit();    
     LCDInit();    
@@ -118,13 +137,14 @@ void main( void )
         // choose mode
         switch(current_mode){
             case USER_LOCAL:
-                // go into user local function chooser
+                // go into user local function choosers
+                
                 break;
             case USER_REMOTE:
                 // go into user remote function chooser
                 break;
             case FACTORY_REMOTE:
-                void factory(void);
+                factory();
                 break;
         }
     }         
@@ -154,7 +174,8 @@ void lowPriorityISR( void ){
         //number = ADRESL;
         
         
-        num2str(&output,raw_weight);
+        filter_raw_weight();
+        num2str(&output,filtered_weight);
         write_string(0,0,output);
         PIR1bits.ADIF = 0;
         ADCON0bits.GO = 1;
