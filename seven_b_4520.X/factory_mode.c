@@ -2,6 +2,7 @@
 #include "basic_serial.h"
 #include <string.h>
 #include "function_manager.h"
+#include "globalVariables.h"
 
 #define NUMBER_OF_MODES 12
 
@@ -9,7 +10,6 @@
 //* Messages
 //******************************************************************
 char factory_welcome[] = "Welcome to factory mode.\n\r type 'HELP'\n\r";
-
 int i;
 // 
 char return_endline[] = "\n\r";
@@ -28,6 +28,8 @@ char string_test[NUMBER_OF_MODES][15] = {"HELP",
                                          "CALIBRATE"};
 char end_msg[] = "\r\n";
 extern unsigned char fromReceiver[BUFFERSIZE];
+extern factory_return;
+
 
 void factory(void){
     // in factory mode you will be greeted with a welcome message and a prompt to call for help if needed
@@ -38,15 +40,25 @@ void factory(void){
 
     // test the recieve string from the serial to determine what mode using a lookup table
     //  
-    //tx232C(fromReceiver);
-    //tx232C(end_msg);
+
     
     int exit_factory = 0;
-    
-    
+    factory_return = 0;
+
+    tx232C(factory_welcome);
+    tx232C(end_msg);    
+
     // wait until the user wants to exit factory mode
     while(exit_factory == 0){
+        filter_raw_weight();
 
+
+        if(factory_return == 1){
+            //tx232C(factory_welcome);
+            //tx232C(end_msg);    
+            factory_return = 0;
+
+        }
         
         // check to see if the user has entered a valid state 
         // if they have then enter it.
@@ -61,4 +73,22 @@ void factory(void){
     }
     
 }
-
+void factory_password(void){
+    unsigned char factory_pw_msg[] = "Please enter the correct password for access to factory mode.\n\r";
+    unsigned char factory_pw[]="123";
+    unsigned char incorrect_pw_msg[]="Incorrect. You have been denied access.\n\r";
+    int still_in_factory_pw = 1;
+    tx232C(factory_pw_msg);
+    while(still_in_factory_pw){
+        if(strcmp(fromReceiver,factory_pw)==0){
+            current_mode = 2;
+            still_in_factory_pw = 0;
+            factory();
+        }
+        else{
+            tx232C(incorrect_pw_msg);
+            still_in_factory_pw = 0;
+            return;
+        }
+    }
+}

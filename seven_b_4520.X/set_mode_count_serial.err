@@ -5,9 +5,9 @@ Warning[2054] C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-
 Warning[2066] C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\set_mode_count_serial.c 70 : type qualifier mismatch in assignment
 Warning[2058] C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\set_mode_count_serial.c 72 : call of function without prototype
 Warning[2054] C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\set_mode_count_serial.c 85 : suspicious pointer conversion
-Warning[2054] C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\set_mode_count_serial.c 95 : suspicious pointer conversion
-Warning[2054] C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\set_mode_count_serial.c 100 : suspicious pointer conversion
-Warning[2066] C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\set_mode_count_serial.c 100 : type qualifier mismatch in assignment
-Warning[2054] C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\set_mode_count_serial.c 124 : suspicious pointer conversion
-Warning[2054] C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\set_mode_count_serial.c 131 : suspicious pointer conversion
-Warning[2054] C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\set_mode_count_serial.c 152 : suspicious pointer conversion
+Warning[2054] C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\set_mode_count_serial.c 96 : suspicious pointer conversion
+Warning[2054] C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\set_mode_count_serial.c 102 : suspicious pointer conversion
+Warning[2066] C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\set_mode_count_serial.c 102 : type qualifier mismatch in assignment
+Warning[2054] C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\set_mode_count_serial.c 126 : suspicious pointer conversion
+Warning[2054] C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\set_mode_count_serial.c 133 : suspicious pointer conversion
+Warning[2054] C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\set_mode_count_serial.c 154 : suspicious pointer conversion

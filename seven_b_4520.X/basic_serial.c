@@ -10,19 +10,19 @@
 // Global variables
 // Used for serial
 // Add variables to be used in interrupts here
-extern unsigned char fromReceiver[BUFFERSIZE];
-extern int MsgToSend;// = 0;
+unsigned char fromReceiver[BUFFERSIZE];
+int MsgToSend = 0;
 // create an array of strings
-extern unsigned char string[5][BUFFERSIZE];
+unsigned char string[5][BUFFERSIZE];
 // point to the first string
-extern int stringPtr;// = 1;
+int stringPtr = 1;
 // point to the first character
-extern int stringPos;// = 0;
+int stringPos = 0;
 // Buffer overflow flag
-extern int overflowFlag;// = 0;
+int overflowFlag = 0;
 // Create a variable for the LRC
-extern unsigned char LRC;
-extern i;
+unsigned char LRC;
+//extern i;
 
 
 
@@ -163,7 +163,7 @@ void receiveCharacter(void){
 
 
 void empty_receive_buffer(void){
-
+    int i;
     for(i = 0; i < BUFFERSIZE; i++){
         fromReceiver[i] = '0';
     }

@@ -10,8 +10,11 @@ extern int unit_mode;
 
 void filter_raw_weight(void){
     
+
+    
     // to calculate the average
     int len = sizeof(samples) / sizeof(int);
+    //filtered_weight = filtered_weight - tare_val;
     
     filtered_weight = movingAvg(samples, &sum, pos, len, raw_weight);
     //printf("The new average is %d\n", newAvg);

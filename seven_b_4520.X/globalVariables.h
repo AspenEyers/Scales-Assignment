@@ -20,20 +20,20 @@ extern "C" {
     // Global variables
     // Used for serial
     // Add variables to be used in interrupts here
-    unsigned char fromReceiver[BUFFERSIZE];
-    int MsgToSend = 0;
+    extern unsigned char fromReceiver[BUFFERSIZE];
+    extern int MsgToSend;
     // create an array of strings
-    unsigned char string[5][BUFFERSIZE];
+    extern unsigned char string[5][BUFFERSIZE];
     // point to the first string
-    int stringPtr = 1;
+    extern int stringPtr;
     // point to the first character
-    int stringPos = 0;
+    extern int stringPos;
     // Buffer overflow flag
-    int overflowFlag = 0;
+    extern int overflowFlag;
     // Create a variable for the LRC
-    unsigned char LRC;
+    extern unsigned char LRC;
     
-    int current_mode = USER_LOCAL;
+    extern int current_mode;
     
     
 

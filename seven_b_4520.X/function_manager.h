@@ -18,6 +18,7 @@ void set_weight_ounces(void);
 void set_weight_grams(void);
 void weigh(void);
 void num2str(char *string, int number);
+void tare(void);
 
 #ifdef	__cplusplus
 }

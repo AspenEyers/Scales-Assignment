@@ -22,7 +22,7 @@ int weight_grams = 0;
 //unsigned char string_count_output[20];
 int count_int = 0;
 void set_mode_count_serial(void){
-    
+    unsigned char string_count_output[20];
     
     
     
@@ -33,7 +33,7 @@ void set_mode_count_serial(void){
         tx232C(endmsg);
         while(!MsgToSend); // wait for user to press enter
         MsgToSend = 0;
-        if(strcmp(fromReceiver,"SETCOUNT"))
+        if(strcmp(fromReceiver,"SETCOUNT")==0)
         {
             while(1)
             {
@@ -67,7 +67,7 @@ void set_mode_count_serial(void){
                 } 
             }
         }
-        else if(strcmp(fromReceiver,"COUNT"))
+        else if(strcmp(fromReceiver,"COUNT")==0)
         {
             filter_raw_weight();
             //callibrate_weight();
@@ -81,8 +81,9 @@ void set_mode_count_serial(void){
                 count_int = count_double - floor(count_double)>0.5 ? (int)ceil(count_double) : (int)floor(count_double); // int calculated count
                 tx232C(count_serial_count_msg);
                 tx232C(endmsg);
-//                intToStringCount(count_int);               
-                tx232C(intToStringCount(count_int));
+//                intToStringCount(count_int);   
+                num2str(&string_count_output, count_int);
+                tx232C(string_count_output);
                 tx232C(endmsg);
             }
             else
@@ -91,13 +92,14 @@ void set_mode_count_serial(void){
                 count_int = count_double - floor(count_double)>0.5 ? (int)ceil(count_double) : (int)floor(count_double); // int calculated count
                 tx232C(count_serial_count_msg);
                 tx232C(endmsg);
-                //intToStringCount(count_int);                
-                tx232C(intToStringCount(count_int));
+                //intToStringCount(count_int);  
+                num2str(&string_count_output, count_int);
+                tx232C(string_count_output);
                 tx232C(endmsg);
             }
             
         }
-        else if(strcmp(fromReceiver,"BACK"))
+        else if(strcmp(fromReceiver,"BACK") == 0)
         {
                 return;
         }

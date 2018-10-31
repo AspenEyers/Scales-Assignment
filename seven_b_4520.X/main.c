@@ -55,8 +55,9 @@ int unit_mode = 0;
 int length;    
 int rem; 
 int direction;
-     
-
+int factory_return = 0;
+int tare_val = 0;
+int current_mode = 0;
 
 //*****************************************************************************
 //*                          Function definitions                             *
@@ -133,6 +134,7 @@ void main( void )
     //tx232C(intro_msg);
     //tx232C(end_msg);
     //edit
+    
     current_mode = 2;
     while(1){
         // choose mode
@@ -161,6 +163,7 @@ void highPriorityISR( void ){
         //tx232C(yes);
         //sendCharacter(fromReceiver[0]);
         PIR1bits.RCIF = 0;
+        factory_return = 1; // you can now return from factory mode
     }
 }
 
@@ -170,19 +173,21 @@ void lowPriorityISR( void ){
 
     if(PIR1bits.ADIF == 1){
         raw_weight = ADRESH;
-        raw_weight = (raw_weight << 1);
+        raw_weight = (raw_weight << 2);
         raw_weight = raw_weight | ((ADRESL >> 6) && (0b00000011));
         //number = ADRESL;
         
         
-        filter_raw_weight();
-        num2str(&output,filtered_weight);
-        write_string(0,0,output);
         
         
-
+        //num2str(&output,raw_weight);
+        //write_string(0,0,output);
+        
         ADCON0bits.GO = 1;
         PIR1bits.ADIF = 0;
+
+
+
     }
     
     // Check to see if data was sent

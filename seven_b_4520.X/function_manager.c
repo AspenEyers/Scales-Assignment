@@ -26,18 +26,24 @@ char help_message[] = "The following commands are valid:\n\r";
 char help_message2[] = "HELP, USER, WEIGH, TARE, COUNT, SET_GRAMS \n\r";
 char help_message3[] = "SET_OUNCES, FACTORY, WEIGHT_READINGS, STATISTICS\n\r";
 char help_message4[] = "SET_SAMPLES, CALIBRATE";
-char count_intro_msg[] = "1\n\r";
-char set_grams_intro_msg[] = "2\n\r";
-char set_ounces_intro_msg[] = "3\n\r";
-char factory_intro_msg[] = "4\r\n";
-char weight_readings_intro_msg[] = "5\r\n";
-char statistics_intro_msg[] = "6\r\n";
-char samples_intro_msg[] = "7\r\n";
+char count_intro_msg[] = "1";
+char set_grams_intro_msg[] = "2";
+char set_ounces_intro_msg[] = "3";
+char factory_intro_msg[] = "4";
+char weight_readings_intro_msg[] = "5";
+char statistics_intro_msg[] = "6";
+char samples_intro_msg[] = "7";
 char msg2[] = "default";
 char end_msg2[] = "\r\n";
+char return_line[] = "\r";
+char grams[] = "grams";
+char oz[] = "oz";
+char empty[] = "      ";
 extern unit_mode;
-extern output;
+extern char output[25];
 extern filtered_weight;
+extern factory_return;
+extern int tare_val;
 
 void enter_function(int mode){
     
@@ -57,33 +63,49 @@ void enter_function(int mode){
         case TARE:
             tx232C(tare_msg);
             tx232C(end_msg2);
+            tare();
             break;
         case CALIBRATE:
-            tx232C(calibrate);
-            tx232C(end_msg2);
-            break;    
+            if (current_mode == 2)
+            {
+                tx232C(calibrate);
+                tx232C(end_msg2);
+                break;    
+            }
+            else{break;}  
         case SET_MODE_COUNT:
             //tx232C(count_intro_msg);
             set_mode_count_serial();
             break;
         case SET_WEIGHT_GRAMS:
             tx232C(set_grams_intro_msg);
+            set_weight_grams();
             break;
         case SET_WEIGHT_OUNCES:
             tx232C(set_ounces_intro_msg);
+            set_weight_ounces();
             break;
         case SET_MODE_FACTORY:
             tx232C(factory_intro_msg);
             break;
         case SET_SAMPLES_PER_MEASURMENT:
-            tx232C(samples_intro_msg);
-            break;
+            if(current_mode == 2){
+                tx232C(samples_intro_msg);
+                break;
+            }
+            else{break;}   
         case SHOW_WEIGHT_READINGS:
-            tx232C(weight_readings_intro_msg);
-            break;
+            if(current_mode == 2){
+                tx232C(weight_readings_intro_msg);
+                break;
+            }
+            else{break;}
         case SHOW_STATISTICS:
-            tx232C(statistics_intro_msg);
-            break;
+            if(current_mode == 2){
+                tx232C(statistics_intro_msg);
+                break;
+            }
+            else{break;}
         case SET_MODE_USER:
             break;
         default:
@@ -107,17 +129,36 @@ void set_weight_ounces(){
 void weigh(void){
     char test_msg[] = "PLZ work";
     
+    
+    factory_return = 0;
+    while(1){
     filter_raw_weight();
         //callibrate_weight();
         //ounce_or_grams();
-        
-        
-        num2str(&test_msg,filtered_weight);
-        //write_string(0,0,test_msg);
-        
-        tx232C(test_msg);
-        //tx232C(end_msg2);
-        
+    
+    if(unit_mode == 0){
+        num2str(&output,(filtered_weight-tare_val));
+        tx232C(output);
+        tx232C(grams);
+        tx232C(empty);
+        tx232C(return_line);
+    }    
+    if(unit_mode == 1){
+        num2str(&output,((filtered_weight-tare_val)*0.035));
+        tx232C(output);
+        tx232C(oz);
+        tx232C(empty);
+        tx232C(return_line);
+    }
+        if(factory_return == 1){
+            break;
+        }
+    }
+}
+
+
+void tare(void){
+    tare_val = filtered_weight;
 }
 
 
