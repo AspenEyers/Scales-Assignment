@@ -1,6 +1,8 @@
 #include "function_manager.h"
 #include "basic_serial.h"
 #include "set_mode_count_serial.h"
+#include "weight_filter.h"
+#include "basic_lcd.h"
 
 
 #define HELP 0            
@@ -34,6 +36,8 @@ char samples_intro_msg[] = "7\r\n";
 char msg2[] = "default";
 char end_msg2[] = "\r\n";
 extern unit_mode;
+extern output;
+extern filtered_weight;
 
 void enter_function(int mode){
     
@@ -48,6 +52,7 @@ void enter_function(int mode){
         case SET_MODE_WEIGH:
             tx232C(weigh_intro_msg);
             tx232C(end_msg2);
+            weigh();
             break;
         case TARE:
             tx232C(tare_msg);
@@ -97,4 +102,56 @@ void set_weight_grams(){
 
 void set_weight_ounces(){
     unit_mode = 1;
+}
+
+void weigh(void){
+    char test_msg[] = "PLZ work";
+    
+    filter_raw_weight();
+        //callibrate_weight();
+        //ounce_or_grams();
+        
+        
+        num2str(&test_msg,filtered_weight);
+        //write_string(0,0,test_msg);
+        
+        tx232C(test_msg);
+        //tx232C(end_msg2);
+        
+}
+
+
+// This function takes in a pointer to a string and
+// a number. The number will be saved to that string
+// The function returns nothing.
+// The function tests each character of the number and 
+// will return when it reaches 0. therefore a number starting
+// with a 0 e.g. 098. will write nothing to the string.
+void num2str(char *string, int number){
+    
+    int length = 0;    
+    int rem = number;
+    int i = 0;
+    
+    // ********                     ******** //
+    // Determine the length of the input number
+    while(rem > 0){
+        length++;
+        rem = rem/10;
+    }
+    
+    // ********                      ******** //
+    // Convert the number into a char array
+    rem = number;
+    i = length;
+    
+    while(length > 0){
+        
+        *(string+length-1) = (rem%10 + 48);
+        length--;
+        rem = rem/10;
+    }
+    *(string+i) = ',';
+    i++;
+    *(string+i) = '\0';
 }

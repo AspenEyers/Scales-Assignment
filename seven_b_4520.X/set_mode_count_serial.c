@@ -13,13 +13,13 @@ int entered_count = 1;
 int weight_per_unit = 0;
 double count_double = 0;
 unsigned char endmsg[] = "\r\n";
-unsigned char count_serial_intro_msg1[]= "Welcome to count mode.";
-unsigned char count_serial_intro_msg2[] = "'BACK' to exit\n'SETCOUNT' to change count\n'COUNT' to count.";
+unsigned char count_serial_intro_msg1[]= "Welcome to count mode.\n\r";
+unsigned char count_serial_intro_msg2[] = "'BACK' to exit\n\r'SETCOUNT' to change count\n\r'COUNT' to count.";
 unsigned char count_serial_setcount_msg[]= "Enter count number:";
 unsigned char count_serial_count_msg[]="Count:";
-unsigned char invalid_command_msg[] = "Invalid input";
+unsigned char invalid_command_msg[] = "Invalid input\n\r";
 int weight_grams = 0;
-unsigned char string_count_output[20];
+//unsigned char string_count_output[20];
 int count_int = 0;
 void set_mode_count_serial(void){
     
@@ -81,8 +81,8 @@ void set_mode_count_serial(void){
                 count_int = count_double - floor(count_double)>0.5 ? (int)ceil(count_double) : (int)floor(count_double); // int calculated count
                 tx232C(count_serial_count_msg);
                 tx232C(endmsg);
-                //int2stringcount();               
-                tx232C(string_count_output);
+//                intToStringCount(count_int);               
+                tx232C(intToStringCount(count_int));
                 tx232C(endmsg);
             }
             else
@@ -91,8 +91,8 @@ void set_mode_count_serial(void){
                 count_int = count_double - floor(count_double)>0.5 ? (int)ceil(count_double) : (int)floor(count_double); // int calculated count
                 tx232C(count_serial_count_msg);
                 tx232C(endmsg);
-                //int2stringcount();               
-                tx232C(string_count_output);
+                //intToStringCount(count_int);                
+                tx232C(intToStringCount(count_int));
                 tx232C(endmsg);
             }
             
@@ -109,6 +109,21 @@ void set_mode_count_serial(void){
         }
     }
 }
+
+char* intToStringCount(int inte){
+    char hundreds_char,tens_char,ones_char;
+    //char* mystring[4];
+    unsigned char string_count_output[20];
+    hundreds_char = (inte/100)+'0';
+    tens_char = ((inte%100)/10)+48;
+    ones_char = ((inte%100)%10)+48;
+    string_count_output[0] = hundreds_char;
+    string_count_output[1] = tens_char;
+    string_count_output[2] = ones_char;
+    string_count_output[3] = '\0';
+    return string_count_output;
+}
+
 
 int isDigit(unsigned char* string1){
     int i = 0;
@@ -131,7 +146,7 @@ int str2int( unsigned char* string2){
     int num = 0;
     int i = 0;
     int exp = 0 ;
-    int output = 0;
+    int output1 = 0;
     int myvalue = 0;
     int length;
     length = (int)strlen(string2);
@@ -139,10 +154,10 @@ int str2int( unsigned char* string2){
         num = fromReceiver[i] - '0'; // convert char to int
         exp = length - i - 1;
         myvalue = pow(10, exp);
-        output = output+ num * myvalue;
+        output1 = output1+ num * myvalue;
         
     }
-    return output;
+    return output1;
 }
 
  

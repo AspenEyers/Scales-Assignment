@@ -22,6 +22,7 @@
 #include "include_scales_functionality.h"
 #include "factory.h"
 #include "weight_filter.h"
+#include "function_manager.h"
 
 
 
@@ -132,19 +133,19 @@ void main( void )
     //tx232C(intro_msg);
     //tx232C(end_msg);
     //edit
-    
+    current_mode = 2;
     while(1){
         // choose mode
         switch(current_mode){
-            case USER_LOCAL:
+            case 0:
                 // go into user local function choosers
                 
                 break;
-            case USER_REMOTE:
+            case 1:
                 // go into user remote function chooser
                 break;
-            case FACTORY_REMOTE:
-                factory();
+            case 2:
+                    factory();
                 break;
         }
     }         
@@ -169,21 +170,19 @@ void lowPriorityISR( void ){
 
     if(PIR1bits.ADIF == 1){
         raw_weight = ADRESH;
-        raw_weight = (raw_weight << 2);
+        raw_weight = (raw_weight << 1);
         raw_weight = raw_weight | ((ADRESL >> 6) && (0b00000011));
         //number = ADRESL;
         
         
         filter_raw_weight();
-        //callibrate_weight();
-        //ounce_or_grams();
-        
         num2str(&output,filtered_weight);
         write_string(0,0,output);
         
         
-        PIR1bits.ADIF = 0;
+
         ADCON0bits.GO = 1;
+        PIR1bits.ADIF = 0;
     }
     
     // Check to see if data was sent
@@ -242,37 +241,3 @@ void AdInit(void){
 
 
 
-// This function takes in a pointer to a string and
-// a number. The number will be saved to that string
-// The function returns nothing.
-// The function tests each character of the number and 
-// will return when it reaches 0. therefore a number starting
-// with a 0 e.g. 098. will write nothing to the string.
-void num2str(char *string, int number){
-    
-    int length = 0;    
-    int rem = number;
-    int i = 0;
-    
-    // ********                     ******** //
-    // Determine the length of the input number
-    while(rem > 0){
-        length++;
-        rem = rem/10;
-    }
-    
-    // ********                      ******** //
-    // Convert the number into a char array
-    rem = number;
-    i = length;
-    
-    while(length > 0){
-        
-        *(string+length-1) = (rem%10 + 48);
-        length--;
-        rem = rem/10;
-    }
-    *(string+i) = ',';
-    i++;
-    *(string+i) = '\0';
-}

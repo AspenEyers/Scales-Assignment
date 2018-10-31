@@ -13,11 +13,12 @@ extern "C" {
 #endif
     extern int MsgToSend;
     extern unsigned char fromReceiver[17];
-    extern current_mode;
-    extern unit_mode;
-void set_mode_count_serial(void);
-int isDigit(unsigned char*);
-int str2int( unsigned char*);
+    extern int current_mode;
+    extern int unit_mode;
+    void set_mode_count_serial(void);
+    char* intToStringCount(int inte);
+    int isDigit(unsigned char*);
+    int str2int( unsigned char*);
 
 
 #ifdef	__cplusplus
