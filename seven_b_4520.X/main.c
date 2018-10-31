@@ -173,6 +173,10 @@ void main( void )
                 // go into user local function choosers
                 
                 // poll for buttons
+                // if button 4 is high change the button state
+                
+                
+                    local_state++;
                 
                 
                 break;
@@ -203,12 +207,12 @@ void highPriorityISR( void ){
 #pragma interruptlow lowPriorityISR 
 void lowPriorityISR( void ){
 
-    
+    /*
     if(INTCONbits.RBIF == 1){
         
         
         if(PORTBbits.RB4 == 1){
-           //write_string(0,0,yes);
+        //   write_string(0,0,yes);
             
         }
         
@@ -223,7 +227,7 @@ void lowPriorityISR( void ){
         INTCONbits.RBIF = 0;
     
     }
-    
+    */
     
     
     // See if there was an AD interrupt
