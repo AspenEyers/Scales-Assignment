@@ -1,5 +1,5 @@
 MPLINK 4.48, Linker
-Linker Map File - Created Thu Nov 01 01:26:36 2018
+Linker Map File - Created Thu Nov 01 02:03:44 2018
 
                                  Section Info
                   Section       Type    Address   Location Size(Bytes)
@@ -53,45 +53,45 @@ Linker Map File - Created Thu Nov 01 01:26:36 2018
      .romdata_basic_lcd.o    romdata   0x000010    program   0x000000
       .romdata_UnpkMath.o    romdata   0x000010    program   0x000000
   .idata_basic_serial.o_i    romdata   0x000010    program   0x000008
-                   lowISR       code   0x000018    program   0x000470
-                   .cinit    romdata   0x000488    program   0x00003e
-              .code_pow.o       code   0x0004c6    program   0x000b1e
-.code_set_mode_count_serial.o       code   0x000fe4    program   0x0008f8
-                     PROG       code   0x0018dc    program   0x00069a
-              .code_exp.o       code   0x001f76    program   0x0005c6
- .code_function_manager.o       code   0x00253c    program   0x00050c
-              .code_log.o       code   0x002a48    program   0x0004fa
-        .code_basic_lcd.o       code   0x002f42    program   0x0003a2
-     .code_factory_mode.o       code   0x0032e4    program   0x000344
-            .code_fchop.o       code   0x003628    program   0x000292
-  .code_mode_controller.o       code   0x0038ba    program   0x000268
-    .code_weight_filter.o       code   0x003b22    program   0x0001c6
-     .code_basic_serial.o       code   0x003ce8    program   0x000186
-            .code_ldexp.o       code   0x003e6e    program   0x000138
-            .code_frexp.o       code   0x003fa6    program   0x000124
-         .code_UnpkMath.o       code   0x0040ca    program   0x00011c
-         .code_PackMath.o       code   0x0041e6    program   0x00011a
-            .code_floor.o       code   0x004300    program   0x000110
-             .code_ceil.o       code   0x004410    program   0x000110
-               _cinit_scn       code   0x004520    program   0x00009e
-   .code_set_mode_count.o       code   0x0045be    program   0x000080
-             .code_fabs.o       code   0x00463e    program   0x000066
-                   STRING       code   0x0046a4    program   0x00005c
-         .code_fxd3232u.o       code   0x004700    program   0x000048
-         .code_fxd1616u.o       code   0x004748    program   0x00002c
-                    .code       code   0x004774    program   0x000020
-             _startup_scn       code   0x004794    program   0x00001c
-.idata_set_mode_count_serial.o_i    romdata   0x0047b0    program   0x000093
-          .idata_main.o_i    romdata   0x004843    program   0x00003f
-.idata_function_manager.o_i    romdata   0x004882    program   0x0000fe
-  .idata_factory_mode.o_i    romdata   0x004980    program   0x0000e9
-        .idata___init.o_i    romdata   0x004a69    program   0x000000
-     .idata_basic_lcd.o_i    romdata   0x004a69    program   0x000000
-      .idata_UnpkMath.o_i    romdata   0x004a69    program   0x000000
-      .idata_PackMath.o_i    romdata   0x004a69    program   0x000000
-            .code_c018i.o       code   0x004a6a    program   0x000000
-             .code_main.o       code   0x004a6a    program   0x000000
-            .code_errno.o       code   0x004a6a    program   0x000000
+                   lowISR       code   0x000018    program   0x000472
+                   .cinit    romdata   0x00048a    program   0x00003e
+              .code_pow.o       code   0x0004c8    program   0x000b1e
+.code_set_mode_count_serial.o       code   0x000fe6    program   0x0008f8
+                     PROG       code   0x0018de    program   0x00069a
+ .code_function_manager.o       code   0x001f78    program   0x0005cc
+              .code_exp.o       code   0x002544    program   0x0005c6
+              .code_log.o       code   0x002b0a    program   0x0004fa
+        .code_basic_lcd.o       code   0x003004    program   0x0003a2
+     .code_factory_mode.o       code   0x0033a6    program   0x000344
+            .code_fchop.o       code   0x0036ea    program   0x000292
+  .code_mode_controller.o       code   0x00397c    program   0x00025c
+    .code_weight_filter.o       code   0x003bd8    program   0x0001c6
+     .code_basic_serial.o       code   0x003d9e    program   0x000186
+            .code_ldexp.o       code   0x003f24    program   0x000138
+            .code_frexp.o       code   0x00405c    program   0x000124
+         .code_UnpkMath.o       code   0x004180    program   0x00011c
+         .code_PackMath.o       code   0x00429c    program   0x00011a
+            .code_floor.o       code   0x0043b6    program   0x000110
+             .code_ceil.o       code   0x0044c6    program   0x000110
+               _cinit_scn       code   0x0045d6    program   0x00009e
+   .code_set_mode_count.o       code   0x004674    program   0x000080
+             .code_fabs.o       code   0x0046f4    program   0x000066
+                   STRING       code   0x00475a    program   0x00005c
+         .code_fxd3232u.o       code   0x0047b6    program   0x000048
+         .code_fxd1616u.o       code   0x0047fe    program   0x00002c
+                    .code       code   0x00482a    program   0x000020
+             _startup_scn       code   0x00484a    program   0x00001c
+.idata_set_mode_count_serial.o_i    romdata   0x004866    program   0x000093
+          .idata_main.o_i    romdata   0x0048f9    program   0x00003f
+.idata_function_manager.o_i    romdata   0x004938    program   0x0000fe
+  .idata_factory_mode.o_i    romdata   0x004a36    program   0x0000e9
+        .idata___init.o_i    romdata   0x004b1f    program   0x000000
+     .idata_basic_lcd.o_i    romdata   0x004b1f    program   0x000000
+      .idata_UnpkMath.o_i    romdata   0x004b1f    program   0x000000
+      .idata_PackMath.o_i    romdata   0x004b1f    program   0x000000
+            .code_c018i.o       code   0x004b20    program   0x000000
+             .code_main.o       code   0x004b20    program   0x000000
+            .code_errno.o       code   0x004b20    program   0x000000
     .config_300001_main.o    romdata   0x300001    program   0x000001
     .config_300002_main.o    romdata   0x300002    program   0x000001
     .config_300003_main.o    romdata   0x300003    program   0x000001
@@ -105,7 +105,7 @@ Linker Map File - Created Thu Nov 01 01:26:36 2018
     .config_30000d_main.o    romdata   0x30000d    program   0x000001
                  .tmpdata      udata   0x000000       data   0x000020
                 MATH_DATA      udata   0x000020       data   0x000014
-       lowPriorityISR_tmp      udata   0x000034       data   0x000002
+      highPriorityISR_tmp      udata   0x000034       data   0x000002
             .idata_main.o      idata   0x000080       data   0x00003f
             .udata_main.o      udata   0x0000bf       data   0x000029
 .idata_function_manager.o      idata   0x000100       data   0x0000fe
@@ -166,80 +166,80 @@ Linker Map File - Created Thu Nov 01 01:26:36 2018
                               Program Memory Usage 
                                Start         End      
                            ---------   ---------      
-                            0x000000    0x004a68      
+                            0x000000    0x004b1e      
                             0x300001    0x300003      
                             0x300005    0x300006      
                             0x300008    0x30000d      
-            19060 out of 33048 program addresses used, program memory utilization is 57%
+            19242 out of 33048 program addresses used, program memory utilization is 58%
 
 
 
                               Symbols - Sorted by Name
                      Name    Address   Location    Storage File                     
                 ---------  ---------  ---------  --------- ---------                
-                   AdInit   0x000458    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
-                   D1616S   0x001bd6    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                D1616SNEG   0x001be4    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                 D1616SOK   0x001be0    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                  D1616SX   0x001bf6    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                   D3232S   0x001c30    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232s.asm
-                D3232SNEG   0x001c3e    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232s.asm
-                 D3232SOK   0x001c3a    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232s.asm
-                  D3232SX   0x001c5e    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232s.asm
-                  DA1616S   0x001bc6    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                  DA3232S   0x001c1a    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232s.asm
-                 FLO1632S   0x0018e0    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\cast16FP.asm
-                 FLO1632U   0x0018dc    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\cast16FP.asm
-                    FPA32   0x001a88    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
-                    FPD32   0x001906    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
-                    FPM32   0x0019ac    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\mulFP.asm
-                    FPS32   0x001a86    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
-                 FXD1616S   0x001bb4    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                 FXD1616U   0x004748    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616u.c
-                 FXD3232S   0x001c00    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232s.asm
-                 FXD3232U   0x004700    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232u.c
-                 FXM1616S   0x001c68    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxm1616s.asm
-                  INT3216   0x001cc2    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
-                  INT3232   0x001ee8    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\castFP32.asm
-                  LCDInit   0x0030ea    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
-           SET_MODE_COUNT   0x0045be    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\set_mode_count.c
+                   AdInit   0x00045a    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
+                   D1616S   0x001bd8    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                D1616SNEG   0x001be6    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                 D1616SOK   0x001be2    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                  D1616SX   0x001bf8    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                   D3232S   0x001c32    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232s.asm
+                D3232SNEG   0x001c40    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232s.asm
+                 D3232SOK   0x001c3c    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232s.asm
+                  D3232SX   0x001c60    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232s.asm
+                  DA1616S   0x001bc8    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                  DA3232S   0x001c1c    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232s.asm
+                 FLO1632S   0x0018e2    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\cast16FP.asm
+                 FLO1632U   0x0018de    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\cast16FP.asm
+                    FPA32   0x001a8a    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                    FPD32   0x001908    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
+                    FPM32   0x0019ae    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\mulFP.asm
+                    FPS32   0x001a88    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                 FXD1616S   0x001bb6    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                 FXD1616U   0x0047fe    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616u.c
+                 FXD3232S   0x001c02    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232s.asm
+                 FXD3232U   0x0047b6    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232u.c
+                 FXM1616S   0x001c6a    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxm1616s.asm
+                  INT3216   0x001cc4    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                  INT3232   0x001eea    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\castFP32.asm
+                  LCDInit   0x0031ac    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
+           SET_MODE_COUNT   0x004674    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\set_mode_count.c
            SET_MODE_WEIGH   0x000006    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\set_mode_weigh.c
-                  TAEQB32   0x001f56    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\eqFP.asm
-                  TAGTB32   0x001d20    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\gtFP.asm
-                  TALTB32   0x001f64    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\ltFP.asm
-               TSIGN1616A   0x001cb4    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxm1616s.asm
-                _PackMath   0x0041e6    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\PackMath.c
-                _UnpkMath   0x0040ca    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\UnpkMath.c
-              __FpCompare   0x001d32    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\compFP.asm
-                 __FpExit   0x001de8    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-                 __FpPack   0x001e14    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-            __FpReturnNaN   0x001ddc    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-         __FpReturnNegInf   0x001dee    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-        __FpReturnNegZero   0x001e06    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-         __FpReturnPosInf   0x001df4    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-        __FpReturnPosZero   0x001e0e    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-        __FpReturnSignInf   0x001dea    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-       __FpReturnSignZero   0x001e02    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-              __FpReturnW   0x001e6c    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-              __FpUnPackA   0x001e8c    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
-              __FpUnPackB   0x001ebc    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
-          ___for_lbl00011   0x003134    program     static                          
-          ___for_lbl00012   0x00313e    program     static                          
-          ___for_lbl00013   0x00311a    program     static                          
-       ___return_lbl00000   0x004746    program     static                          
+                  TAEQB32   0x001f58    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\eqFP.asm
+                  TAGTB32   0x001d22    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\gtFP.asm
+                  TALTB32   0x001f66    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\ltFP.asm
+               TSIGN1616A   0x001cb6    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxm1616s.asm
+                _PackMath   0x00429c    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\PackMath.c
+                _UnpkMath   0x004180    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\UnpkMath.c
+              __FpCompare   0x001d34    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\compFP.asm
+                 __FpExit   0x001dea    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+                 __FpPack   0x001e16    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+            __FpReturnNaN   0x001dde    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+         __FpReturnNegInf   0x001df0    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+        __FpReturnNegZero   0x001e08    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+         __FpReturnPosInf   0x001df6    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+        __FpReturnPosZero   0x001e10    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+        __FpReturnSignInf   0x001dec    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+       __FpReturnSignZero   0x001e04    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+              __FpReturnW   0x001e6e    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+              __FpUnPackA   0x001e8e    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+              __FpUnPackB   0x001ebe    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+          ___for_lbl00011   0x0031f6    program     static                          
+          ___for_lbl00012   0x003200    program     static                          
+          ___for_lbl00013   0x0031dc    program     static                          
+       ___return_lbl00000   0x0047fc    program     static                          
        ___return_lbl00000   0x000004    program     static                          
-       ___return_lbl00000   0x004772    program     static                          
+       ___return_lbl00000   0x004828    program     static                          
        ___return_lbl00000   0x00000c    program     static                          
-       ___return_lbl00001   0x0047ae    program     static                          
+       ___return_lbl00001   0x004864    program     static                          
        ___return_lbl00001   0x00001c    program     static                          
-       ___return_lbl00002   0x0045bc    program     static                          
-       ___return_lbl00010   0x0031a2    program     static                          
-       ___return_lbl00014   0x00321e    program     static                          
-       ___return_lbl00017   0x00324a    program     static                          
-       ___return_lbl00019   0x000486    program     static                          
-       ___return_lbl00023   0x0032cc    program     static                          
-        ___while_lbl00015   0x0031e8    program     static                          
-        ___while_lbl00016   0x00321e    program     static                          
+       ___return_lbl00002   0x004672    program     static                          
+       ___return_lbl00010   0x003264    program     static                          
+       ___return_lbl00014   0x0032e0    program     static                          
+       ___return_lbl00017   0x00330c    program     static                          
+       ___return_lbl00021   0x000488    program     static                          
+       ___return_lbl00023   0x00338e    program     static                          
+        ___while_lbl00015   0x0032aa    program     static                          
+        ___while_lbl00016   0x0032e0    program     static                          
                __config_0   0x300001    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
                __config_1   0x300002    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
               __config_10   0x30000d    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
@@ -252,233 +252,233 @@ Linker Map File - Created Thu Nov 01 01:26:36 2018
                __config_8   0x30000b    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
                __config_9   0x30000c    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
                    __init   0x00000e    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\__init.c
-                   __pa_0   0x0040ae    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\frexp.c
-                   __pa_0   0x003f9c    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\ldexp.c
-                   __pa_0   0x002e0e    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\log.c
-                   __pa_0   0x000cee    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                   __pa_0   0x002406    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\exp.c
-                   __pa_0   0x0038a2    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\fchop.c
-                   __pa_0   0x0041d8    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\UnpkMath.c
-                   __pa_0   0x0042ae    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\PackMath.c
-                   __pa_1   0x00240e    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\exp.c
-                   __pa_1   0x000d04    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                   __pa_1   0x0042be    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\PackMath.c
-                   __pa_1   0x0038ac    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\fchop.c
-                   __pa_1   0x0040bc    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\frexp.c
-                   __pa_1   0x002e1a    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\log.c
-                  __pa_10   0x0024ec    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\exp.c
-                  __pa_10   0x000dfe    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                  __pa_10   0x002ed0    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\log.c
-                  __pa_11   0x0024fe    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\exp.c
-                  __pa_11   0x000e24    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                  __pa_11   0x002ed8    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\log.c
-                  __pa_12   0x000e36    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                  __pa_12   0x002510    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\exp.c
-                  __pa_12   0x002eea    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\log.c
-                  __pa_13   0x000e48    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                  __pa_13   0x002f04    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\log.c
-                  __pa_13   0x00251c    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\exp.c
-                  __pa_14   0x000e52    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                  __pa_14   0x00252a    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\exp.c
-                  __pa_14   0x002f16    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\log.c
-                  __pa_15   0x000e6c    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                  __pa_15   0x002f28    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\log.c
-                  __pa_15   0x002534    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\exp.c
-                  __pa_16   0x000e84    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                  __pa_16   0x002f34    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\log.c
-                  __pa_17   0x000e92    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                  __pa_18   0x000ea0    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                  __pa_19   0x000ea8    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                   __pa_2   0x000d0c    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                   __pa_2   0x00242e    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\exp.c
-                   __pa_2   0x0042cc    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\PackMath.c
-                   __pa_2   0x002e2c    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\log.c
-                  __pa_20   0x000eba    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                  __pa_21   0x000ec6    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                  __pa_22   0x000ed8    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                  __pa_23   0x000eea    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                  __pa_24   0x000ef6    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                  __pa_25   0x000f02    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                  __pa_26   0x000f12    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                  __pa_27   0x000f20    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                  __pa_28   0x000f2a    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                  __pa_29   0x000f32    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                   __pa_3   0x000d26    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                   __pa_3   0x0042d6    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\PackMath.c
-                   __pa_3   0x002e48    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\log.c
-                   __pa_3   0x002448    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\exp.c
-                  __pa_30   0x000f3a    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                  __pa_31   0x000f4c    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                  __pa_32   0x000f58    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                  __pa_33   0x000f5e    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                  __pa_34   0x000f66    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                  __pa_35   0x000f72    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                  __pa_36   0x000f80    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                  __pa_37   0x000f88    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                  __pa_38   0x000f92    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                  __pa_39   0x000f9a    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                   __pa_4   0x002e4e    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\log.c
-                   __pa_4   0x0042e4    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\PackMath.c
-                   __pa_4   0x000d6a    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                   __pa_4   0x002458    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\exp.c
-                  __pa_40   0x000fa4    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                  __pa_41   0x000fb2    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                  __pa_42   0x000fba    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                  __pa_43   0x000fc6    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                  __pa_44   0x000fd4    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                  __pa_45   0x000fde    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                   __pa_5   0x000d8e    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                   __pa_5   0x002e58    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\log.c
-                   __pa_5   0x00246a    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\exp.c
-                   __pa_5   0x0042ec    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\PackMath.c
-                   __pa_6   0x002e76    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\log.c
-                   __pa_6   0x0042f4    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\PackMath.c
-                   __pa_6   0x000d9c    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                   __pa_6   0x002480    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\exp.c
-                   __pa_7   0x000db0    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                   __pa_7   0x00249e    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\exp.c
-                   __pa_7   0x002e90    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\log.c
-                   __pa_8   0x002eaa    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\log.c
-                   __pa_8   0x000dca    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                   __pa_8   0x0024ba    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\exp.c
-                   __pa_9   0x002ec0    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\log.c
-                   __pa_9   0x000de4    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                   __pa_9   0x0024d8    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\exp.c
-               __tmplbl_0   0x003208    program     static                          
-            __zero_memory   0x004774    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-                _do_cinit   0x004520    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                   __pa_0   0x004164    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\frexp.c
+                   __pa_0   0x004052    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\ldexp.c
+                   __pa_0   0x002ed0    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\log.c
+                   __pa_0   0x000cf0    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                   __pa_0   0x0029d4    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\exp.c
+                   __pa_0   0x003964    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\fchop.c
+                   __pa_0   0x00428e    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\UnpkMath.c
+                   __pa_0   0x004364    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\PackMath.c
+                   __pa_1   0x0029dc    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\exp.c
+                   __pa_1   0x000d06    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                   __pa_1   0x004374    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\PackMath.c
+                   __pa_1   0x00396e    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\fchop.c
+                   __pa_1   0x004172    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\frexp.c
+                   __pa_1   0x002edc    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\log.c
+                  __pa_10   0x002aba    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\exp.c
+                  __pa_10   0x000e00    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                  __pa_10   0x002f92    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\log.c
+                  __pa_11   0x002acc    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\exp.c
+                  __pa_11   0x000e26    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                  __pa_11   0x002f9a    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\log.c
+                  __pa_12   0x000e38    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                  __pa_12   0x002ade    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\exp.c
+                  __pa_12   0x002fac    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\log.c
+                  __pa_13   0x000e4a    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                  __pa_13   0x002fc6    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\log.c
+                  __pa_13   0x002aea    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\exp.c
+                  __pa_14   0x000e54    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                  __pa_14   0x002af8    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\exp.c
+                  __pa_14   0x002fd8    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\log.c
+                  __pa_15   0x000e6e    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                  __pa_15   0x002fea    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\log.c
+                  __pa_15   0x002b02    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\exp.c
+                  __pa_16   0x000e86    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                  __pa_16   0x002ff6    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\log.c
+                  __pa_17   0x000e94    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                  __pa_18   0x000ea2    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                  __pa_19   0x000eaa    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                   __pa_2   0x000d0e    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                   __pa_2   0x0029fc    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\exp.c
+                   __pa_2   0x004382    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\PackMath.c
+                   __pa_2   0x002eee    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\log.c
+                  __pa_20   0x000ebc    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                  __pa_21   0x000ec8    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                  __pa_22   0x000eda    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                  __pa_23   0x000eec    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                  __pa_24   0x000ef8    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                  __pa_25   0x000f04    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                  __pa_26   0x000f14    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                  __pa_27   0x000f22    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                  __pa_28   0x000f2c    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                  __pa_29   0x000f34    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                   __pa_3   0x000d28    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                   __pa_3   0x00438c    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\PackMath.c
+                   __pa_3   0x002f0a    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\log.c
+                   __pa_3   0x002a16    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\exp.c
+                  __pa_30   0x000f3c    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                  __pa_31   0x000f4e    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                  __pa_32   0x000f5a    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                  __pa_33   0x000f60    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                  __pa_34   0x000f68    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                  __pa_35   0x000f74    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                  __pa_36   0x000f82    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                  __pa_37   0x000f8a    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                  __pa_38   0x000f94    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                  __pa_39   0x000f9c    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                   __pa_4   0x002f10    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\log.c
+                   __pa_4   0x00439a    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\PackMath.c
+                   __pa_4   0x000d6c    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                   __pa_4   0x002a26    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\exp.c
+                  __pa_40   0x000fa6    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                  __pa_41   0x000fb4    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                  __pa_42   0x000fbc    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                  __pa_43   0x000fc8    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                  __pa_44   0x000fd6    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                  __pa_45   0x000fe0    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                   __pa_5   0x000d90    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                   __pa_5   0x002f1a    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\log.c
+                   __pa_5   0x002a38    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\exp.c
+                   __pa_5   0x0043a2    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\PackMath.c
+                   __pa_6   0x002f38    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\log.c
+                   __pa_6   0x0043aa    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\PackMath.c
+                   __pa_6   0x000d9e    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                   __pa_6   0x002a4e    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\exp.c
+                   __pa_7   0x000db2    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                   __pa_7   0x002a6c    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\exp.c
+                   __pa_7   0x002f52    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\log.c
+                   __pa_8   0x002f6c    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\log.c
+                   __pa_8   0x000dcc    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                   __pa_8   0x002a88    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\exp.c
+                   __pa_9   0x002f82    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\log.c
+                   __pa_9   0x000de6    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                   __pa_9   0x002aa6    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\exp.c
+               __tmplbl_0   0x0032ca    program     static                          
+            __zero_memory   0x00482a    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+                _do_cinit   0x0045d6    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
                    _entry   0x000000    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                   _false   0x004742    program     static                          
-                   _fchop   0x003628    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\fchop.c
-                 _startup   0x004794    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                     ceil   0x004410    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\ceil.c
-               commandLCD   0x003232    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
-                compare_l   0x00478a    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-                copy_loop   0x004592    program     static                          
-            copy_one_byte   0x004598    program     static                          
-                     done   0x0045bc    program     static                          
-             done_copying   0x0045a6    program     static                          
-     empty_receive_buffer   0x003e14    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_serial.c
-        enable_interrupts   0x003cfe    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_serial.c
-                  endloop   0x00476e    program     static                          
-           enter_function   0x00253c    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\function_manager.c
-                      exp   0x001f76    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\exp.c
-                     fabs   0x00463e    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\fabs.c
-                  factory   0x0032e4    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\factory_mode.c
-         factory_password   0x0033c8    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\factory_mode.c
-        filter_raw_weight   0x003b22    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\weight_filter.c
-                    floor   0x004300    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\floor.c
-                    frexp   0x003fa6    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\frexp.c
-           functionPicker   0x0038ba    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\mode_controller.c
+                   _false   0x0047f8    program     static                          
+                   _fchop   0x0036ea    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\fchop.c
+                 _startup   0x00484a    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                     ceil   0x0044c6    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\ceil.c
+               commandLCD   0x0032f4    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
+                compare_l   0x004840    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+                copy_loop   0x004648    program     static                          
+            copy_one_byte   0x00464e    program     static                          
+                     done   0x004672    program     static                          
+             done_copying   0x00465c    program     static                          
+     empty_receive_buffer   0x003eca    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_serial.c
+        enable_interrupts   0x003db4    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_serial.c
+                  endloop   0x004824    program     static                          
+           enter_function   0x001f78    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\function_manager.c
+                      exp   0x002544    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\exp.c
+                     fabs   0x0046f4    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\fabs.c
+                  factory   0x0033a6    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\factory_mode.c
+         factory_password   0x00348a    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\factory_mode.c
+        filter_raw_weight   0x003bd8    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\weight_filter.c
+                    floor   0x0043b6    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\floor.c
+                    frexp   0x00405c    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\frexp.c
+           functionPicker   0x00397c    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\mode_controller.c
               goToHighISR   0x000008    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
                goToLowISR   0x000018    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
-          highPriorityISR   0x000342    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
-         intToStringCount   0x001532    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\set_mode_count_serial.c
-                  isDigit   0x001644    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\set_mode_count_serial.c
-                 jANotInf   0x001ab0    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
-                 jANotInf   0x001924    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
-                 jANotInf   0x0019ca    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\mulFP.asm
-                 jANotNeg   0x001b44    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
-                jANotZero   0x001938    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
-              jAandWsetup   0x001b14    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
-                  jAisNeg   0x001dae    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\compFP.asm
-                 jAltBexp   0x001b02    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
-                jBANotInf   0x001aa6    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
-                 jBNotInf   0x001abe    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
-              jBothFinite   0x0019d8    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\mulFP.asm
-             jBothNotZero   0x0019e4    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\mulFP.asm
-             jBothNotZero   0x001d50    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\compFP.asm
-            jDifOrPosSign   0x001ad2    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
-                      jEQ   0x001d6c    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\compFP.asm
-                     jEnd   0x0046ce    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strcmp.asm
-                     jEnd   0x0046fe    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strlen.asm
-                    jExch   0x001d78    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\compFP.asm
-                    jExit   0x001d1e    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
-                    jExit   0x001f54    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\castFP32.asm
-                   jExpEQ   0x001dbe    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\compFP.asm
-                   jFinal   0x001da2    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\compFP.asm
-               jFinalSign   0x001bac    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
-                jHaveZero   0x0019e0    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\mulFP.asm
-                jI2F16Beg   0x0018f0    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\cast16FP.asm
-                    jLoop   0x001f28    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\castFP32.asm
-                    jLoop   0x001cfe    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
-                    jLoop   0x0046f4    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strlen.asm
-                    jLoop   0x0046c4    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strcmp.asm
-                    jLoop   0x001960    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
-                jLoopExit   0x001f3c    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\castFP32.asm
-                jLoopExit   0x001d0e    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
-                     jMax   0x001cd2    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
-                     jMax   0x001ef8    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\castFP32.asm
-                  jMaxNeg   0x001f0a    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\castFP32.asm
-                  jMaxNeg   0x001ce0    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
-                  jMaxPos   0x001cd6    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
-                  jMaxPos   0x001efc    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\castFP32.asm
-                      jNE   0x001d70    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\compFP.asm
-                    jNext   0x001986    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
-                jNoAdjust   0x001984    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
-                  jNoExch   0x001d98    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\compFP.asm
-             jNotBothZero   0x001ad6    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
-                  jNotInf   0x001cee    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
-                  jNotInf   0x001f16    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\castFP32.asm
-                  jPkLoop   0x001e22    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-             jPkRoundDone   0x001e6c    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-               jPkRoundIt   0x001e54    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-             jPkShiftDone   0x001e3e    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-           jReturnPosInf0   0x001df8    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-                  jRotate   0x001dca    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\compFP.asm
-                   jShift   0x001db4    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\compFP.asm
-               jShiftDone   0x001b6c    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
-               jShiftLoop   0x001b5e    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
-                jSignDone   0x001b9c    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
-              jSignedZero   0x00192e    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
-                 jSignsEQ   0x001d54    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\compFP.asm
-                  jUnpkA1   0x001e96    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
-                  jUnpkA2   0x001eae    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
-                 jUnpkANZ   0x001ea4    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
-                  jUnpkB1   0x001ec6    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
-                  jUnpkB2   0x001ede    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
-                 jUnpkBNZ   0x001ed4    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
-                 jUnpkNaN   0x001eb8    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
-                 jWNotNeg   0x001b58    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
-                   jWr123   0x001f02    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\castFP32.asm
-                  jWrZ123   0x001f12    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\castFP32.asm
-                    jZero   0x001ce8    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
-                    jZero   0x001f10    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\castFP32.asm
-               jZero1and2   0x001dfc    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-                lcd_clear   0x002fd2    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
-                 lcd_wait   0x003252    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
-                    ldexp   0x003e6e    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\ldexp.c
-                      log   0x002a48    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\log.c
-                     loop   0x0047a4    program     static                          
-                     loop   0x00470e    program     static                          
-                     loop   0x004752    program     static                          
-                   loop_h   0x004782    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-                   loop_l   0x00478c    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-           lowPriorityISR   0x0003e6    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
+          highPriorityISR   0x000344    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
+         intToStringCount   0x001534    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\set_mode_count_serial.c
+                  isDigit   0x001646    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\set_mode_count_serial.c
+                 jANotInf   0x001ab2    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                 jANotInf   0x001926    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
+                 jANotInf   0x0019cc    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\mulFP.asm
+                 jANotNeg   0x001b46    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                jANotZero   0x00193a    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
+              jAandWsetup   0x001b16    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                  jAisNeg   0x001db0    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\compFP.asm
+                 jAltBexp   0x001b04    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                jBANotInf   0x001aa8    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                 jBNotInf   0x001ac0    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+              jBothFinite   0x0019da    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\mulFP.asm
+             jBothNotZero   0x0019e6    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\mulFP.asm
+             jBothNotZero   0x001d52    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\compFP.asm
+            jDifOrPosSign   0x001ad4    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                      jEQ   0x001d6e    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\compFP.asm
+                     jEnd   0x004784    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strcmp.asm
+                     jEnd   0x0047b4    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strlen.asm
+                    jExch   0x001d7a    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\compFP.asm
+                    jExit   0x001d20    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                    jExit   0x001f56    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\castFP32.asm
+                   jExpEQ   0x001dc0    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\compFP.asm
+                   jFinal   0x001da4    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\compFP.asm
+               jFinalSign   0x001bae    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                jHaveZero   0x0019e2    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\mulFP.asm
+                jI2F16Beg   0x0018f2    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\cast16FP.asm
+                    jLoop   0x001f2a    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\castFP32.asm
+                    jLoop   0x001d00    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                    jLoop   0x0047aa    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strlen.asm
+                    jLoop   0x00477a    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strcmp.asm
+                    jLoop   0x001962    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
+                jLoopExit   0x001f3e    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\castFP32.asm
+                jLoopExit   0x001d10    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                     jMax   0x001cd4    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                     jMax   0x001efa    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\castFP32.asm
+                  jMaxNeg   0x001f0c    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\castFP32.asm
+                  jMaxNeg   0x001ce2    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                  jMaxPos   0x001cd8    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                  jMaxPos   0x001efe    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\castFP32.asm
+                      jNE   0x001d72    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\compFP.asm
+                    jNext   0x001988    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
+                jNoAdjust   0x001986    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
+                  jNoExch   0x001d9a    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\compFP.asm
+             jNotBothZero   0x001ad8    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                  jNotInf   0x001cf0    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                  jNotInf   0x001f18    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\castFP32.asm
+                  jPkLoop   0x001e24    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+             jPkRoundDone   0x001e6e    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+               jPkRoundIt   0x001e56    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+             jPkShiftDone   0x001e40    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+           jReturnPosInf0   0x001dfa    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+                  jRotate   0x001dcc    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\compFP.asm
+                   jShift   0x001db6    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\compFP.asm
+               jShiftDone   0x001b6e    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+               jShiftLoop   0x001b60    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                jSignDone   0x001b9e    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+              jSignedZero   0x001930    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
+                 jSignsEQ   0x001d56    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\compFP.asm
+                  jUnpkA1   0x001e98    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+                  jUnpkA2   0x001eb0    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+                 jUnpkANZ   0x001ea6    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+                  jUnpkB1   0x001ec8    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+                  jUnpkB2   0x001ee0    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+                 jUnpkBNZ   0x001ed6    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+                 jUnpkNaN   0x001eba    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+                 jWNotNeg   0x001b5a    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                   jWr123   0x001f04    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\castFP32.asm
+                  jWrZ123   0x001f14    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\castFP32.asm
+                    jZero   0x001cea    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                    jZero   0x001f12    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\castFP32.asm
+               jZero1and2   0x001dfe    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+                lcd_clear   0x003094    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
+                 lcd_wait   0x003314    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
+                    ldexp   0x003f24    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\ldexp.c
+                      log   0x002b0a    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\log.c
+                     loop   0x00485a    program     static                          
+                     loop   0x0047c4    program     static                          
+                     loop   0x004808    program     static                          
+                   loop_h   0x004838    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+                   loop_l   0x004842    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+           lowPriorityISR   0x000436    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
                      main   0x00001e    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
-                movingAvg   0x003bac    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\weight_filter.c
-                  num2str   0x0028a8    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\function_manager.c
-                      pow   0x0004c6    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                 read_lcd   0x003274    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
-         receiveCharacter   0x003d98    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_serial.c
-            sendCharacter   0x003d74    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_serial.c
-              set_lcd_pos   0x00303e    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
-    set_mode_count_serial   0x000fe4    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\set_mode_count_serial.c
-         set_weight_grams   0x002704    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\function_manager.c
-        set_weight_ounces   0x00270c    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\function_manager.c
-          setupInterrupts   0x003ce8    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_serial.c
-              setupSerial   0x003d0c    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_serial.c
-                  str2int   0x001720    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\set_mode_count_serial.c
-                   strcmp   0x0046a4    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strcmp.asm
-                   strlen   0x0046e4    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strlen.asm
-                     tare   0x00289e    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\function_manager.c
-                     test   0x00453a    program     static                          
-                   tx232C   0x003d32    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_serial.c
-                     wait   0x0031b6    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
-                    weigh   0x002716    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\function_manager.c
-                write_lcd   0x002fe6    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
-             write_string   0x002f42    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
-               zero_block   0x004782    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+                movingAvg   0x003c62    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\weight_filter.c
+                  num2str   0x0023a4    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\function_manager.c
+                      pow   0x0004c8    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                 read_lcd   0x003336    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
+         receiveCharacter   0x003e4e    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_serial.c
+            sendCharacter   0x003e2a    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_serial.c
+              set_lcd_pos   0x003100    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
+    set_mode_count_serial   0x000fe6    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\set_mode_count_serial.c
+         set_weight_grams   0x002190    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\function_manager.c
+        set_weight_ounces   0x002198    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\function_manager.c
+          setupInterrupts   0x003d9e    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_serial.c
+              setupSerial   0x003dc2    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_serial.c
+                  str2int   0x001722    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\set_mode_count_serial.c
+                   strcmp   0x00475a    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strcmp.asm
+                   strlen   0x00479a    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strlen.asm
+                     tare   0x00239a    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\function_manager.c
+                     test   0x0045f0    program     static                          
+                   tx232C   0x003de8    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_serial.c
+                     wait   0x003278    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
+                    weigh   0x0021a2    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\function_manager.c
+                write_lcd   0x0030a8    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
+             write_string   0x003004    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
+               zero_block   0x004838    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                    ADCON0   0x000fc2       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                ADCON0bits   0x000fc2       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
                    ADCON1   0x000fc1       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
@@ -715,7 +715,7 @@ Linker Map File - Created Thu Nov 01 01:26:36 2018
                   __tmp_0   0x000000       data     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
                   __tmp_0   0x000000       data     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\mode_controller.c
                   __tmp_0   0x000000       data     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\set_mode_count_serial.c
-                  __tmp_2   0x000034       data     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
+                  __tmp_1   0x000034       data     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
                 calibrate   0x000124       data     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\function_manager.c
              count_double   0x000304       data     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\set_mode_count_serial.c
                 count_int   0x000391       data     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\set_mode_count_serial.c
@@ -794,288 +794,288 @@ weight_readings_intro_msg   0x0001db       data     extern C:\Users\Aspen\OneDri
                goToLowISR   0x000018    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
        ___return_lbl00001   0x00001c    program     static                          
                      main   0x00001e    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
-          highPriorityISR   0x000342    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
-           lowPriorityISR   0x0003e6    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
-                   AdInit   0x000458    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
-       ___return_lbl00019   0x000486    program     static                          
-                      pow   0x0004c6    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                   __pa_0   0x000cee    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                   __pa_1   0x000d04    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                   __pa_2   0x000d0c    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                   __pa_3   0x000d26    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                   __pa_4   0x000d6a    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                   __pa_5   0x000d8e    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                   __pa_6   0x000d9c    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                   __pa_7   0x000db0    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                   __pa_8   0x000dca    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                   __pa_9   0x000de4    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                  __pa_10   0x000dfe    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                  __pa_11   0x000e24    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                  __pa_12   0x000e36    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                  __pa_13   0x000e48    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                  __pa_14   0x000e52    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                  __pa_15   0x000e6c    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                  __pa_16   0x000e84    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                  __pa_17   0x000e92    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                  __pa_18   0x000ea0    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                  __pa_19   0x000ea8    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                  __pa_20   0x000eba    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                  __pa_21   0x000ec6    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                  __pa_22   0x000ed8    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                  __pa_23   0x000eea    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                  __pa_24   0x000ef6    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                  __pa_25   0x000f02    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                  __pa_26   0x000f12    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                  __pa_27   0x000f20    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                  __pa_28   0x000f2a    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                  __pa_29   0x000f32    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                  __pa_30   0x000f3a    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                  __pa_31   0x000f4c    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                  __pa_32   0x000f58    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                  __pa_33   0x000f5e    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                  __pa_34   0x000f66    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                  __pa_35   0x000f72    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                  __pa_36   0x000f80    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                  __pa_37   0x000f88    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                  __pa_38   0x000f92    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                  __pa_39   0x000f9a    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                  __pa_40   0x000fa4    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                  __pa_41   0x000fb2    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                  __pa_42   0x000fba    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                  __pa_43   0x000fc6    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                  __pa_44   0x000fd4    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-                  __pa_45   0x000fde    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
-    set_mode_count_serial   0x000fe4    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\set_mode_count_serial.c
-         intToStringCount   0x001532    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\set_mode_count_serial.c
-                  isDigit   0x001644    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\set_mode_count_serial.c
-                  str2int   0x001720    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\set_mode_count_serial.c
-                 FLO1632U   0x0018dc    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\cast16FP.asm
-                 FLO1632S   0x0018e0    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\cast16FP.asm
-                jI2F16Beg   0x0018f0    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\cast16FP.asm
-                    FPD32   0x001906    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
-                 jANotInf   0x001924    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
-              jSignedZero   0x00192e    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
-                jANotZero   0x001938    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
-                    jLoop   0x001960    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
-                jNoAdjust   0x001984    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
-                    jNext   0x001986    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
-                    FPM32   0x0019ac    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\mulFP.asm
-                 jANotInf   0x0019ca    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\mulFP.asm
-              jBothFinite   0x0019d8    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\mulFP.asm
-                jHaveZero   0x0019e0    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\mulFP.asm
-             jBothNotZero   0x0019e4    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\mulFP.asm
-                    FPS32   0x001a86    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
-                    FPA32   0x001a88    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
-                jBANotInf   0x001aa6    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
-                 jANotInf   0x001ab0    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
-                 jBNotInf   0x001abe    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
-            jDifOrPosSign   0x001ad2    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
-             jNotBothZero   0x001ad6    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
-                 jAltBexp   0x001b02    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
-              jAandWsetup   0x001b14    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
-                 jANotNeg   0x001b44    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
-                 jWNotNeg   0x001b58    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
-               jShiftLoop   0x001b5e    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
-               jShiftDone   0x001b6c    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
-                jSignDone   0x001b9c    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
-               jFinalSign   0x001bac    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
-                 FXD1616S   0x001bb4    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                  DA1616S   0x001bc6    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                   D1616S   0x001bd6    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                 D1616SOK   0x001be0    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                D1616SNEG   0x001be4    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                  D1616SX   0x001bf6    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                 FXD3232S   0x001c00    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232s.asm
-                  DA3232S   0x001c1a    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232s.asm
-                   D3232S   0x001c30    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232s.asm
-                 D3232SOK   0x001c3a    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232s.asm
-                D3232SNEG   0x001c3e    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232s.asm
-                  D3232SX   0x001c5e    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232s.asm
-                 FXM1616S   0x001c68    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxm1616s.asm
-               TSIGN1616A   0x001cb4    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxm1616s.asm
-                  INT3216   0x001cc2    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
-                     jMax   0x001cd2    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
-                  jMaxPos   0x001cd6    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
-                  jMaxNeg   0x001ce0    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
-                    jZero   0x001ce8    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
-                  jNotInf   0x001cee    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
-                    jLoop   0x001cfe    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
-                jLoopExit   0x001d0e    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
-                    jExit   0x001d1e    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
-                  TAGTB32   0x001d20    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\gtFP.asm
-              __FpCompare   0x001d32    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\compFP.asm
-             jBothNotZero   0x001d50    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\compFP.asm
-                 jSignsEQ   0x001d54    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\compFP.asm
-                      jEQ   0x001d6c    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\compFP.asm
-                      jNE   0x001d70    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\compFP.asm
-                    jExch   0x001d78    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\compFP.asm
-                  jNoExch   0x001d98    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\compFP.asm
-                   jFinal   0x001da2    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\compFP.asm
-                  jAisNeg   0x001dae    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\compFP.asm
-                   jShift   0x001db4    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\compFP.asm
-                   jExpEQ   0x001dbe    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\compFP.asm
-                  jRotate   0x001dca    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\compFP.asm
-            __FpReturnNaN   0x001ddc    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-                 __FpExit   0x001de8    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-        __FpReturnSignInf   0x001dea    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-         __FpReturnNegInf   0x001dee    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-         __FpReturnPosInf   0x001df4    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-           jReturnPosInf0   0x001df8    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-               jZero1and2   0x001dfc    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-       __FpReturnSignZero   0x001e02    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-        __FpReturnNegZero   0x001e06    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-        __FpReturnPosZero   0x001e0e    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-                 __FpPack   0x001e14    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-                  jPkLoop   0x001e22    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-             jPkShiftDone   0x001e3e    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-               jPkRoundIt   0x001e54    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-              __FpReturnW   0x001e6c    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-             jPkRoundDone   0x001e6c    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
-              __FpUnPackA   0x001e8c    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
-                  jUnpkA1   0x001e96    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
-                 jUnpkANZ   0x001ea4    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
-                  jUnpkA2   0x001eae    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
-                 jUnpkNaN   0x001eb8    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
-              __FpUnPackB   0x001ebc    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
-                  jUnpkB1   0x001ec6    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
-                 jUnpkBNZ   0x001ed4    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
-                  jUnpkB2   0x001ede    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
-                  INT3232   0x001ee8    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\castFP32.asm
-                     jMax   0x001ef8    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\castFP32.asm
-                  jMaxPos   0x001efc    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\castFP32.asm
-                   jWr123   0x001f02    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\castFP32.asm
-                  jMaxNeg   0x001f0a    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\castFP32.asm
-                    jZero   0x001f10    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\castFP32.asm
-                  jWrZ123   0x001f12    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\castFP32.asm
-                  jNotInf   0x001f16    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\castFP32.asm
-                    jLoop   0x001f28    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\castFP32.asm
-                jLoopExit   0x001f3c    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\castFP32.asm
-                    jExit   0x001f54    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\castFP32.asm
-                  TAEQB32   0x001f56    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\eqFP.asm
-                  TALTB32   0x001f64    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\ltFP.asm
-                      exp   0x001f76    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\exp.c
-                   __pa_0   0x002406    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\exp.c
-                   __pa_1   0x00240e    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\exp.c
-                   __pa_2   0x00242e    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\exp.c
-                   __pa_3   0x002448    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\exp.c
-                   __pa_4   0x002458    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\exp.c
-                   __pa_5   0x00246a    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\exp.c
-                   __pa_6   0x002480    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\exp.c
-                   __pa_7   0x00249e    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\exp.c
-                   __pa_8   0x0024ba    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\exp.c
-                   __pa_9   0x0024d8    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\exp.c
-                  __pa_10   0x0024ec    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\exp.c
-                  __pa_11   0x0024fe    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\exp.c
-                  __pa_12   0x002510    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\exp.c
-                  __pa_13   0x00251c    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\exp.c
-                  __pa_14   0x00252a    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\exp.c
-                  __pa_15   0x002534    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\exp.c
-           enter_function   0x00253c    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\function_manager.c
-         set_weight_grams   0x002704    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\function_manager.c
-        set_weight_ounces   0x00270c    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\function_manager.c
-                    weigh   0x002716    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\function_manager.c
-                     tare   0x00289e    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\function_manager.c
-                  num2str   0x0028a8    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\function_manager.c
-                      log   0x002a48    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\log.c
-                   __pa_0   0x002e0e    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\log.c
-                   __pa_1   0x002e1a    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\log.c
-                   __pa_2   0x002e2c    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\log.c
-                   __pa_3   0x002e48    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\log.c
-                   __pa_4   0x002e4e    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\log.c
-                   __pa_5   0x002e58    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\log.c
-                   __pa_6   0x002e76    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\log.c
-                   __pa_7   0x002e90    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\log.c
-                   __pa_8   0x002eaa    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\log.c
-                   __pa_9   0x002ec0    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\log.c
-                  __pa_10   0x002ed0    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\log.c
-                  __pa_11   0x002ed8    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\log.c
-                  __pa_12   0x002eea    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\log.c
-                  __pa_13   0x002f04    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\log.c
-                  __pa_14   0x002f16    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\log.c
-                  __pa_15   0x002f28    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\log.c
-                  __pa_16   0x002f34    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\log.c
-             write_string   0x002f42    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
-                lcd_clear   0x002fd2    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
-                write_lcd   0x002fe6    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
-              set_lcd_pos   0x00303e    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
-                  LCDInit   0x0030ea    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
-          ___for_lbl00013   0x00311a    program     static                          
-          ___for_lbl00011   0x003134    program     static                          
-          ___for_lbl00012   0x00313e    program     static                          
-       ___return_lbl00010   0x0031a2    program     static                          
-                     wait   0x0031b6    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
-        ___while_lbl00015   0x0031e8    program     static                          
-               __tmplbl_0   0x003208    program     static                          
-        ___while_lbl00016   0x00321e    program     static                          
-       ___return_lbl00014   0x00321e    program     static                          
-               commandLCD   0x003232    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
-       ___return_lbl00017   0x00324a    program     static                          
-                 lcd_wait   0x003252    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
-                 read_lcd   0x003274    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
-       ___return_lbl00023   0x0032cc    program     static                          
-                  factory   0x0032e4    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\factory_mode.c
-         factory_password   0x0033c8    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\factory_mode.c
-                   _fchop   0x003628    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\fchop.c
-                   __pa_0   0x0038a2    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\fchop.c
-                   __pa_1   0x0038ac    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\fchop.c
-           functionPicker   0x0038ba    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\mode_controller.c
-        filter_raw_weight   0x003b22    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\weight_filter.c
-                movingAvg   0x003bac    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\weight_filter.c
-          setupInterrupts   0x003ce8    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_serial.c
-        enable_interrupts   0x003cfe    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_serial.c
-              setupSerial   0x003d0c    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_serial.c
-                   tx232C   0x003d32    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_serial.c
-            sendCharacter   0x003d74    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_serial.c
-         receiveCharacter   0x003d98    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_serial.c
-     empty_receive_buffer   0x003e14    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_serial.c
-                    ldexp   0x003e6e    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\ldexp.c
-                   __pa_0   0x003f9c    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\ldexp.c
-                    frexp   0x003fa6    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\frexp.c
-                   __pa_0   0x0040ae    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\frexp.c
-                   __pa_1   0x0040bc    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\frexp.c
-                _UnpkMath   0x0040ca    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\UnpkMath.c
-                   __pa_0   0x0041d8    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\UnpkMath.c
-                _PackMath   0x0041e6    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\PackMath.c
-                   __pa_0   0x0042ae    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\PackMath.c
-                   __pa_1   0x0042be    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\PackMath.c
-                   __pa_2   0x0042cc    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\PackMath.c
-                   __pa_3   0x0042d6    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\PackMath.c
-                   __pa_4   0x0042e4    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\PackMath.c
-                   __pa_5   0x0042ec    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\PackMath.c
-                   __pa_6   0x0042f4    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\PackMath.c
-                    floor   0x004300    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\floor.c
-                     ceil   0x004410    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\ceil.c
-                _do_cinit   0x004520    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                     test   0x00453a    program     static                          
-                copy_loop   0x004592    program     static                          
-            copy_one_byte   0x004598    program     static                          
-             done_copying   0x0045a6    program     static                          
-       ___return_lbl00002   0x0045bc    program     static                          
-                     done   0x0045bc    program     static                          
-           SET_MODE_COUNT   0x0045be    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\set_mode_count.c
-                     fabs   0x00463e    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\fabs.c
-                   strcmp   0x0046a4    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strcmp.asm
-                    jLoop   0x0046c4    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strcmp.asm
-                     jEnd   0x0046ce    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strcmp.asm
-                   strlen   0x0046e4    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strlen.asm
-                    jLoop   0x0046f4    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strlen.asm
-                     jEnd   0x0046fe    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strlen.asm
-                 FXD3232U   0x004700    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232u.c
-                     loop   0x00470e    program     static                          
-                   _false   0x004742    program     static                          
-       ___return_lbl00000   0x004746    program     static                          
-                 FXD1616U   0x004748    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616u.c
-                     loop   0x004752    program     static                          
-                  endloop   0x00476e    program     static                          
-       ___return_lbl00000   0x004772    program     static                          
-            __zero_memory   0x004774    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-               zero_block   0x004782    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-                   loop_h   0x004782    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-                compare_l   0x00478a    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-                   loop_l   0x00478c    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
-                 _startup   0x004794    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                     loop   0x0047a4    program     static                          
-       ___return_lbl00001   0x0047ae    program     static                          
+          highPriorityISR   0x000344    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
+           lowPriorityISR   0x000436    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
+                   AdInit   0x00045a    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
+       ___return_lbl00021   0x000488    program     static                          
+                      pow   0x0004c8    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                   __pa_0   0x000cf0    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                   __pa_1   0x000d06    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                   __pa_2   0x000d0e    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                   __pa_3   0x000d28    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                   __pa_4   0x000d6c    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                   __pa_5   0x000d90    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                   __pa_6   0x000d9e    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                   __pa_7   0x000db2    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                   __pa_8   0x000dcc    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                   __pa_9   0x000de6    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                  __pa_10   0x000e00    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                  __pa_11   0x000e26    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                  __pa_12   0x000e38    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                  __pa_13   0x000e4a    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                  __pa_14   0x000e54    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                  __pa_15   0x000e6e    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                  __pa_16   0x000e86    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                  __pa_17   0x000e94    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                  __pa_18   0x000ea2    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                  __pa_19   0x000eaa    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                  __pa_20   0x000ebc    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                  __pa_21   0x000ec8    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                  __pa_22   0x000eda    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                  __pa_23   0x000eec    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                  __pa_24   0x000ef8    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                  __pa_25   0x000f04    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                  __pa_26   0x000f14    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                  __pa_27   0x000f22    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                  __pa_28   0x000f2c    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                  __pa_29   0x000f34    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                  __pa_30   0x000f3c    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                  __pa_31   0x000f4e    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                  __pa_32   0x000f5a    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                  __pa_33   0x000f60    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                  __pa_34   0x000f68    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                  __pa_35   0x000f74    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                  __pa_36   0x000f82    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                  __pa_37   0x000f8a    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                  __pa_38   0x000f94    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                  __pa_39   0x000f9c    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                  __pa_40   0x000fa6    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                  __pa_41   0x000fb4    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                  __pa_42   0x000fbc    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                  __pa_43   0x000fc8    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                  __pa_44   0x000fd6    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+                  __pa_45   0x000fe0    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\pow.c
+    set_mode_count_serial   0x000fe6    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\set_mode_count_serial.c
+         intToStringCount   0x001534    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\set_mode_count_serial.c
+                  isDigit   0x001646    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\set_mode_count_serial.c
+                  str2int   0x001722    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\set_mode_count_serial.c
+                 FLO1632U   0x0018de    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\cast16FP.asm
+                 FLO1632S   0x0018e2    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\cast16FP.asm
+                jI2F16Beg   0x0018f2    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\cast16FP.asm
+                    FPD32   0x001908    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
+                 jANotInf   0x001926    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
+              jSignedZero   0x001930    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
+                jANotZero   0x00193a    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
+                    jLoop   0x001962    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
+                jNoAdjust   0x001986    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
+                    jNext   0x001988    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
+                    FPM32   0x0019ae    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\mulFP.asm
+                 jANotInf   0x0019cc    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\mulFP.asm
+              jBothFinite   0x0019da    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\mulFP.asm
+                jHaveZero   0x0019e2    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\mulFP.asm
+             jBothNotZero   0x0019e6    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\mulFP.asm
+                    FPS32   0x001a88    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                    FPA32   0x001a8a    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                jBANotInf   0x001aa8    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                 jANotInf   0x001ab2    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                 jBNotInf   0x001ac0    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+            jDifOrPosSign   0x001ad4    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+             jNotBothZero   0x001ad8    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                 jAltBexp   0x001b04    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+              jAandWsetup   0x001b16    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                 jANotNeg   0x001b46    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                 jWNotNeg   0x001b5a    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+               jShiftLoop   0x001b60    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+               jShiftDone   0x001b6e    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                jSignDone   0x001b9e    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+               jFinalSign   0x001bae    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                 FXD1616S   0x001bb6    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                  DA1616S   0x001bc8    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                   D1616S   0x001bd8    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                 D1616SOK   0x001be2    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                D1616SNEG   0x001be6    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                  D1616SX   0x001bf8    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                 FXD3232S   0x001c02    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232s.asm
+                  DA3232S   0x001c1c    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232s.asm
+                   D3232S   0x001c32    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232s.asm
+                 D3232SOK   0x001c3c    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232s.asm
+                D3232SNEG   0x001c40    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232s.asm
+                  D3232SX   0x001c60    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232s.asm
+                 FXM1616S   0x001c6a    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxm1616s.asm
+               TSIGN1616A   0x001cb6    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxm1616s.asm
+                  INT3216   0x001cc4    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                     jMax   0x001cd4    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                  jMaxPos   0x001cd8    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                  jMaxNeg   0x001ce2    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                    jZero   0x001cea    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                  jNotInf   0x001cf0    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                    jLoop   0x001d00    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                jLoopExit   0x001d10    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                    jExit   0x001d20    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                  TAGTB32   0x001d22    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\gtFP.asm
+              __FpCompare   0x001d34    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\compFP.asm
+             jBothNotZero   0x001d52    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\compFP.asm
+                 jSignsEQ   0x001d56    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\compFP.asm
+                      jEQ   0x001d6e    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\compFP.asm
+                      jNE   0x001d72    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\compFP.asm
+                    jExch   0x001d7a    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\compFP.asm
+                  jNoExch   0x001d9a    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\compFP.asm
+                   jFinal   0x001da4    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\compFP.asm
+                  jAisNeg   0x001db0    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\compFP.asm
+                   jShift   0x001db6    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\compFP.asm
+                   jExpEQ   0x001dc0    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\compFP.asm
+                  jRotate   0x001dcc    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\compFP.asm
+            __FpReturnNaN   0x001dde    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+                 __FpExit   0x001dea    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+        __FpReturnSignInf   0x001dec    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+         __FpReturnNegInf   0x001df0    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+         __FpReturnPosInf   0x001df6    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+           jReturnPosInf0   0x001dfa    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+               jZero1and2   0x001dfe    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+       __FpReturnSignZero   0x001e04    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+        __FpReturnNegZero   0x001e08    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+        __FpReturnPosZero   0x001e10    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+                 __FpPack   0x001e16    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+                  jPkLoop   0x001e24    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+             jPkShiftDone   0x001e40    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+               jPkRoundIt   0x001e56    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+              __FpReturnW   0x001e6e    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+             jPkRoundDone   0x001e6e    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+              __FpUnPackA   0x001e8e    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+                  jUnpkA1   0x001e98    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+                 jUnpkANZ   0x001ea6    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+                  jUnpkA2   0x001eb0    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+                 jUnpkNaN   0x001eba    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+              __FpUnPackB   0x001ebe    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+                  jUnpkB1   0x001ec8    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+                 jUnpkBNZ   0x001ed6    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+                  jUnpkB2   0x001ee0    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+                  INT3232   0x001eea    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\castFP32.asm
+                     jMax   0x001efa    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\castFP32.asm
+                  jMaxPos   0x001efe    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\castFP32.asm
+                   jWr123   0x001f04    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\castFP32.asm
+                  jMaxNeg   0x001f0c    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\castFP32.asm
+                    jZero   0x001f12    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\castFP32.asm
+                  jWrZ123   0x001f14    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\castFP32.asm
+                  jNotInf   0x001f18    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\castFP32.asm
+                    jLoop   0x001f2a    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\castFP32.asm
+                jLoopExit   0x001f3e    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\castFP32.asm
+                    jExit   0x001f56    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\castFP32.asm
+                  TAEQB32   0x001f58    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\eqFP.asm
+                  TALTB32   0x001f66    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\ltFP.asm
+           enter_function   0x001f78    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\function_manager.c
+         set_weight_grams   0x002190    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\function_manager.c
+        set_weight_ounces   0x002198    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\function_manager.c
+                    weigh   0x0021a2    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\function_manager.c
+                     tare   0x00239a    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\function_manager.c
+                  num2str   0x0023a4    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\function_manager.c
+                      exp   0x002544    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\exp.c
+                   __pa_0   0x0029d4    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\exp.c
+                   __pa_1   0x0029dc    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\exp.c
+                   __pa_2   0x0029fc    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\exp.c
+                   __pa_3   0x002a16    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\exp.c
+                   __pa_4   0x002a26    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\exp.c
+                   __pa_5   0x002a38    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\exp.c
+                   __pa_6   0x002a4e    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\exp.c
+                   __pa_7   0x002a6c    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\exp.c
+                   __pa_8   0x002a88    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\exp.c
+                   __pa_9   0x002aa6    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\exp.c
+                  __pa_10   0x002aba    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\exp.c
+                  __pa_11   0x002acc    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\exp.c
+                  __pa_12   0x002ade    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\exp.c
+                  __pa_13   0x002aea    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\exp.c
+                  __pa_14   0x002af8    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\exp.c
+                  __pa_15   0x002b02    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\exp.c
+                      log   0x002b0a    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\log.c
+                   __pa_0   0x002ed0    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\log.c
+                   __pa_1   0x002edc    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\log.c
+                   __pa_2   0x002eee    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\log.c
+                   __pa_3   0x002f0a    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\log.c
+                   __pa_4   0x002f10    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\log.c
+                   __pa_5   0x002f1a    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\log.c
+                   __pa_6   0x002f38    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\log.c
+                   __pa_7   0x002f52    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\log.c
+                   __pa_8   0x002f6c    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\log.c
+                   __pa_9   0x002f82    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\log.c
+                  __pa_10   0x002f92    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\log.c
+                  __pa_11   0x002f9a    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\log.c
+                  __pa_12   0x002fac    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\log.c
+                  __pa_13   0x002fc6    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\log.c
+                  __pa_14   0x002fd8    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\log.c
+                  __pa_15   0x002fea    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\log.c
+                  __pa_16   0x002ff6    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\log.c
+             write_string   0x003004    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
+                lcd_clear   0x003094    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
+                write_lcd   0x0030a8    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
+              set_lcd_pos   0x003100    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
+                  LCDInit   0x0031ac    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
+          ___for_lbl00013   0x0031dc    program     static                          
+          ___for_lbl00011   0x0031f6    program     static                          
+          ___for_lbl00012   0x003200    program     static                          
+       ___return_lbl00010   0x003264    program     static                          
+                     wait   0x003278    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
+        ___while_lbl00015   0x0032aa    program     static                          
+               __tmplbl_0   0x0032ca    program     static                          
+        ___while_lbl00016   0x0032e0    program     static                          
+       ___return_lbl00014   0x0032e0    program     static                          
+               commandLCD   0x0032f4    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
+       ___return_lbl00017   0x00330c    program     static                          
+                 lcd_wait   0x003314    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
+                 read_lcd   0x003336    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_lcd.c
+       ___return_lbl00023   0x00338e    program     static                          
+                  factory   0x0033a6    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\factory_mode.c
+         factory_password   0x00348a    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\factory_mode.c
+                   _fchop   0x0036ea    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\fchop.c
+                   __pa_0   0x003964    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\fchop.c
+                   __pa_1   0x00396e    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\fchop.c
+           functionPicker   0x00397c    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\mode_controller.c
+        filter_raw_weight   0x003bd8    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\weight_filter.c
+                movingAvg   0x003c62    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\weight_filter.c
+          setupInterrupts   0x003d9e    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_serial.c
+        enable_interrupts   0x003db4    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_serial.c
+              setupSerial   0x003dc2    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_serial.c
+                   tx232C   0x003de8    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_serial.c
+            sendCharacter   0x003e2a    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_serial.c
+         receiveCharacter   0x003e4e    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_serial.c
+     empty_receive_buffer   0x003eca    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\basic_serial.c
+                    ldexp   0x003f24    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\ldexp.c
+                   __pa_0   0x004052    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\ldexp.c
+                    frexp   0x00405c    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\frexp.c
+                   __pa_0   0x004164    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\frexp.c
+                   __pa_1   0x004172    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\frexp.c
+                _UnpkMath   0x004180    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\UnpkMath.c
+                   __pa_0   0x00428e    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\UnpkMath.c
+                _PackMath   0x00429c    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\PackMath.c
+                   __pa_0   0x004364    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\PackMath.c
+                   __pa_1   0x004374    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\PackMath.c
+                   __pa_2   0x004382    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\PackMath.c
+                   __pa_3   0x00438c    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\PackMath.c
+                   __pa_4   0x00439a    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\PackMath.c
+                   __pa_5   0x0043a2    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\PackMath.c
+                   __pa_6   0x0043aa    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\PackMath.c
+                    floor   0x0043b6    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\floor.c
+                     ceil   0x0044c6    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\ceil.c
+                _do_cinit   0x0045d6    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                     test   0x0045f0    program     static                          
+                copy_loop   0x004648    program     static                          
+            copy_one_byte   0x00464e    program     static                          
+             done_copying   0x00465c    program     static                          
+       ___return_lbl00002   0x004672    program     static                          
+                     done   0x004672    program     static                          
+           SET_MODE_COUNT   0x004674    program     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\set_mode_count.c
+                     fabs   0x0046f4    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\fabs.c
+                   strcmp   0x00475a    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strcmp.asm
+                    jLoop   0x00477a    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strcmp.asm
+                     jEnd   0x004784    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strcmp.asm
+                   strlen   0x00479a    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strlen.asm
+                    jLoop   0x0047aa    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strlen.asm
+                     jEnd   0x0047b4    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strlen.asm
+                 FXD3232U   0x0047b6    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232u.c
+                     loop   0x0047c4    program     static                          
+                   _false   0x0047f8    program     static                          
+       ___return_lbl00000   0x0047fc    program     static                          
+                 FXD1616U   0x0047fe    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616u.c
+                     loop   0x004808    program     static                          
+                  endloop   0x004824    program     static                          
+       ___return_lbl00000   0x004828    program     static                          
+            __zero_memory   0x00482a    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+               zero_block   0x004838    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+                   loop_h   0x004838    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+                compare_l   0x004840    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+                   loop_l   0x004842    program     static E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4520.asm
+                 _startup   0x00484a    program     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                     loop   0x00485a    program     static                          
+       ___return_lbl00001   0x004864    program     static                          
                __config_0   0x300001    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
                __config_1   0x300002    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
                __config_2   0x300003    program     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
@@ -1132,7 +1132,7 @@ weight_readings_intro_msg   0x0001db       data     extern C:\Users\Aspen\OneDri
                  __TEMPB1   0x000032       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\temparg.asm
                    __TEMP   0x000033       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\temparg.asm
                  __TEMPB0   0x000033       data     extern E:\c18v3.46\pic18-lt\cxx-framework\src\traditional\math\temparg.asm
-                  __tmp_2   0x000034       data     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
+                  __tmp_1   0x000034       data     static C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
                       yes   0x000080       data     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
                        no   0x000086       data     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c
                   samples   0x00008b       data     extern C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\main.c

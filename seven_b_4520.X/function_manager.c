@@ -17,6 +17,7 @@
 #define SHOW_STATISTICS 9
 #define SET_SAMPLES_PER_MEASURMENT 10
 #define CALIBRATE 11
+#define REMOTE_MODE current_mode == 1 || current_mode == 2
 
 // mode intro messages
 char weigh_intro_msg[] = "You are in weigh mode";
@@ -50,21 +51,33 @@ void enter_function(int mode){
     
     switch(mode){
         case HELP:
-            tx232C(help_message);
-            tx232C(help_message2);            
-            tx232C(help_message3);
-            tx232C(help_message4);
-            tx232C(end_msg2);
+            if(REMOTE_MODE){
+                tx232C(help_message);
+                tx232C(help_message2);            
+                tx232C(help_message3);
+                tx232C(help_message4);
+                tx232C(end_msg2);
+            }else{
+            
+            }
             break;
         case SET_MODE_WEIGH:
-            tx232C(weigh_intro_msg);
-            tx232C(end_msg2);
-            weigh();
+            if(REMOTE_MODE){
+                tx232C(weigh_intro_msg);
+                tx232C(end_msg2);
+                weigh();
+            }else{
+                weigh();
+            }
             break;
         case TARE:
-            tx232C(tare_msg);
-            tx232C(end_msg2);
-            tare();
+            if(REMOTE_MODE){
+                tx232C(tare_msg);
+                tx232C(end_msg2);
+                tare();
+            }else{
+            
+            }
             break;
         case CALIBRATE:
             if (current_mode == 2)
@@ -73,7 +86,10 @@ void enter_function(int mode){
                 tx232C(end_msg2);
                 break;    
             }
-            else{break;}  
+            else{
+                
+            }
+            break;  
         case SET_MODE_COUNT:
             //tx232C(count_intro_msg);
             //empty_receive_buffer();
@@ -138,20 +154,31 @@ void weigh(void){
         //callibrate_weight();
         //ounce_or_grams();
     
-    if(unit_mode == 0){
-        num2str(&output,(filtered_weight-tare_val));
-        tx232C(output);
-        tx232C(grams);
-        tx232C(empty);
-        tx232C(return_line);
-    }    
-    if(unit_mode == 1){
-        num2str(&output,((filtered_weight-tare_val)*0.035));
-        tx232C(output);
-        tx232C(oz);
-        tx232C(empty);
-        tx232C(return_line);
+    if(current_mode == 1 || current_mode == 2){
+        if(unit_mode == 0){
+            num2str(&output,(filtered_weight-tare_val));
+            tx232C(output);
+            tx232C(grams);
+            tx232C(empty);
+            tx232C(return_line);
+        }    
+        if(unit_mode == 1){
+            num2str(&output,((filtered_weight-tare_val)*0.035));
+            tx232C(output);
+            tx232C(oz);
+            tx232C(empty);
+            tx232C(return_line);
+        }
+    }else{
+        if(unit_mode == 0){
+            write_string(0,0, grams);
+        }
+        if(unit_mode == 1){
+            write_string(0,0, oz);
+        }
     }
+    
+    
         if(factory_return == 1){
             break;
         }

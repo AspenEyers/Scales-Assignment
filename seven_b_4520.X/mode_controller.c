@@ -28,8 +28,8 @@ void functionPicker(int mode )
     char weigh_lcd[] = "SET_MODE_WEIGH";
     char tare_lcd[] = "TARE";
     char count_lcd[] = "SET_MODE_COUNT";
-    char grams_lcd[] = "SET_GRAMS";
-    char ounces_lcd[] = "SET_OZ";
+    char grams_lcd[] = "TO_GRAM";
+    char ounces_lcd[] = "TO_OZ";
     char factory_lcd[] = "FACTORY";
     char err[] = "Error";
    
