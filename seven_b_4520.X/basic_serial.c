@@ -37,6 +37,31 @@ void setupInterrupts(void){
     PIE1bits.ADIE = 1;     // AD interrupt enable 
     IPR1bits.ADIP = 0;     // AD low priority
     IPR1 |= (1 << 5);      // USART interrupt > high priority 
+    
+    INTCONbits.TMR0IE = 1; //Enable timer0 interrupt
+    
+    // Something in these lines are screwing me up
+    //T0CONbits.T08BIT = 0;
+    //T0CONbits.T0CS = 0;
+    //T0CONbits.T0PS2 =1;
+    //____________________________
+    //TMR0H = 0xF8;
+    //TMR0L = 0x30;
+        
+    //Set interrupts
+    //TRISBbits.RB3 = 1;
+    //TRISBbits.RB2 = 1;
+   
+    //PORTBbits.RB3 = 0;
+    //PORTBbits.RB2 = 0;
+    
+    
+    //INTCONbits.PEIE  = 1; // Peripheral Interrupt Enable bit
+    //INTCON2bits.RBIP = 0; // Port B is low
+    //INTCON2bits.TMR0IP = 0; // Set timer0 interrupt as Low Priority
+    //INTCONbits.TMR0IF = 0x0;    // Clear the timer0 flag
+    
+    
     INTCON |= (1 << 7);    // Enable high priority interrupts 
     INTCON |= (1 << 6);    // Enable low priority interrupts
 }

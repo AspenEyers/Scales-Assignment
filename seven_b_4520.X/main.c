@@ -136,6 +136,7 @@ void main( void )
     //edit
     
     current_mode = 2;
+    empty_receive_buffer();
     while(1){
         // choose mode
         switch(current_mode){

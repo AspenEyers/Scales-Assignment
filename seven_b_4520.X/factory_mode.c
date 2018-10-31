@@ -2,6 +2,7 @@
 #include "basic_serial.h"
 #include <string.h>
 #include "function_manager.h"
+#include "set_mode_count_serial.h"
 #include "globalVariables.h"
 
 #define NUMBER_OF_MODES 12

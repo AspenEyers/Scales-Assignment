@@ -75,6 +75,7 @@ void enter_function(int mode){
             else{break;}  
         case SET_MODE_COUNT:
             //tx232C(count_intro_msg);
+            //empty_receive_buffer();
             set_mode_count_serial();
             break;
         case SET_WEIGHT_GRAMS:

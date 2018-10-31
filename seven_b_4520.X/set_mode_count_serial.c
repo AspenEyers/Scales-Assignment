@@ -9,34 +9,45 @@
 #include "function_manager.h"
 #include <string.h>
 #include "set_mode_count_serial.h"
+#include "weight_filter.h"
 int entered_count = 1;
 int weight_per_unit = 0;
 double count_double = 0;
 unsigned char endmsg[] = "\r\n";
 unsigned char count_serial_intro_msg1[]= "Welcome to count mode.\n\r";
-unsigned char count_serial_intro_msg2[] = "'BACK' to exit\n\r'SETCOUNT' to change count\n\r'COUNT' to count.";
+unsigned char count_serial_intro_msg2[] = "'BACK' to exit\n\r'SETCOUNT' to change count\n\r'SHOWCOUNT' to count.";
 unsigned char count_serial_setcount_msg[]= "Enter count number:";
 unsigned char count_serial_count_msg[]="Count:";
 unsigned char invalid_command_msg[] = "Invalid input\n\r";
-int weight_grams = 0;
+extern int filtered_weight;
+extern int tare_val;
 //unsigned char string_count_output[20];
 int count_int = 0;
 void set_mode_count_serial(void){
     unsigned char string_count_output[20];
-    
-    
-    
+    char setcount_msg[]="SETCOUNT";
+    char count_msg[]="SHOWCOUNT";
+    char back_msg[]="BACK";
+    char output5[10];
+    //int exit_count_mode = 0;
+    //empty_receive_buffer();
     tx232C(count_serial_intro_msg1);
+    MsgToSend = 0;
     while(1)
     {
+        //filter_raw_weight();
         tx232C(count_serial_intro_msg2);
         tx232C(endmsg);
-        while(!MsgToSend); // wait for user to press enter
+        //empty_receive_buffer();
+        while(!MsgToSend){
+            //filter_raw_weight();
+        } // wait for user to press enter
         MsgToSend = 0;
-        if(strcmp(fromReceiver,"SETCOUNT")==0)
+        if(strcmp(fromReceiver,setcount_msg)==0)
         {
             while(1)
             {
+                //filter_raw_weight();
                 tx232C(count_serial_setcount_msg);
                 tx232C(endmsg);
                 while(!MsgToSend); // wait for user to press enter
@@ -58,26 +69,30 @@ void set_mode_count_serial(void){
                 else
                 {   
                     filter_raw_weight();
-                    //callibrate_weight();
-                    //ounce_or_grams();
+                    
+                    //txt232C(entered_count)
+//                    num2str(&output5,(filtered_weight-tare_val));
+//                    tx232C(output5);
 
-
-                    weight_per_unit = weight_grams / entered_count; // get weight of 1 unit in g (int)
+                    weight_per_unit = (filtered_weight-tare_val) / entered_count; // get weight of 1 unit in g (int)
+//                    num2str(&output5,weight_per_unit);
+//                    tx232C(output5);
                     break;
                 } 
             }
         }
-        else if(strcmp(fromReceiver,"COUNT")==0)
+        else if(strcmp(fromReceiver,count_msg)==0)
         {
             filter_raw_weight();
             //callibrate_weight();
             //ounce_or_grams();
-
+//            num2str(&output5,(filtered_weight-tare_val));
+//                    tx232C(output5);
             
             
             if(unit_mode!=1)
             {
-                count_double = weight_grams/(double)weight_per_unit; //perform calc to get count (double float))
+                count_double = (filtered_weight-tare_val)/(double)weight_per_unit; //perform calc to get count (double float))
                 count_int = count_double - floor(count_double)>0.5 ? (int)ceil(count_double) : (int)floor(count_double); // int calculated count
                 tx232C(count_serial_count_msg);
                 tx232C(endmsg);
@@ -88,7 +103,7 @@ void set_mode_count_serial(void){
             }
             else
             {
-                count_double = weight_grams/((double)weight_per_unit*28.35); //perform calc to get count (double float))
+                count_double = (filtered_weight-tare_val)/((double)weight_per_unit*28.35); //perform calc to get count (double float))
                 count_int = count_double - floor(count_double)>0.5 ? (int)ceil(count_double) : (int)floor(count_double); // int calculated count
                 tx232C(count_serial_count_msg);
                 tx232C(endmsg);
@@ -99,17 +114,22 @@ void set_mode_count_serial(void){
             }
             
         }
-        else if(strcmp(fromReceiver,"BACK") == 0)
+        else if(strcmp(fromReceiver,back_msg) == 0)
         {
-                return;
+            
+                break;
         }
         else
         {   
             tx232C(invalid_command_msg);
             tx232C(endmsg);
+            
             continue;
         }
     }
+//    num2str(&output5,50);
+//                    tx232C(output5);
+    return;
 }
 
 char* intToStringCount(int inte){
