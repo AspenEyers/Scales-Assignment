@@ -40,7 +40,7 @@ void factory(void){
     // followed by an enter.
 
     // test the recieve string from the serial to determine what mode using a lookup table
-    //  
+
 
     
     int exit_factory = 0;

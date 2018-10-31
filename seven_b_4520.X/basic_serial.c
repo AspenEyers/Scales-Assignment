@@ -33,7 +33,7 @@ unsigned char LRC;
 void setupInterrupts(void){
 
     RCON |= (1 << 7);      // Enable interrupt priority
-    IPR1bits.ADIP = 0;     // AD low priority
+    IPR1bits.ADIP = 1;     // AD low priority
     IPR1 |= (1 << 5);      // USART interrupt > high priority 
     
     //INTCONbits.TMR0IE = 1; //Enable timer0 interrupt
@@ -60,7 +60,7 @@ void setupInterrupts(void){
     
     
     
-    INTCONbits.RBIE = 1; // Enable port B toggle interrupt
+    INTCONbits.RBIE = 0; // Enable port B toggle interrupt
     INTCON2bits.RBIP = 0; // Set port B interrupt to low priority
     INTCONbits.RBIF = 0; // Reset the port B interrupt flags
     

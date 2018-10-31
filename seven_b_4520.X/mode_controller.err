@@ -1,1 +1,9 @@
-Error[yy] C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\mode_controller.c 1 : syntax error
+Warning[2054] C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\mode_controller.c 39 : suspicious pointer conversion
+Warning[2054] C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\mode_controller.c 42 : suspicious pointer conversion
+Warning[2054] C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\mode_controller.c 45 : suspicious pointer conversion
+Warning[2054] C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\mode_controller.c 48 : suspicious pointer conversion
+Warning[2054] C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\mode_controller.c 51 : suspicious pointer conversion
+Warning[2054] C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\mode_controller.c 54 : suspicious pointer conversion
+Warning[2054] C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\mode_controller.c 57 : suspicious pointer conversion
+Warning[2054] C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\mode_controller.c 60 : suspicious pointer conversion
+Warning[2054] C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\mode_controller.c 63 : suspicious pointer conversion

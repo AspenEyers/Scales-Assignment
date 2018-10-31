@@ -17,11 +17,13 @@
 #include <usart.h>
 #include "basic_lcd.h"
 #include "basic_serial.h"
+#include "mode_controller.h"
 
 #ifndef GLOBAL
 #define GLOBAL
 #include "globalVariables.h"
 #endif
+
 
 #ifndef CONFIGS
 #define	CONFIGS
@@ -163,21 +165,36 @@ void main( void )
     //tx232C(end_msg);
     //edit
     
-    current_mode = 2;
+    current_mode = 0;
+    enable_interrupts();
     empty_receive_buffer();
     while(1){
-        enable_interrupts();
+
         // choose mode
         switch(current_mode){
             case 0:
+                
                 // go into user local function choosers
                 
                 // poll for buttons
                 // if button 4 is high change the button state
+                functionPicker(local_state);
                 
-                
-                    local_state++;
-                
+                while(1){
+                    if(PORTBbits.RB4 == 1){
+                        wait(10000); // debounce
+                        while(PORTBbits.RB4 == 1);
+                        local_state++;
+                        if(local_state > 7 ){
+                            local_state = 0;
+                        }
+                        break;
+                    }else if(PORTBbits.RB5 == 1){
+                        wait(1000); // debounce                    
+                        // move into the Actual function corresponding to the 'local_state'
+                        enter_function(local_state);
+                    }   
+                }
                 
                 break;
             case 1:
@@ -201,6 +218,24 @@ void highPriorityISR( void ){
         //sendCharacter(fromReceiver[0]);
         PIR1bits.RCIF = 0;
         factory_return = 1; // you can now return from factory mode
+    }
+    
+    
+    if(PIR1bits.ADIF == 1){
+
+        raw_weight = ADRESH;
+        raw_weight = (raw_weight << 2);
+        raw_weight = raw_weight | ((ADRESL >> 6) && (0b00000011));
+        //number = ADRESL;
+        
+        
+        //num2str(&output,raw_weight);
+        //write_string(0,0,output);
+        
+        PIR1bits.ADIF = 0;        
+        ADCON0bits.GO = 1;
+        
+
     }
 }
 
@@ -231,21 +266,7 @@ void lowPriorityISR( void ){
     
     
     // See if there was an AD interrupt
-    if(PIR1bits.ADIF == 1){
-
-        raw_weight = ADRESH;
-        raw_weight = (raw_weight << 2);
-        raw_weight = raw_weight | ((ADRESL >> 6) && (0b00000011));
-        //number = ADRESL;
-        
-        //num2str(&output,raw_weight);
-        //write_string(0,0,output);
-        
-        PIR1bits.ADIF = 0;        
-        ADCON0bits.GO = 1;
-        
-
-    }
+    
     
     // Check to see if data was sent
     //if(PIR1 & (1 << 4)){
@@ -297,7 +318,7 @@ void AdInit(void){
         
         // start the conversion
         // this needs to be done every time
-        ADCON0bits.GO = 1;
+        //ADCON0bits.GO = 1;
 
 }
 

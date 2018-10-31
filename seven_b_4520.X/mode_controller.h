@@ -13,10 +13,7 @@ extern "C" {
 #endif
 
 
-int user_local(void);
-int user_remote(void);
-int factory(void);
-
+void functionPicker(int);
 
 
 #ifdef	__cplusplus

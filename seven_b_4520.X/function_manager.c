@@ -44,6 +44,7 @@ extern char output[25];
 extern filtered_weight;
 extern factory_return;
 extern int tare_val;
+extern int current_mode;
 
 void enter_function(int mode){
     
