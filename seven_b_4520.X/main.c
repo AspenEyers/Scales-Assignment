@@ -176,7 +176,7 @@ void lowPriorityISR( void ){
         
         filter_raw_weight();
         //callibrate_weight();
-        ounce_or_grams();
+        //ounce_or_grams();
         
         num2str(&output,filtered_weight);
         write_string(0,0,output);
