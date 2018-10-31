@@ -57,7 +57,11 @@ void set_mode_count_serial(void){
                 }
                 else
                 {   
-                    SET_MODE_WEIGH(); // GET CURRENT WEIGHT 
+                    filter_raw_weight();
+                    //callibrate_weight();
+                    //ounce_or_grams();
+
+
                     weight_per_unit = weight_grams / entered_count; // get weight of 1 unit in g (int)
                     break;
                 } 
@@ -65,7 +69,12 @@ void set_mode_count_serial(void){
         }
         else if(strcmp(fromReceiver,"COUNT"))
         {
-            SET_MODE_WEIGH();
+            filter_raw_weight();
+            //callibrate_weight();
+            //ounce_or_grams();
+
+            
+            
             if(unit_mode!=1)
             {
                 count_double = weight_grams/(double)weight_per_unit; //perform calc to get count (double float))
@@ -90,10 +99,7 @@ void set_mode_count_serial(void){
         }
         else if(strcmp(fromReceiver,"BACK"))
         {
-            if(current_mode == 2)
-            {
-                factory();
-            }
+                return;
         }
         else
         {   

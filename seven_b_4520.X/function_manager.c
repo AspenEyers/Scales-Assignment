@@ -1,6 +1,6 @@
 #include "function_manager.h"
 #include "basic_serial.h"
-
+#include "set_mode_count_serial.h"
 
 
 #define HELP 0            
@@ -58,7 +58,8 @@ void enter_function(int mode){
             tx232C(end_msg2);
             break;    
         case SET_MODE_COUNT:
-            tx232C(count_intro_msg);
+            //tx232C(count_intro_msg);
+            set_mode_count_serial();
             break;
         case SET_WEIGHT_GRAMS:
             tx232C(set_grams_intro_msg);
