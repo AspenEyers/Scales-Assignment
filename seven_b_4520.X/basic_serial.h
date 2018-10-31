@@ -27,6 +27,7 @@ extern "C" {
     void receiveCharacter(void);
     void setupInterrupts(void);
     void empty_receive_buffer(void);
+    void enable_interrupts(void);
 
 
 #ifdef	__cplusplus

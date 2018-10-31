@@ -77,7 +77,7 @@ void main( void )
     unsigned char debug[] = "DEBUG\n\r";
     unsigned char one[] = "1";
     unsigned char zero[] = "0";
-    unsigned char num_arr[][3] = {"0", "1", "2", "3","4","5","6","7","8","9",
+    //unsigned char num_arr[][3] = {"0", "1", "2", "3","4","5","6","7","8","9",
                                    "10","11","12","13","14","15","16"};
     // Set the variables for lcd display
     int row = 0;

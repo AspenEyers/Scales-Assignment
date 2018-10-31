@@ -17,13 +17,21 @@
 #include <usart.h>
 #include "basic_lcd.h"
 #include "basic_serial.h"
+
+#ifndef GLOBAL
+#define GLOBAL
 #include "globalVariables.h"
+#endif
+
+#ifndef CONFIGS
+#define	CONFIGS
 #include "ConfigRegs18f4520.h"
+#endif	
+
 #include "include_scales_functionality.h"
 #include "factory.h"
 #include "weight_filter.h"
 #include "function_manager.h"
-
 
 
 //*****************************************************************************
@@ -58,6 +66,8 @@ int direction;
 int factory_return = 0;
 int tare_val = 0;
 int current_mode = 0;
+int local_state = 0;
+int local_state_count = 7;
 
 //*****************************************************************************
 //*                          Function definitions                             *
@@ -84,6 +94,24 @@ void goToLowISR( void ){
         goto lowPriorityISR
     _endasm 
 }
+
+
+// I HAVE TURNED OFF THE REFERENCE VOLTAGES IN THE AD
+// I HAVE TURNED OFF THE REFERENCE VOLTAGES IN THE AD
+// I HAVE TURNED OFF THE REFERENCE VOLTAGES IN THE AD
+// I HAVE TURNED OFF THE REFERENCE VOLTAGES IN THE AD
+// I HAVE TURNED OFF THE REFERENCE VOLTAGES IN THE AD
+// I HAVE TURNED OFF THE REFERENCE VOLTAGES IN THE AD
+// I HAVE TURNED OFF THE REFERENCE VOLTAGES IN THE AD
+// I HAVE TURNED OFF THE REFERENCE VOLTAGES IN THE AD
+// I HAVE TURNED OFF THE REFERENCE VOLTAGES IN THE AD
+// I HAVE TURNED OFF THE REFERENCE VOLTAGES IN THE AD
+// I HAVE TURNED OFF THE REFERENCE VOLTAGES IN THE AD
+// I HAVE TURNED OFF THE REFERENCE VOLTAGES IN THE AD
+// I HAVE TURNED OFF THE REFERENCE VOLTAGES IN THE AD
+// I HAVE TURNED OFF THE REFERENCE VOLTAGES IN THE AD
+
+
 
 
 //*****************************************************************************
@@ -138,10 +166,14 @@ void main( void )
     current_mode = 2;
     empty_receive_buffer();
     while(1){
+        enable_interrupts();
         // choose mode
         switch(current_mode){
             case 0:
                 // go into user local function choosers
+                
+                // poll for buttons
+                
                 
                 break;
             case 1:
@@ -170,24 +202,44 @@ void highPriorityISR( void ){
 
 #pragma interruptlow lowPriorityISR 
 void lowPriorityISR( void ){
-        
 
+    
+    if(INTCONbits.RBIF == 1){
+        
+        
+        if(PORTBbits.RB4 == 1){
+           //write_string(0,0,yes);
+            
+        }
+        
+        if(PORTBbits.RB5 == 1){
+           //write_string(0,0,no);
+            
+        }
+           //write_string(0,0,no);        
+        PORTBbits.RB4 = 0;
+        PORTBbits.RB5 = 0;
+        // Reset the push button interrupt
+        INTCONbits.RBIF = 0;
+    
+    }
+    
+    
+    
+    // See if there was an AD interrupt
     if(PIR1bits.ADIF == 1){
+
         raw_weight = ADRESH;
         raw_weight = (raw_weight << 2);
         raw_weight = raw_weight | ((ADRESL >> 6) && (0b00000011));
         //number = ADRESL;
         
-        
-        
-        
         //num2str(&output,raw_weight);
         //write_string(0,0,output);
         
+        PIR1bits.ADIF = 0;        
         ADCON0bits.GO = 1;
-        PIR1bits.ADIF = 0;
-
-
+        
 
     }
     
@@ -195,7 +247,7 @@ void lowPriorityISR( void ){
     //if(PIR1 & (1 << 4)){
     //    receiveCharacter();
     //}
-    
+    PIR1bits.TXIF = 0;
 } 
 
 void AdInit(void){
@@ -214,8 +266,8 @@ void AdInit(void){
             
     // Voltage reference config bits
             // Might be useful to test this with the DC power supply
-    ADCON1bits.VCFG0 = 1;   // 1 = Vref- reference is AN2
-    ADCON1bits.VCFG1 = 1;   // 1 = Vref+ reference is AN3 
+    ADCON1bits.VCFG0 = 0;   // 1 = Vref- reference is AN2
+    ADCON1bits.VCFG1 = 0;   // 1 = Vref+ reference is AN3 
 
     // RC oscilator
     ADCON2bits.ADCS0 = 1;
@@ -244,6 +296,5 @@ void AdInit(void){
         ADCON0bits.GO = 1;
 
 }
-
 
 
