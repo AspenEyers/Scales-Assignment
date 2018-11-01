@@ -29,25 +29,26 @@ void set_mode_count_serial(void){
     char count_msg[]="SHOWCOUNT";
     char back_msg[]="BACK";
     char output5[10];
+    int inde = 0;
     //int exit_count_mode = 0;
     //empty_receive_buffer();
     tx232C(count_serial_intro_msg1);
     MsgToSend = 0;
     while(1)
     {
-        //filter_raw_weight();
+        filter_raw_weight();
         tx232C(count_serial_intro_msg2);
         tx232C(endmsg);
         //empty_receive_buffer();
         while(!MsgToSend){
-            //filter_raw_weight();
+            filter_raw_weight();
         } // wait for user to press enter
         MsgToSend = 0;
         if(strcmp(fromReceiver,setcount_msg)==0)
         {
             while(1)
             {
-                //filter_raw_weight();
+                filter_raw_weight();
                 tx232C(count_serial_setcount_msg);
                 tx232C(endmsg);
                 while(!MsgToSend); // wait for user to press enter
@@ -67,27 +68,32 @@ void set_mode_count_serial(void){
                     continue;
                 }
                 else
-                {   
-                    filter_raw_weight();
-                    
+                {   for(inde = 0; inde<100; inde++)
+                    {
+                        filter_raw_weight();
+                        
+                    }
                     //txt232C(entered_count)
 //                    num2str(&output5,(filtered_weight-tare_val));
 //                    tx232C(output5);
 
                     weight_per_unit = (filtered_weight-tare_val) / entered_count; // get weight of 1 unit in g (int)
-//                    num2str(&output5,weight_per_unit);
-//                    tx232C(output5);
+                    num2str(&output5,weight_per_unit);
+                    tx232C(output5);
                     break;
                 } 
             }
         }
         else if(strcmp(fromReceiver,count_msg)==0)
         {
-            filter_raw_weight();
+            for(inde = 0; inde<100; inde++){
+                    filter_raw_weight();
+                   
+            }
             //callibrate_weight();
             //ounce_or_grams();
-//            num2str(&output5,(filtered_weight-tare_val));
-//                    tx232C(output5);
+            num2str(&output5,(filtered_weight-tare_val));
+                    tx232C(output5);
             
             
             if(unit_mode!=1)

@@ -15,23 +15,25 @@
 /*
  * 
  */
-#define NUMBER_OF_MODES 7
+#define NUMBER_OF_MODES 8
 
 char user_remote_welcome[] = "Welcome to user remote mode.\n\r type 'HELP'\n\r";
-char user_remote_options[NUMBER_OF_MODES][10] = {"HELP",             
+char user_remote_options[NUMBER_OF_MODES][10] = {"HELP",
+                                         "USER",
                                          "WEIGH",
                                          "TARE",
                                          "COUNT",
                                          "SET_GRAMS",
                                          "SET_OUNCES",
-                                         "FACTORY",
+                                         "FACTORY"
                                          };
 unsigned char end_rem[] = "\r\n";
 extern unsigned char fromReceiver[BUFFERSIZE];
 extern int current_mode;
+int exit_user_remote = 0;
 void user_remote(){
-    int exit_user_remote = 0;
     int ind = 0;
+    exit_user_remote = 0;
     tx232C(user_remote_welcome);
     tx232C(end_rem);
     
@@ -40,7 +42,7 @@ void user_remote(){
     
     // wait until the user wants to exit factory mode
     while(exit_user_remote == 0){
-
+        filter_raw_weight();
         
         // check to see if the user has entered a valid state 
         // if they have then enter it.

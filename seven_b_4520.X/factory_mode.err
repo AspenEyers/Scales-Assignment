@@ -1,8 +1,8 @@
 Warning[2073] C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\factory_mode.c 29 : null-terminated initializer string too long
 Warning[2068] C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\factory_mode.c 32 : obsolete use of implicit 'int' detected
-Warning[2054] C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\factory_mode.c 49 : suspicious pointer conversion
 Warning[2054] C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\factory_mode.c 50 : suspicious pointer conversion
-Warning[2058] C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\factory_mode.c 54 : call of function without prototype
-Warning[2054] C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\factory_mode.c 67 : suspicious pointer conversion
-Warning[2054] C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\factory_mode.c 84 : suspicious pointer conversion
-Warning[2054] C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\factory_mode.c 84 : suspicious pointer conversion
+Warning[2054] C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\factory_mode.c 51 : suspicious pointer conversion
+Warning[2058] C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\factory_mode.c 55 : call of function without prototype
+Warning[2054] C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\factory_mode.c 68 : suspicious pointer conversion
+Warning[2054] C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\factory_mode.c 88 : suspicious pointer conversion
+Warning[2054] C:\Users\Aspen\OneDrive\2018\Semester 2\MTRX3700-Major\Git\Scales-Assignment\seven_b_4520.X\factory_mode.c 88 : suspicious pointer conversion

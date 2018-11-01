@@ -34,6 +34,7 @@
 #include "factory.h"
 #include "weight_filter.h"
 #include "function_manager.h"
+#include "user_remote.h"
 
 
 //*****************************************************************************
@@ -58,7 +59,7 @@ char output[25];
 int raw_weight;
 int filtered_weight;
 //int window;
-int samples[20] = {0};
+
 int pos;
 long sum;
 int unit_mode = 0;
@@ -70,6 +71,8 @@ int tare_val = 0;
 int current_mode = 0;
 int local_state = 0;
 int local_state_count = 7;
+int sampleSize = 20;
+int samples[] = {0};
 
 //*****************************************************************************
 //*                          Function definitions                             *
@@ -98,20 +101,21 @@ void goToLowISR( void ){
 }
 
 
-// I HAVE TURNED OFF THE REFERENCE VOLTAGES IN THE AD
-// I HAVE TURNED OFF THE REFERENCE VOLTAGES IN THE AD
-// I HAVE TURNED OFF THE REFERENCE VOLTAGES IN THE AD
-// I HAVE TURNED OFF THE REFERENCE VOLTAGES IN THE AD
-// I HAVE TURNED OFF THE REFERENCE VOLTAGES IN THE AD
-// I HAVE TURNED OFF THE REFERENCE VOLTAGES IN THE AD
-// I HAVE TURNED OFF THE REFERENCE VOLTAGES IN THE AD
-// I HAVE TURNED OFF THE REFERENCE VOLTAGES IN THE AD
-// I HAVE TURNED OFF THE REFERENCE VOLTAGES IN THE AD
-// I HAVE TURNED OFF THE REFERENCE VOLTAGES IN THE AD
-// I HAVE TURNED OFF THE REFERENCE VOLTAGES IN THE AD
-// I HAVE TURNED OFF THE REFERENCE VOLTAGES IN THE AD
-// I HAVE TURNED OFF THE REFERENCE VOLTAGES IN THE AD
-// I HAVE TURNED OFF THE REFERENCE VOLTAGES IN THE AD
+// I HAVE DISABLED THE AD INTERRUPT
+// I HAVE DISABLED THE AD INTERRUPT
+// I HAVE DISABLED THE AD INTERRUPT
+// I HAVE DISABLED THE AD INTERRUPT
+// I HAVE DISABLED THE AD INTERRUPT
+// I HAVE DISABLED THE AD INTERRUPT
+// I HAVE DISABLED THE AD INTERRUPT
+// I HAVE DISABLED THE AD INTERRUPT// I HAVE DISABLED THE AD INTERRUPT
+// I HAVE DISABLED THE AD INTERRUPT
+// I HAVE DISABLED THE AD INTERRUPT
+// I HAVE DISABLED THE AD INTERRUPT
+// I HAVE DISABLED THE AD INTERRUPT
+// I HAVE DISABLED THE AD INTERRUPT
+// I HAVE DISABLED THE AD INTERRUPT
+
 
 
 
@@ -165,6 +169,10 @@ void main( void )
     //tx232C(end_msg);
     //edit
     
+    // set b0 as output for capture compare
+    
+    
+    
     current_mode = 0;
     enable_interrupts();
     empty_receive_buffer();
@@ -194,11 +202,16 @@ void main( void )
                         // move into the Actual function corresponding to the 'local_state'
                         enter_function(local_state);
                     }   
+                    if(current_mode != 0){
+                        break;
+                    }
+                    
                 }
                 
                 break;
             case 1:
                 // go into user remote function chooser
+                user_remote();
                 break;
             case 2:
                     factory();
@@ -223,6 +236,7 @@ void highPriorityISR( void ){
     
     if(PIR1bits.ADIF == 1){
 
+
         raw_weight = ADRESH;
         raw_weight = (raw_weight << 2);
         raw_weight = raw_weight | ((ADRESL >> 6) && (0b00000011));
@@ -232,9 +246,9 @@ void highPriorityISR( void ){
         //num2str(&output,raw_weight);
         //write_string(0,0,output);
         
-        PIR1bits.ADIF = 0;        
-        ADCON0bits.GO = 1;
         
+        ADCON0bits.GO = 1;
+        PIR1bits.ADIF = 0;               
 
     }
 }
@@ -291,8 +305,8 @@ void AdInit(void){
             
     // Voltage reference config bits
             // Might be useful to test this with the DC power supply
-    ADCON1bits.VCFG0 = 0;   // 1 = Vref- reference is AN2
-    ADCON1bits.VCFG1 = 0;   // 1 = Vref+ reference is AN3 
+    ADCON1bits.VCFG0 = 1;   // 1 = Vref- reference is AN2
+    ADCON1bits.VCFG1 = 1;   // 1 = Vref+ reference is AN3 
 
     // RC oscilator
     ADCON2bits.ADCS0 = 1;
@@ -318,7 +332,7 @@ void AdInit(void){
         
         // start the conversion
         // this needs to be done every time
-        //ADCON0bits.GO = 1;
+        ADCON0bits.GO = 1;
 
 }
 

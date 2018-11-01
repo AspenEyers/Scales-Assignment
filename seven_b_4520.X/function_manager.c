@@ -3,7 +3,8 @@
 #include "set_mode_count_serial.h"
 #include "weight_filter.h"
 #include "basic_lcd.h"
-
+#include <p18cxxx.h>
+#include "user_remote.h"
 
 #define HELP 0            
 #define SET_MODE_USER 1
@@ -25,8 +26,9 @@ char tare_msg[] = "Taring scales";
 char calibrate[] = "calibrating scales:";
 char help_message[] = "The following commands are valid:\n\r";
 char help_message2[] = "HELP, USER, WEIGH, TARE, COUNT, SET_GRAMS \n\r";
-char help_message3[] = "SET_OUNCES, FACTORY, WEIGHT_READINGS, STATISTICS\n\r";
-char help_message4[] = "SET_SAMPLES, CALIBRATE";
+char help_message3[] = "SET_OUNCES, FACTORY";
+char help_message4[] = ", WEIGHT_READINGS, STATISTICS\n\r";
+char help_message5[] = "SET_SAMPLES, CALIBRATE";
 char count_intro_msg[] = "1";
 char set_grams_intro_msg[] = "2";
 char set_ounces_intro_msg[] = "3";
@@ -46,19 +48,27 @@ extern filtered_weight;
 extern factory_return;
 extern int tare_val;
 extern int current_mode;
+extern int raw_weight;
+extern int exit_user_remote;
 
 void enter_function(int mode){
     
     switch(mode){
         case HELP:
-            if(REMOTE_MODE){
+            if(current_mode == 2){
                 tx232C(help_message);
                 tx232C(help_message2);            
                 tx232C(help_message3);
                 tx232C(help_message4);
+                tx232C(help_message5);
+                tx232C(end_msg2);
+            }else if(current_mode == 1) {
+                tx232C(help_message);
+                tx232C(help_message2);            
+                tx232C(help_message3);
                 tx232C(end_msg2);
             }else{
-            
+            // do nothing
             }
             break;
         case SET_MODE_WEIGH:
@@ -76,7 +86,7 @@ void enter_function(int mode){
                 tx232C(end_msg2);
                 tare();
             }else{
-            
+                tare();
             }
             break;
         case CALIBRATE:
@@ -104,11 +114,18 @@ void enter_function(int mode){
             set_weight_ounces();
             break;
         case SET_MODE_FACTORY:
-            tx232C(factory_intro_msg);
+            
+            //tx232C(factory_intro_msg);
+            tx232C(set_ounces_intro_msg);
+            if(current_mode == 1){
+                factory_password();
+            }
+            
             break;
         case SET_SAMPLES_PER_MEASURMENT:
             if(current_mode == 2){
                 tx232C(samples_intro_msg);
+                //set_samples();
                 break;
             }
             else{break;}   
@@ -125,6 +142,16 @@ void enter_function(int mode){
             }
             else{break;}
         case SET_MODE_USER:
+            if(current_mode == 2){
+                current_mode = 1;
+            }else if(current_mode == 1){
+                current_mode = 0;
+                exit_user_remote = 1;
+                
+            }else{
+                current_mode = 1;
+            }
+            
             break;
         default:
             tx232C(msg2);
@@ -136,6 +163,7 @@ void enter_function(int mode){
     }
 }
 
+
 void set_weight_grams(){
     unit_mode = 0;
 }
@@ -145,12 +173,21 @@ void set_weight_ounces(){
 }
 
 void weigh(void){
-    char test_msg[] = "PLZ work";
     
+    char return_line[] = "\r";
+    char grams[] = "grams";
+    char oz[] = "oz";
+    char empty[] = "      ";
     
     factory_return = 0;
     while(1){
-    filter_raw_weight();
+        // poll the AD
+        
+
+        
+        
+        filter_raw_weight();
+        
         //callibrate_weight();
         //ounce_or_grams();
     
@@ -187,6 +224,7 @@ void weigh(void){
 
 
 void tare(void){
+    filter_raw_weight();
     tare_val = filtered_weight;
 }
 

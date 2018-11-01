@@ -33,7 +33,7 @@ unsigned char LRC;
 void setupInterrupts(void){
 
     RCON |= (1 << 7);      // Enable interrupt priority
-    IPR1bits.ADIP = 1;     // AD low priority
+    IPR1bits.ADIP = 1;     // AD high priority
     IPR1 |= (1 << 5);      // USART interrupt > high priority 
     
     //INTCONbits.TMR0IE = 1; //Enable timer0 interrupt
@@ -78,12 +78,13 @@ void setupInterrupts(void){
 
 void enable_interrupts(){
     //INTCONbits.RBIE = 1; 
+    
     INTCON |= (1 << 7);    // Enable high priority interrupts 
     INTCON |= (1 << 6);    // Enable low priority interrupts
     PIE1 |= (1 << 5);      // USART receive interrupt enable
-    PIE1bits.ADIE = 1;     // AD interrupt enable 
-    PORTBbits.RB4 = 0;
-    PORTBbits.RB5 = 0;
+    //PIE1bits.ADIE = 1;     // AD interrupt enable 
+    //PORTBbits.RB4 = 0;
+    //PORTBbits.RB5 = 0;
 }
 
 // Set up the USART in Async mode

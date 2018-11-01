@@ -30,6 +30,7 @@ char string_test[NUMBER_OF_MODES][15] = {"HELP",
 char end_msg[] = "\r\n";
 extern unsigned char fromReceiver[BUFFERSIZE];
 extern factory_return;
+extern int MsgToSend;
 
 
 void factory(void){
@@ -80,11 +81,14 @@ void factory_password(void){
     unsigned char incorrect_pw_msg[]="Incorrect. You have been denied access.\n\r";
     int still_in_factory_pw = 1;
     tx232C(factory_pw_msg);
+    
+    MsgToSend =0;
     while(still_in_factory_pw){
+        while(MsgToSend==0);
         if(strcmp(fromReceiver,factory_pw)==0){
             current_mode = 2;
             still_in_factory_pw = 0;
-            factory();
+            //factory();
         }
         else{
             tx232C(incorrect_pw_msg);
