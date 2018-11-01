@@ -36,6 +36,8 @@
 #include "function_manager.h"
 #include "user_remote.h"
 
+#include "tts.h"
+
 
 //*****************************************************************************
 //*                          Defines                                          *
@@ -51,6 +53,7 @@
 char yes[] = "yes\n\r";
 char no[] = "no\n\r";
 
+char welcome[] = "welcome";
 //*****************************************************************************
 //*                          Variables for main                               *
 //***************************************************************************** 
@@ -72,7 +75,7 @@ int current_mode = 0;
 int local_state = 0;
 int local_state_count = 7;
 int sampleSize = 20;
-int samples[] = {0};
+int samples[20] = {0};
 
 //*****************************************************************************
 //*                          Function definitions                             *
@@ -152,6 +155,7 @@ void main( void )
     setupSerial();
     AdInit();    
     LCDInit();    
+    //tts_init();
     // Note: the setup interrupts MUST go after the setup functions
     // otherwise it will break the timing in the setups.
     setupInterrupts();
@@ -172,6 +176,8 @@ void main( void )
     // set b0 as output for capture compare
     
     
+    
+    //tts_run(welcome);
     
     current_mode = 0;
     enable_interrupts();

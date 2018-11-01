@@ -15,6 +15,9 @@
       <itemPath>set_mode_count_serial.h</itemPath>
       <itemPath>mode_controller.h</itemPath>
       <itemPath>user_remote.h</itemPath>
+      <itemPath>set_mode_count_local.h</itemPath>
+      <itemPath>tts.h</itemPath>
+      <itemPath>TTS_Cmd.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -34,6 +37,8 @@
       <itemPath>set_mode_count_serial.c</itemPath>
       <itemPath>mode_controller.c</itemPath>
       <itemPath>user_remote.c</itemPath>
+      <itemPath>set_mode_count_local.c</itemPath>
+      <itemPath>tts.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"

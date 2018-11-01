@@ -5,5 +5,8 @@ build/default/debug/function_manager.o:  \
 	C:/Users/Aspen/OneDrive/2018/Semester\ 2/MTRX3700-Major/Git/Scales-Assignment/seven_b_4520.X/set_mode_count_serial.h  \
 	C:/Users/Aspen/OneDrive/2018/Semester\ 2/MTRX3700-Major/Git/Scales-Assignment/seven_b_4520.X/weight_filter.h  \
 	C:/Users/Aspen/OneDrive/2018/Semester\ 2/MTRX3700-Major/Git/Scales-Assignment/seven_b_4520.X/basic_lcd.h  \
+	C:/Users/Aspen/OneDrive/2018/Semester\ 2/MTRX3700-Major/Git/Scales-Assignment/seven_b_4520.X/set_mode_count_local.h  \
+	C:/Users/Aspen/OneDrive/2018/Semester\ 2/MTRX3700-Major/Git/Scales-Assignment/seven_b_4520.X/tts.h  \
 	C:/Users/Aspen/OneDrive/2018/Semester\ 2/MTRX3700-Major/Git/Scales-Assignment/seven_b_4520.X/user_remote.h  \
+	C:/Users/Aspen/OneDrive/2018/Semester\ 2/MTRX3700-Major/Git/Scales-Assignment/seven_b_4520.X/TTS_Cmd.h  \
 

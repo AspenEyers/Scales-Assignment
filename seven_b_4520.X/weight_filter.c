@@ -13,11 +13,12 @@ extern int unit_mode;
 void filter_raw_weight(void){
     
     // to calculate the average
-    int len = sizeof(samples) / sizeof(int);
+    int len = sampleSize;
     while(PIR1bits.ADIF == 0);
     raw_weight = ADRESH;
     raw_weight = (raw_weight << 2);
     raw_weight = raw_weight | ((ADRESL >> 6) && (0b00000011));
+    
     ADCON0bits.GO = 1;
     
 

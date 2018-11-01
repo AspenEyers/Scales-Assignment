@@ -5,6 +5,9 @@
 #include "basic_lcd.h"
 #include <p18cxxx.h>
 #include "user_remote.h"
+#include "set_mode_count_local.h"
+#include "tts.h"
+#include "TTS_Cmd.h"
 
 #define HELP 0            
 #define SET_MODE_USER 1
@@ -50,6 +53,7 @@ extern int tare_val;
 extern int current_mode;
 extern int raw_weight;
 extern int exit_user_remote;
+extern int sampleSize;
 
 void enter_function(int mode){
     
@@ -103,7 +107,10 @@ void enter_function(int mode){
         case SET_MODE_COUNT:
             //tx232C(count_intro_msg);
             //empty_receive_buffer();
+            if(current_mode!=0){
             set_mode_count_serial();
+            }
+            else(set_mode_count_local());
             break;
         case SET_WEIGHT_GRAMS:
             tx232C(set_grams_intro_msg);
@@ -125,10 +132,12 @@ void enter_function(int mode){
         case SET_SAMPLES_PER_MEASURMENT:
             if(current_mode == 2){
                 tx232C(samples_intro_msg);
-                //set_samples();
+                set_samples();
                 break;
             }
-            else{break;}   
+            else{
+                tx232C(samples_intro_msg);
+                break;}   
         case SHOW_WEIGHT_READINGS:
             if(current_mode == 2){
                 tx232C(weight_readings_intro_msg);
@@ -163,7 +172,18 @@ void enter_function(int mode){
     }
 }
 
-
+void set_samples(){
+    char heheh[20];
+    MsgToSend = 0;
+    while(MsgToSend==0);
+    MsgToSend = 0;
+    if (isDigit(fromReceiver))
+    {
+        sampleSize = str2int(fromReceiver);
+        num2str(&heheh,sampleSize);
+                    tx232C(heheh);
+    }
+}
 void set_weight_grams(){
     unit_mode = 0;
 }
